@@ -13,45 +13,47 @@
 
 // http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
 
-$arial:             Arial, "Helvetica Neue", Helvetica, sans-serif
-$helvetica:         "Helvetica Neue", "Helvetica", Arial, sans-serif
-$verdana:           Verdana, Geneva, Tahoma, sans-serif
-$geneva:            Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
-$georgia:           Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
+$arial:               Arial, "Helvetica Neue", Helvetica, sans-serif
+$helvetica:           "Helvetica Neue", "Helvetica", Arial, sans-serif
+$verdana:             Verdana, Geneva, Tahoma, sans-serif
+$geneva:              Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif
+$georgia:             Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif
 
 // google web fonts...
 
 // http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/
 // http://designshack.net/articles/typography/10-more-great-google-font-combinations-you-can-copy/
 
-$cantata:           "Cantata One", Georgia, serif
-$imprima:           Imprima, Verdana, Helvetica, sans-serif
+$cantata:             "Cantata One", Georgia, serif
+$imprima:             Imprima, Verdana, Helvetica, sans-serif
 
-$allerta:           Allerta, Helvetica, Arial, sans-serif
-$crimson:           Crimson Text, Georgia, Times, serif
+$allerta:             Allerta, Helvetica, Arial, sans-serif
+$crimson:             Crimson Text, Georgia, Times, serif
 
-$arvo:              Arvo, Georgia, Times, serif
-$pt-sans:           "PT Sans", Helvetica, Arial, sans-serif
+$arvo:                Arvo, Georgia, Times, serif
+$pt-sans:             "PT Sans", Helvetica, Arial, sans-serif
 
-$pt-serif:          "PT Serif", serif
+$pt-serif:            "PT Serif", serif
 
-$droid-serif:       "Droid Serif", Georgia, Times, serif
-$droid-sans:        "Droid Sans", Helvetica, Arial, sans-serif
+$droid-serif:         "Droid Serif", Georgia, Times, serif
+$droid-sans:          "Droid Sans", Helvetica, Arial, sans-serif
 
 // base definitions...
 
-$base-font-family:  $droid-sans       !default
-$base-font-size:    100%              !default
-$base-line-height:  1.4               !default
+$base-font-family:    $droid-sans       !default
+$base-font-size:      100%              !default
+$base-line-height:    1.4               !default
 
-$base-font-header:  $droid-serif      !default
-$base-font-nav:     $droid-serif      !default
-$base-font-button:  $droid-serif      !default
+// font family...
+
+$font-family-header:  $droid-serif      !default
+$font-family-nav:     $droid-serif      !default
+$font-family-button:  $droid-serif      !default
 
 // non-google web fonts alternativ:
-// $base-font-header:  $arial         !default
-// $base-font-header:  $georgia       !default
-// $base-font-nav:     $georgia       !default
+// $font-family-header:  $arial            !default
+// $font-family-header:  $georgia          !default
+// $font-family-nav:     $georgia          !default
 
 // icon fonts...
 
@@ -80,21 +82,21 @@ $bg-footer:         #fff
 // fonts...
 
 $base-font-color:   #444         !default
-$base-header-color: #222         !default
+$color-header:      #222         !default
 
 $font-white:        #fff
 $font-gray:         #999
 
 // color palette alternative:
 // $base-font-color:   lighten($blackish, 10)  !default
-// $base-header-color: $blackish               !default
+// $color-header:      $blackish               !default
 // $font-white:        #fff
 // $font-gray:         lighten($blackish, 40)
 
 // links...
 
-$logo-color:        darken($dark-bluish, 10)
-$nav-color:         darken($dark-bluish, 10)
+$color-logo:        darken($dark-bluish, 10)
+$color-nav:         darken($dark-bluish, 10)
 
 $link-normal:       darken($dark-bluish, 10)
 $link-hover:        lighten($dark-bluish, 10)
@@ -111,15 +113,15 @@ $link-focus:        darken($dark-bluish, 10)
 
 // buttons...
 
-$button-color:      $font-gray
-$button-font-color: $font-white
+$color-button:      $font-gray
+$color-button-font: $font-white
 
 // miscellaneous...
 
-$ruler:             #ddd
-$spacer:            #fff
-$highlight:         #00b5f1
-$border:            #c3c3c3
+$color-ruler:       #ddd
+$color-spacer:      #fff
+$color-highlight:   #00b5f1
+$color-border:      #c3c3c3
 
 // alerts...
 

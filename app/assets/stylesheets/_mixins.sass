@@ -150,12 +150,12 @@
     right: 10px
     left: auto
 
-@mixin shadow-3($bg-color: #fff, $border: #ccc)
+@mixin shadow-3($bg-color: #fff, $color-border: #ccc)
   position: relative
   background-color: $bg-color
-  border: 1px solid $border
+  border: 1px solid $color-border
   +border-radius(4px)
-  +box-shadow(0 1px 4px $border)
+  +box-shadow(0 1px 4px $color-border)
 
   &:before, &:after
     content: ""
@@ -296,7 +296,7 @@
   bottom: 1em
   right: 2.618em
   width:  $arrow-width
-  font-family: $base-font-button
+  font-family: $font-family-button
   font-size: .716em
   text-align: center
   +link-colors($arrow-color-1, $arrow-color-2, $arrow-color-1, $arrow-color-1, $arrow-color-1)
@@ -315,7 +315,7 @@
   bottom: 1em
   right: 2.618em
   width:  $arrow-width
-  font-family: $base-font-button
+  font-family: $font-family-button
   font-size: .716em
   text-align: center
   +link-colors($arrow-color-1, $arrow-color-2, $arrow-color-1, $arrow-color-1, $arrow-color-1)
@@ -350,12 +350,12 @@
   +border-radius($size/2)
   +box-shadow(0 6px 0 0 rgba(0, 0, 0, 0.15) inset, 0 0 8px rgba(0, 0, 0, 0.25) inset)
 
-@mixin circle-border($size: 100px, $border: 7px, $color: white)
+@mixin circle-border($size: 100px, $color-border: 7px, $color: white)
   display: block
   width: $size
   height: $size
   text-align: center
-  border: $border solid $color
+  border: $color-border solid $color
   +box-shadow(0 0 5px rgba(0, 0, 0, 0.1))
   +border-radius($size)
   img
