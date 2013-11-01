@@ -22,7 +22,7 @@ module Aqqaluk
 
     # Precompile *all* assets, except those that start with underscore per:
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
-    config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
+    # config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
