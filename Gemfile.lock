@@ -82,6 +82,13 @@ GEM
     mime-types (1.25)
     mini_portile (0.5.2)
     minitest (4.7.5)
+    mobileesp_converted (0.2.2)
+    mobvious (0.3.2)
+      mobileesp_converted (~> 0.2.0)
+      rack (>= 1.1.0)
+    mobvious-rails (0.1.2)
+      activesupport
+      mobvious
     multi_json (1.8.2)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
@@ -180,6 +187,8 @@ DEPENDENCIES
   haml-rails
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+  mobvious
+  mobvious-rails
   oily_png
   pg (= 0.15.1)
   rails (= 4.0.0)

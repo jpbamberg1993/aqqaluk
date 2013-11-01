@@ -34,6 +34,8 @@ gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
 gem 'turbolinks',   '1.1.1'
 gem 'jbuilder',     '1.0.2'
+gem 'mobvious'
+gem 'mobvious-rails'
 
 # Compass specific gems.
 gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
