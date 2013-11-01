@@ -20,9 +20,20 @@ html
   -webkit-font-smoothing: antialiased
 
 body
-  margin: 0 auto
-  width: 960px
   background-color: $bg-body
+
+.container
+  +container($total-columns, $break6, $break9, $break12)
+  +susy-grid-background
+
+  +at-breakpoint($break6)
+    +susy-grid-background
+
+  +at-breakpoint($break9)
+    +susy-grid-background
+
+  +at-breakpoint($break12)
+    +susy-grid-background
 
 audio,
 canvas,
