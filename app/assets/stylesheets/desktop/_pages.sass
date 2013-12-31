@@ -18,6 +18,60 @@
     padding: $em8 0
 
 
+/* Toggles
+  -----------------------
+
+// Hide elements when breakpoint < 12
+// Purpose: display elements on larger desktop screens exclusively
+
+.hide-lt-12
+  +hidden
+
++at-breakpoint($break12)
+  .hide-lt-12
+    +reveal-hidden
+
+// Hide elements when breakpoint = 12
+// Purpose: display elements on ALL screen sizes smaller than larger desktop screens
+
++at-breakpoint($break12)
+  .hide-eq-12
+    +hidden
+
+// Hide elements when breakpoint < 9
+// Purpose: display elements only on larger desktop screens and tablets,
+//          hide elements from mini's and the smallest screen sizes (smart phones)
+
+.hide-lt-9
+  +hidden
+
+  +at-breakpoint($break9)
+    +reveal-hidden
+
+// Hide elements when breakpoint > 6
+// Purpose: hide elements from tablets and desktops
+
+.hide-gt-6
+  +at-breakpoint($break9)
+    +hidden
+
+// Hide elements when breakpoint > 4
+// Purpose: hide elements from everything but smart phones
+
+.hide-gt-4
+  +at-breakpoint($break6)
+    +hidden
+
+// Hide elements when breakpoint = 4
+// Purpose: hide elements from the smallest screen sizes only (smart phones)
+
+.hide-eq-4
+  +hidden
+
+  +at-breakpoint($break6)
+    +reveal-hidden
+
+
 /* Pages
   -----------------------
 

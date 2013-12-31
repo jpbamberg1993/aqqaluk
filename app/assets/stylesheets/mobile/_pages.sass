@@ -12,6 +12,26 @@
     padding: $em6 0
 
 
+/* Toggles
+  -----------------------
+
+// Hide elements when breakpoint > 4
+// Purpose: hide elements from everything but smart phones
+
+.hide-gt-4
+  +at-breakpoint($break6)
+    +hidden
+
+// Hide elements when breakpoint = 4
+// Purpose: hide elements from the smallest screen sizes only (smart phones)
+
+.hide-eq-4
+  +hidden
+
+  +at-breakpoint($break6)
+    +reveal-hidden
+
+
 /* Pages
   -----------------------
 
