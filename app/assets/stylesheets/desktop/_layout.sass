@@ -57,14 +57,24 @@ video
 // navigation in _navigation.sass
 
 header
-  height: 60px
-  margin-bottom: 10px
+  height: 63px
+  // margin-bottom: 10px
   background-color: $bg-header
+
+  +at-breakpoint($break9)
+    height: 126px
 
 .logo
   float: left
-  margin: .625em 0 0 0
+  margin: $em-5 0 0 0
   +link-colors($color-logo, $color-logo, $color-logo, $color-logo, $color-logo)
+  img
+    width: 93px
+    height: 63px
+
+    +at-breakpoint($break9)
+      width: 186px
+      height: 126px
 
 
 /* Footer
