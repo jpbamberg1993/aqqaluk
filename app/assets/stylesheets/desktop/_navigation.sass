@@ -2,13 +2,24 @@
   -----------------------
 
 nav
-  float: left
-  margin: 25px 0 0 250px
+  +span-columns(2 omega, 4)
+  margin-top: 38px
+
+  +at-breakpoint($break6)
+    +span-columns(4 omega, $break6)
+
+  +at-breakpoint($break9)
+    +span-columns(7 omega, $break9)
+    margin-top: 71px
+
+  +at-breakpoint($break12)
+    +span-columns(9 omega, $break12)
+    margin-top: 93px
 
 ul#nav
   +inline-block-list
   li
-    padding: 0 20px
+    padding: 0 $em-2
     font-family: $font-family-nav
     +link-colors($color-nav, $color-nav, $color-nav, $color-nav, $color-nav)
   li:first-child

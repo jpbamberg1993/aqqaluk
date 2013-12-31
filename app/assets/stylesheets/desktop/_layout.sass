@@ -58,21 +58,36 @@ video
 
 header
   height: 63px
-  // margin-bottom: 10px
   background-color: $bg-header
 
   +at-breakpoint($break9)
+    height: 102px
+
+  +at-breakpoint($break12)
     height: 126px
 
 .logo
-  float: left
-  margin: $em-5 0 0 0
   +link-colors($color-logo, $color-logo, $color-logo, $color-logo, $color-logo)
+  +span-columns(2, 4)
+
+  +at-breakpoint($break6)
+    +span-columns(2, $break6)
+
+  +at-breakpoint($break9)
+    +span-columns(2, $break9)
+
+  +at-breakpoint($break12)
+    +span-columns(3, $break12)
+
   img
     width: 93px
     height: 63px
 
     +at-breakpoint($break9)
+      width: 150px
+      height: 102px
+
+    +at-breakpoint($break12)
       width: 186px
       height: 126px
 

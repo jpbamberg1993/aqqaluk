@@ -1,10 +1,28 @@
 %nav{:role => "navigation"}
   %ul#nav
     %li
-      = link_to 'link 1', '/', :title => ''
+      = link_to 'Students', '/', :title => ''
+    / %li
+    /   = link_to 'Donors & Sponsors', '/', :title => ''
+    / %li
+    /   = link_to 'Lanuage & Culture', '/', :title => ''
+    / %li
+    /   = link_to 'News & Events', '/', :title => ''
     %li
-      = link_to 'Link 2', '/', :title => ''
+      = link_to '/', :title => '' do
+        Donors
+        %span.hide-lt-9
+          &amp;
+          Sponsors
     %li
-      = link_to 'Link 3', '/', :title => ''
+      = link_to '/', :title => '' do
+        %span.hide-lt-9
+          Lanuage
+          &amp;
+        Culture
     %li
-      = link_to 'Link 4', '/', :title => ''
+      = link_to '/', :title => '' do
+        News
+        %span.hide-lt-9
+          &amp;
+          Events
