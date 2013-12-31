@@ -41,13 +41,15 @@ img
 
 header
   height: 63px
-  // margin-bottom: 10px
   background-color: $bg-header
 
 .logo
-  float: left
-  margin: $em-5 0 0 0
   +link-colors($color-logo, $color-logo, $color-logo, $color-logo, $color-logo)
+  +span-columns(2, 4)
+
+  +at-breakpoint($break6)
+    +span-columns(2, $break6)
+
   img
     width: 93px
     height: 63px
