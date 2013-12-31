@@ -1,3 +1,41 @@
+/* Paragraphs
+  -----------------------
+
+p
+  margin: 0 0 $em-6
+  font-size: $em2
+
+  +at-breakpoint($break6)
+    margin-bottom: $em-5
+    font-size: $em2c
+
+
+/* Links
+  -----------------------
+
+a
+  +link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus)
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+
+/* Headers
+  -----------------------
+
+h1, h2, h3, h4, h5
+  font-family: $font-family-header
+  color: $color-header
+
+h2
+  margin: 0 0 $em-5
+  font-size: $em2b
+
+  +at-breakpoint($break6)
+    margin-bottom: $em-4
+    font-size: $em2c
+
+
 /* Highlighters
   -----------------------
 
@@ -11,21 +49,3 @@
 ::selection
   background: $color-highlight
   text-shadow: none
-
-
-/*  Links
-  -----------------------
-
-a
-  +link-colors($link-normal, $link-hover, $link-active, $link-visited, $link-focus)
-  text-decoration: none
-  &:hover
-    text-decoration: underline
-
-
-/*  Headers
-  -----------------------
-
-h1, h2, h3, h4, h5
-  font-family: $font-family-header
-  color: $color-header
