@@ -16,4 +16,4 @@
 // Anystretch
 // ===========================
 
-$('#hero').anystretch("assets/heroes/aqqaluk.jpg", {speed: 200, positionY: 'top'});
+$('#hero').anystretch("assets/heroes/aqqaluk.jpg", {speed: 200, positionY: 'center'});
