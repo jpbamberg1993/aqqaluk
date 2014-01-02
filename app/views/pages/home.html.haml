@@ -1,8 +1,22 @@
-%section.panel#hero
-  .container
-    .hero
-      %h1 Pages#home
-      %p Find me in app/views/pages/home.html.haml
+%section#hero
+  #carousel
+    = image_tag 'heroes/home-989.jpg', :alt => 'Aqqaluk Trust', :width => '989', :height => ' 550'
+    = image_tag 'heroes/camp-989.jpg', :alt => 'Camp Sivu', :width => '989', :height => ' 550'
+    = image_tag 'heroes/student-989-fade.jpg', :alt => 'Scholarships', :width => '989', :height => ' 550'
+    = image_tag 'heroes/culture-989.jpg', :alt => 'Language and Culture', :width => '989', :height => ' 550'
+  = link_to '', '#', :title => 'Show previous', :id => 'prev', :class => 'carousel-sides'
+  = link_to '', '#', :title => 'Show next', :id => 'next', :class => 'carousel-sides'
+  #pager
+    %a.selected{href: "#"}
+      %span 1
+    %a{href: "#"}
+      %span 2
+    %a{href: "#"}
+      %span 3
+    %a{href: "#"}
+      %span 4
+    %a{href: "#"}
+      %span 5
 
 %section.panel#testimonials
   .container
