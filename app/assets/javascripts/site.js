@@ -18,21 +18,19 @@
 
 $('#carousel').carouFredSel({
     width: '100%',
-    // items               : 1,
     items: {
         visible         : 3,
         start           : -1
     },
-    // direction           : "up",
     scroll: {
         items           : 1,
-        // easing          : "elastic",
         duration        : 1000,
         timeoutDuration : 7000,
         pauseOnHover    : true
     },
-    prev: '#prev',
-    next: '#next',
+    // cookie              : true,
+    prev                : '#prev',
+    next                : '#next',
     pagination: {
         container       : '#pager',
         deviation       : 1
