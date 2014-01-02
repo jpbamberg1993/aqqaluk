@@ -37,6 +37,12 @@ $('#carousel').carouFredSel({
     }
 });
 
+// $("#carousel").carouFredSel({
+//   items: 1,
+//   direction: "up"
+// });
+
+
 
 // ===========================
 // Anystretch
