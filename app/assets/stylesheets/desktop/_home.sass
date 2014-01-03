@@ -1,7 +1,13 @@
+/* Home
+  -----------------------
+
 #hero
   position: relative
+  width: 100%
   height: 550px
+  overflow: hidden
   background-color: $color-1
+  // +hidden
 
 .slide
   position: relative
@@ -48,3 +54,24 @@
     background-color: rgba(255, 255, 255, 0.5)
   span
     display: none
+
+
+/* Testimonials
+  -----------------------
+
+.testimonial
+  // clear: both
+  display: block
+  +clearfix
+  .profile
+    +span-columns(2, $break12)
+  .pic1
+    +image-portal("pics/1.jpg", 150px)
+  .pic2
+    +image-portal("pics/2.jpg", 150px)
+  .pic3
+    +image-portal("pics/3.jpg", 150px)
+  .pic4
+    +image-portal("pics/4.jpg", 150px)
+  p
+    +span-columns(10 omega, $break12)

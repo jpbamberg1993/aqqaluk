@@ -37,11 +37,14 @@ $('#carousel').carouFredSel({
     }
 });
 
-// $("#carousel").carouFredSel({
-//   items: 1,
-//   direction: "up"
-// });
-
+$("#carousel2").carouFredSel({
+    direction           : "up",
+    scroll: {
+        fx              : "fade",
+        duration        : 1000,
+        timeoutDuration : 7000
+    }
+});
 
 
 // ===========================
