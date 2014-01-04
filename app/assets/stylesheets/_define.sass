@@ -58,6 +58,15 @@ $georgia:             Georgia, Palatino, "Palatino Linotype", Times, "Times New 
 $droid-serif:         "Droid Serif", Georgia, Times, serif
 $droid-sans:          "Droid Sans", Helvetica, Arial, sans-serif
 
+// embedded fonts...
+
+@font-face
+  font-family: 'FONT_NAME'
+  font-weight: normal
+  font-style: normal
+  src: font-url('FONT_NAME.eot')
+  src: font-url('FONT_NAME.eot?#iefix') format("embedded-opentype"), font-url('FONT_NAME.svg#FONT_NAME') format("svg"), font-url('FONT_NAME.woff') format("woff"), font-url('FONT_NAME.ttf') format("truetype")
+
 // base definitions...
 
 $base-font-family:    $droid-sans       !default
