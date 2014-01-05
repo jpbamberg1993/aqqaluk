@@ -1,6 +1,29 @@
 %footer{:role => "contentinfo"}
   .container
-    %ul
-      %li
-        = link_to 'Home', root_path, :title => ''
+    .address
+      .vcard
+        %p.fn.org
+          Aqqaluk Trust
+        .adr
+          %p.street-address P.O. Box 509
+          %p
+            %span.locality> Kotzebue
+            ,
+            %span.region Alaska
+            %span.postal-code 99752
+
+    .phone-number
+      %p
+        Toll Free --
+        %a{:href => 'callto://1-866-442-1607', :title => 'Toll Free Number', :class => 'callto'} 866-442-1607
+        %a{:href => 'tel://1-866-442-1607', :title => 'Toll Free Number', :class => 'tel'} 866-442-1607
+      %p
+        Phone --
+        %a{:href => 'callto://907-442-1607', :title => 'Main Number', :class => 'callto'} 907-442-1607
+        %a{:href => 'tel://907-442-1607', :title => 'Main Number', :class => 'tel'} 907-442-1607
+      %p
+        Fax -- (907) 442-2289
+      %p
+        aqqaluk.trust@aqqaluktrust.com
+
     %p.copyright &copy; Aqqaluk Trust 2013
