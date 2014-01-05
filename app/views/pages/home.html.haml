@@ -2,16 +2,54 @@
   #carousel
     .slide
       = image_tag 'heroes/home-989.jpg', :alt => 'Aqqaluk Trust', :width => '989', :height => '550'
-      %div This is a test 1.
+      %div
+        %p
+          %span.emp Empowering
+          the iñupiat people through
+          %span.lang language,
+          %span.cult culture
+          and
+          %span.edu education.
     .slide
       = image_tag 'heroes/camp-989.jpg', :alt => 'Camp Sivu', :width => '989', :height => '550'
-      %div This is a test 2.
+      %div
+        %p
+          At Camp Sivu
+          %span education
+          is
+          %span fun
+          for kids!
     .slide
       = image_tag 'heroes/student-989-fade.jpg', :alt => 'Scholarships', :width => '989', :height => '550'
-      %div This is a test 3.
+      %div
+        %p
+          %span Scholarships
+          Aqqualuk Trusts greatest mission is to assist in the education of Iñupiat people.
+        %ul
+          %li
+            859
+            %br
+            Students Helped
+          %li
+            $1.2 million
+            %br
+            Total Expenditure
+          %li
+            492
+            %br
+            Active Sponsors
     .slide
       = image_tag 'heroes/culture-989.jpg', :alt => 'Language and Culture', :width => '989', :height => '550'
-      %div This is a test 4.
+      %div
+        %p
+          %span Enrich
+          your culture by learning the Iñupiat language!
+      %div
+        = image_tag 'icons/rosetta-stone.png', :alt => 'Aqqaluk Trust', :width => '82', :height => '104'
+        %p
+          %a{:href => '#', :title => ''} Click here
+          for your free copy of Rosetta Stone
+
   = link_to '', '#', :title => 'Show previous', :id => 'prev', :class => 'carousel-sides'
   = link_to '', '#', :title => 'Show next', :id => 'next', :class => 'carousel-sides'
   #pager
