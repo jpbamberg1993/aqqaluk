@@ -19,9 +19,24 @@
     top: 0
 
 .home
+  width: 100%
   min-height: 172px
   margin: 50px 0 0 50px
-  background: image-url("heroes/home-text-989.png") 0 0 no-repeat
+  // background: image-url("heroes/home-text-989.png") -17px -19px no-repeat
+  span
+    line-height: $em-2
+    color: $font-white
+    +single-text-shadow(0, 2px, 13px, false, #000)
+  .a, .c, .d, .f
+    font-size: $em3
+  .a
+    color: $font-orange
+  .c
+    color: $font-yellow
+  .d
+    color: $font-purple
+  .f
+    color: $font-white-yellow
 
 .camp
   min-height: 241px
