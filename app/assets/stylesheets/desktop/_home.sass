@@ -20,41 +20,60 @@
 
 .home
   width: 100%
-  min-height: 172px
   margin: 50px 0 0 50px
-  // background: image-url("heroes/home-text-989.png") -17px -19px no-repeat
-  span
-    line-height: $em-2
+  // background: image-url("heroes/home-text-989.png") -16px -14px no-repeat
+  h2
+    line-height: 1
     color: $font-white
+    font-size: $em4
+  span
     +single-text-shadow(0, 2px, 13px, false, #000)
-  .a, .c, .d, .f
+  .a, .b, .c, .d
     font-size: $em3
   .a
     color: $font-orange
-  .c
+  .b
     color: $font-yellow
-  .d
+  .c
     color: $font-purple
-  .f
+  .d
     color: $font-white-yellow
 
 .camp
-  min-height: 241px
+  width: 100%
   margin: 50px 0 0 50px
-  background: image-url("heroes/camp-text-989.png") 0 0 no-repeat
+  // background: image-url("heroes/camp-text-989.png") -8px -5px no-repeat
+  h2
+    line-height: .95
+    color: $font-black
+    +single-text-shadow(0, 5px, 8px, false, #fff)
+  span
+    display: block
+  .a, .c, .e
+    font-size: $em1
+  .b, .d
+    font-size: $em3
+    color: $font-brown
 
 .students
   width: 100%
   height: 100%
-  p
-    min-height: 195px
-    margin: 50px 0 0 50px
-    background: image-url("heroes/students-text-989.png") 0 0 no-repeat
+  h2
+    line-height: 1
+    margin: 50px 0 $em2c 50px
+    font-size: $em4
+    color: $font-blue
+    // background: image-url("heroes/students-text-989.png") -15px -10px no-repeat
+    +single-text-shadow(0, 5px, 8px, false, $font-off-white)
+    span
+      font-size: $em5
+      color: $font-navy-blue
+      +single-text-shadow(0, 5px, 8px, false, $font-off-white)
   a
     display: block
     width: 202px
     height: 56px
-    margin: 15px 0 0 205px
+    margin: 15px 0 0 200px
     background: image-url("icons/apply-today-button-989.png") 0 0 no-repeat
   ul
     position: absolute
@@ -64,30 +83,43 @@
     margin: 0 0 -35px 0
   li
     display: inline-block
+    line-height: 1.443
     width: 33%
     height: 79px
     text-align: center
-  li:nth-child(1)
-    background: image-url("heroes/students-sub-1-989.png") 50% 50% no-repeat
-  li:nth-child(2)
-    background: image-url("heroes/students-sub-2-989.png") 50% 50% no-repeat
-  li:nth-child(3)
-    background: image-url("heroes/students-sub-3-989.png") 50% 50% no-repeat
+    font-size: $em3
+    color: $font-white
+    +single-text-shadow(0, 5px, 8px, false, #000)
+  // li:nth-child(1)
+  //   background: image-url("heroes/students-sub-1-989.png") 50% 50% no-repeat
+  // li:nth-child(2)
+  //   background: image-url("heroes/students-sub-2-989.png") 50% 50% no-repeat
+  // li:nth-child(3)
+  //   background: image-url("heroes/students-sub-3-989.png") 50% 50% no-repeat
 
 .language
+  line-height: 1.159
   margin: 50px 0 0 50px
-  .message
-    min-height: 202px
-    background: image-url("heroes/language-text-989.png") 0 0 no-repeat
-  .rosetta
-    min-height: 87px
-    padding-left: 70px
-    background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
+  h2
+    margin-bottom: $em2
+    font-size: $em2c
+    color: $font-white
+    +single-text-shadow(0, 5px, 5px, false, #000)
+    // background: image-url("heroes/language-text-989.png") -14px -15px no-repeat
     span
       display: block
-      width: 170px
-      height: 47px
-      background: image-url("heroes/language-text-2-989.png") 0 0 no-repeat
+      font-size: $em6
+  p
+    min-height: 87px
+    padding: 15px 0 0 90px
+    font-size: $em2
+    color: $font-white
+    +single-text-shadow(0, 5px, 8px, false, #000)
+    background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
+    span
+      font-weight: strong
+      color: $font-orange
+      +single-text-shadow(0, 5px, 8px, false, #fff)
 
 .slider-nav
   position: absolute

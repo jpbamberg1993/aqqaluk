@@ -21,7 +21,7 @@ $('#carousel').carouFredSel({
     height              : 550,
     items: {
         visible         : 3,
-        start           : -1,
+        start           : -6,
         width           : 989,
         height          : 550
     },
