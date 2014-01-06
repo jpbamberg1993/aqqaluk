@@ -21,7 +21,7 @@ $('#carousel').carouFredSel({
     height              : 550,
     items: {
         visible         : 3,
-        start           : -6,
+        start           : -1,
         width           : 989,
         height          : 550
     },
@@ -31,7 +31,24 @@ $('#carousel').carouFredSel({
         duration        : 1000,
         // timeoutDuration : 7000,
         // pauseOnHover    : true
+
+        onBefore: function(data) {
+          // hide current block
+          data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();
+        },
+
+        onAfter: function(data) {
+          // show active slide block
+          data.items.visible.eq(1).find( '.slide-block' ).stop().fadeIn(1500);
+        }
     },
+
+    onCreate: function(data){
+      // show first title block and hide the rest
+      $(this).find( '.slide-block' ).hide();
+      $(this).find( '.slide.active .slide-block' ).stop().fadeIn();
+    },
+
     auto                : false,
     prev: {
         button          : "#prev",
