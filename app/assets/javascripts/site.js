@@ -17,24 +17,40 @@
 // ===========================
 
 $('#carousel').carouFredSel({
-    width: '100%',
+    width               : "100%",
+    height              : 550,
     items: {
         visible         : 3,
-        start           : -1
+        start           : -1,
+        width           : 989,
+        height          : 550
     },
     scroll: {
         items           : 1,
+        // easing          : "easeOutCirc",
         duration        : 1000,
-        timeoutDuration : 7000,
-        pauseOnHover    : true
+        // timeoutDuration : 7000,
+        // pauseOnHover    : true
     },
-    // cookie              : true,
-    prev                : '#prev',
-    next                : '#next',
+    auto                : false,
+    prev: {
+        button          : "#prev",
+        key             : "left"
+    },
+    next: {
+        button          : "#next",
+        key             : "right"
+    },
     pagination: {
-        container       : '#pager',
+        container       : "#pager",
         deviation       : 1
-    }
+    },
+    swipe               : true
+    // swipe: {
+    //   onMouse           : true,
+    //   onTouch           : true
+    // }
+    // cookie              : true,
 });
 
 $("#carousel2").carouFredSel({
