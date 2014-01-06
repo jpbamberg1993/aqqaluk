@@ -62,8 +62,8 @@
           %br
           copy of Rosetta Stone
 
-  = link_to '', '#', :title => 'Show previous', :id => 'prev', :class => 'slider-nav'
-  = link_to '', '#', :title => 'Show next', :id => 'next', :class => 'slider-nav'
+  = link_to '', '#', :title => 'Previous', :id => 'prev', :class => 'slider-nav'
+  = link_to '', '#', :title => 'Next', :id => 'next', :class => 'slider-nav'
   #pager
     %a.selected{href: "#"}
       %span 1
@@ -78,19 +78,25 @@
 
 %section.panel#testimonial
   .container
+    = image_tag 'icons/circle-quote.png', :alt => 'Testimonials', :width => '170', :height => '164', :class => 'hide-lt-9'
+    = image_tag 'icons/circle-quote-100.png', :alt => 'Testimonials', :width => '100', :height => '96', :class => 'hide-gt-6'
     #carousel2
       .testimonial
         .profile.pic1
-        %p "I'm proud to be an active sponsor of Aqqaluk Trust! Knowing that I have a part in improving the lives of children and preserving culture is a great feeling!"
+        .profile-block
+          %p "I'm proud to be a sponsor! Having a part in improving the lives of children and preserving culture is a great feeling!"
       .testimonial
         .profile.pic2
-        %p "Aqqaluk Trust helps prepare our children for their futures."
+        .profile-block
+          %p "Aqqaluk Trust helps prepare our children for their futures."
       .testimonial
         .profile.pic3
-        %p "Language class has shown me how fun learning our language can be."
+        .profile-block
+          %p "Language class has shown me how fun learning our language can be."
       .testimonial
         .profile.pic4
-        %p "Camp Sivu is important because it teaches me about who I am, where I am from."
+        .profile-block
+          %p "Camp Sivu is important because it teaches me about who I am, where I come from."
 
 %section.panel#founder
   .container.wood1
