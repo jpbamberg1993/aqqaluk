@@ -58,4 +58,30 @@ header
 /* Footer
   -----------------------
 
+footer
+  position: relative
+  background-color: $black
+  padding-top: $em5/2
+  .container
+    background: image-url("icons/alaska-100.png") 97% 0 no-repeat
+  p
+    font-size: $em1
+    color: $font-gray
+  &:before
+    content: ""
+    position: absolute
+    top: -11px
+    width: 100%
+    height: 11px
+    background: image-url("fixtures/trim-top.png") 0 0 repeat-x
+  .copyright
+    clear: both
 
+  +at-breakpoint($break6)
+    padding-top: $em6/2
+    .container
+      background: image-url("icons/alaska-150.png") 97% 0 no-repeat
+    .address
+      +span-columns(2, $break6)
+    .phone-number
+      +span-columns(3, $break6)
