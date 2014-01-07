@@ -62,7 +62,7 @@ $('#carousel').carouFredSel({
         container       : "#pager",
         deviation       : 1
     },
-    swipe               : true
+    // swipe               : true
     // swipe: {
     //   onMouse           : true,
     //   onTouch           : true

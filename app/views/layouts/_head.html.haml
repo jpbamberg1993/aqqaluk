@@ -3,9 +3,7 @@
   %link{:rel => "dns-prefetch", :href => "//fonts.googleapis.com"}
   /[if IE] %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge"}
 
-  %title= content_for?(:title) ? yield(:title) : "Aqqaluk Trust"
-  -# alternative title format.
-  -# %title= content_for?(:title) ? ("Aqqaluk Trust - " + yield(:title)) : "Aqqaluk Trust"
+  %title= content_for?(:title) ? ("Aqqaluk Trust - " + yield(:title)) : "Aqqaluk Trust"
 
   %meta{:name => "description", :content => "Aqqaluk Trust"}
   %meta{:name => "viewport", :content => "width=device-width"}
