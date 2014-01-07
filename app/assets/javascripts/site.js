@@ -67,7 +67,7 @@ $('#carousel').carouFredSel({
     //   onMouse           : true,
     //   onTouch           : true
     // }
-    // cookie              : true,
+    // cookie              : true
 });
 
 $("#carousel2").carouFredSel({

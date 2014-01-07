@@ -4,131 +4,127 @@
 #hero
   position: relative
   width: 100%
-  height: 550px
+  height: 272px
   overflow: hidden
-  background-color: $black-1
-  +hidden
+  background-color: $black
+  // +hidden
 
 .slide
   position: relative
-  display: block
   float: left
-  div
+  display: block
+  width: 487px
+  height: 272px
+  .slide-block
     position: absolute
     display: block
     top: 0
+    width: 100%
   h2
     font-family: $eaglefeather
 
 // home slide ----------------------------- //
 
 .home
-  width: 100%
-  margin: 50px 0 0 50px
-  // background: image-url("heroes/home-text-989.png") -16px -14px no-repeat
-  h2
-    line-height: 1
-    color: $font-white
-    font-size: $em4
-  span
-    +single-text-shadow(0, 2px, 13px, false, #000)
-  .a, .b, .c, .d
-    font-size: $em3
-  .a
-    color: $font-orange
-  .b
-    color: $font-yellow
-  .c
-    color: $font-purple
-  .d
-    color: $font-white-yellow
+  background: image-url("heroes/home-487.jpg") 0 0 no-repeat
+  .slide-block
+    margin: 25px 0 0 40px
+    h2
+      line-height: 1
+      color: $font-white
+      font-size: $em1
+    span
+      +single-text-shadow(0, 2px, 13px, false, #000)
+    .a, .b, .c, .d
+      font-size: $em3
+    .a
+      color: $font-orange
+    .b
+      color: $font-yellow
+    .c
+      color: $font-purple
+    .d
+      color: $font-white-yellow
 
 // camp slide ----------------------------- //
 
 .camp
-  width: 100%
-  margin: 50px 0 0 50px
-  // background: image-url("heroes/camp-text-989.png") -8px -5px no-repeat
-  h2
-    line-height: .95
-    color: $font-black
-    +single-text-shadow(0, 5px, 8px, false, #fff)
-  span
-    display: block
-  .a, .c, .e
-    font-size: $em1
-  .b, .d
-    font-size: $em3
-    color: $font-brown
+  background: image-url("heroes/camp-487.jpg") 0 0 no-repeat
+  .slide-block
+    margin: 25px 0 0 40px
+    h2
+      line-height: .95
+      color: $font-black
+      +single-text-shadow(0, 5px, 8px, false, #fff)
+    span
+      display: block
+    .a, .c, .e
+      font-size: $em1
+    .b, .d
+      font-size: $em3
+      color: $font-brown
 
 // students slide ------------------------- //
 
 .students
-  width: 100%
-  height: 100%
-  h2
-    line-height: 1
-    margin: 50px 0 $em2c 50px
-    font-size: $em4
-    color: $font-blue
-    // background: image-url("heroes/students-text-989.png") -15px -10px no-repeat
-    +single-text-shadow(0, 5px, 8px, false, $font-off-white)
-    span
-      font-size: $em5
-      color: $font-navy-blue
+  background: image-url("heroes/students-487-fade.jpg") 0 0 no-repeat
+  .slide-block
+    height: 272px
+    h2
+      line-height: 1
+      margin: 25px 0 $em2c 40px
+      font-size: $em1
+      color: $font-blue
       +single-text-shadow(0, 5px, 8px, false, $font-off-white)
-  a
-    display: block
-    width: 202px
-    height: 56px
-    margin: 15px 0 0 200px
-    background: image-url("icons/apply-today-button-989.png") 0 0 no-repeat
-  ul
-    position: absolute
-    bottom: 0
-    width: 100%
-    height: 146px
-    margin: 0 0 -18px 0
-  li
-    display: inline-block
-    line-height: 1.443
-    width: 33%
-    height: 79px
-    text-align: center
-    font-size: $em3
-    color: $font-white
-    +single-text-shadow(0, 5px, 8px, false, #000)
-  // li:nth-child(1)
-  //   background: image-url("heroes/students-sub-1-989.png") 50% 50% no-repeat
-  // li:nth-child(2)
-  //   background: image-url("heroes/students-sub-2-989.png") 50% 50% no-repeat
-  // li:nth-child(3)
-  //   background: image-url("heroes/students-sub-3-989.png") 50% 50% no-repeat
+      span
+        font-size: $em5
+        color: $font-navy-blue
+        +single-text-shadow(0, 5px, 8px, false, $font-off-white)
+    a
+      display: block
+      width: 202px
+      height: 56px
+      margin: 15px 0 0 40px
+      background: image-url("icons/apply-today-button-487.png") 0 0 no-repeat
+    ul
+      position: absolute
+      bottom: 0
+      width: 100%
+      height: 72px
+      margin: 0 0 -4px 0
+    li
+      display: inline-block
+      line-height: 1.443
+      width: 33%
+      text-align: center
+      font-size: $em1
+      color: $font-white
+      +single-text-shadow(0, 5px, 8px, false, #000)
+    li:nth-child(2)
+      width: 32%
 
 // language slide ------------------------- //
 
 .language
-  line-height: 1
-  margin: 50px 0 0 50px
-  h2
-    margin-bottom: $em2
-    font-size: $em4
-    color: $font-white
-    +single-text-shadow(0, 5px, 5px, false, $font-black)
-    // background: image-url("heroes/language-text-989.png") -14px -15px no-repeat
-    span
-      display: block
-      font-size: $em6
-  p
-    min-height: 87px
-    padding: 15px 0 0 90px
-    font-size: $em2b
-    color: $font-white
-    +single-text-shadow(0, 5px, 8px, false, #000)
-    background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
-    strong
-      color: $font-orange
-      +single-text-shadow(1px, 2px, 2px, false, #fff)
+  background: image-url("heroes/language-487.jpg") 0 0 no-repeat
+  .slide-block
+    line-height: 1
+    margin: 25px 0 0 40px
+    h2
+      margin-bottom: $em2
+      font-size: $em1
+      color: $font-white
+      +single-text-shadow(0, 5px, 5px, false, $font-black)
+      span
+        display: block
+        font-size: $em6
+    p
+      min-height: 87px
+      padding: 15px 0 0 90px
+      font-size: $em1
+      color: $font-white
+      +single-text-shadow(0, 5px, 8px, false, #000)
+      background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
 
 // slide controls ------------------------- //
 
@@ -137,26 +133,22 @@
   display: block
   top: 0
   width: 50%
-  height: 550px
+  height: 272px
 
 #prev
-  left: -494px
-  background: rgba(41, 35, 35, 0.5) image-url("icons/arrow-left.png") 100% 50% no-repeat
+  left: -200px
+  background: image-url("icons/arrow-left-50.png") 100% 50% no-repeat
 
 #next
-  right: -494px
-  background: rgba(41, 35, 35, 0.5) image-url("icons/arrow-right.png") 0 50% no-repeat
-
-#prev, #next
-  &:hover
-    background-color: rgba(41, 35, 35, 0.3)
+  right: -200px
+  background: image-url("icons/arrow-right-50.png") 0 50% no-repeat
 
 #pager
   position: absolute
   display: block
-  bottom: 10px
+  bottom: 1px
   right: 50%
-  margin-right: -475px
+  margin-right: -240px
   a
     display: inline-block
     width: 10px
@@ -176,8 +168,7 @@
   -----------------------
 
 #testimonial
-  +hidden
-
+  // +hidden
   .container
     position: relative
     img
@@ -231,7 +222,7 @@
   position: relative
   padding: 0
   color: $font-white
-  background-color: $black-1
+  background-color: $black
   &:before, &:after
     content: ""
     position: absolute
@@ -243,7 +234,7 @@
   &:after
     bottom: -11px
     background: image-url("fixtures/trim-bottom.png") 0 0 repeat-x
-  +hidden
+  // +hidden
 
 .wood1
   height: $em3
