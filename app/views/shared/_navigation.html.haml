@@ -1,21 +1,21 @@
 %nav{:role => "navigation"}
   %ul#nav
     %li
-      = link_to 'Students', '/', :title => ''
+      = link_to 'Students', pages_students_path, :title => ''
     %li
-      = link_to '/', :title => '' do
+      = link_to pages_sponsors_path, :title => '' do
         Donors
         %span.hide-lt-9
           &amp;
           Sponsors
     %li
-      = link_to '/', :title => '' do
+      = link_to pages_language_path, :title => '' do
         %span.hide-lt-9
           Lanuage
           &amp;
         Culture
     %li
-      = link_to '/', :title => '' do
+      = link_to pages_news_path, :title => '' do
         News
         %span.hide-lt-9
           &amp;

@@ -2,6 +2,10 @@ Aqqaluk::Application.routes.draw do
   root :to => 'pages#home'
 
   get "pages/home"
+  get "pages/students"
+  get "pages/sponsors"
+  get "pages/language"
+  get "pages/news"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
