@@ -7,7 +7,7 @@
   height: 550px
   overflow: hidden
   background-color: $black-1
-  // +hidden
+  +hidden
 
 .slide
   position: relative
@@ -176,7 +176,7 @@
   -----------------------
 
 #testimonial
-  // +hidden
+  +hidden
 
   .container
     position: relative
@@ -286,6 +286,7 @@
   &:after
     bottom: -11px
     background: image-url("fixtures/trim-bottom.png") 0 0 repeat-x
+  +hidden
 
 .wood1
   height: $em3
@@ -379,4 +380,21 @@
   -----------------------
 
 #culture
-  margin-top: 11px
+  // +hidden
+
+.culture
+  height: 300px
+  padding-top: 61px
+  background: image-url("fixtures/inuuniatiqput-200.gif") 6px 0 no-repeat
+
+  +at-breakpoint($break6)
+    padding-top: 71px
+    background: image-url("fixtures/way-of-life-450.gif") 6px 0 no-repeat
+
+  +at-breakpoint($break9)
+    padding-top: 111px
+    background: image-url("fixtures/way-of-life-700.gif") 12px 0 no-repeat
+
+  +at-breakpoint($break12)
+    padding-top: 135px
+    background: image-url("fixtures/way-of-life.gif") 12px 0 no-repeat
