@@ -2,9 +2,7 @@
   %meta{:charset => "utf-8"}
   %link{:rel => "dns-prefetch", :href => "//ajax.googleapis.com"}
 
-  %title= content_for?(:title) ? yield(:title) : "Aqqaluk Trust"
-  -# alternative title format.
-  -# %title= content_for?(:title) ? ("Aqqaluk Trust - " + yield(:title)) : "Aqqaluk Trust"
+  %title= content_for?(:title) ? ("Aqqaluk Trust - " + yield(:title)) : "Aqqaluk Trust"
 
   %meta{:name => "description", :content => "Aqqaluk Trust"}
   %meta{:name => "HandheldFriendly", :content => "True"}
@@ -24,6 +22,9 @@
   %meta{:name => "msapplication-TileImage", :content => "/apple-touch-icon-144x144-precomposed.png"}
   %meta{:name => "msapplication-TileColor", :content => "#222222"}
 
+  -# Add to homescreen for Chrome on Android
+  -# %meta{:name => "mobile-web-app-capable", :content => "yes"}
+
   -# For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94
   -# %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
   -# %meta{:name => "apple-mobile-web-app-status-bar-style", :content => "black"}
@@ -36,8 +37,8 @@
   = stylesheet_link_tag "mobile"
   -# for production customize modernizr at: http://www.modernizr.com/download/
   -# IMPORTANT: add the following to production.rb:
-  -# config.assets.precompile += %w( modernizr-2.6.2.min.js )
-  = javascript_include_tag 'modernizr-2.6.2.min'
+  -# config.assets.precompile += %w( modernizr.custom.53769.js )
+  = javascript_include_tag 'modernizr.custom.53769'
 
   %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
   %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}

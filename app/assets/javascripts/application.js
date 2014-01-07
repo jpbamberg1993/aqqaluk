@@ -18,4 +18,5 @@
 //= require jquery.carouFredSel-6.2.1-packed
 //=# require jquery.transit.min
 //= require jquery.touchSwipe.min
+//= require mobvious-rails
 //= require site
