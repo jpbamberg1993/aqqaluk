@@ -10,14 +10,10 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//=# require jquery
-//=# require jquery_ujs
 //= require jquery-2.0.3.min
 //= require turbolinks
 //= require enquire.min
-//=# require jquery.anystretch
 //= require jquery.carouFredSel-6.2.1-packed
-//=# require jquery.transit.min
 //= require jquery.touchSwipe.min
 //= require mobvious-rails
 //= require site

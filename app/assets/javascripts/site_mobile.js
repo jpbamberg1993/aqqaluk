@@ -59,11 +59,10 @@ $('#carousel').carouFredSel({
     pagination: {
         container       : "#pager"
     },
-    swipe               : true
-    // swipe: {
-    //   onMouse           : true,
-    //   onTouch           : true
-    // }
+    swipe: {
+      onMouse           : true,
+      onTouch           : true
+    }
     // cookie              : true
 });
 

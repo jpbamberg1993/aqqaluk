@@ -10,12 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//=# require jquery
-//=# require jquery_ujs
 //= require jquery-1.10.2.min
 //= require turbolinks
-//=# require jquery.anystretch
 //= require jquery.carouFredSel-6.2.1-packed
-//=# require jquery.transit.min
 //= require jquery.touchSwipe.min
 //= require site_mobile
