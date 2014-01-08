@@ -4,7 +4,6 @@
 %section#hero
   #carousel
     .slide.home.active
-      =# image_tag 'heroes/home-989.jpg', :alt => 'Aqqaluk Trust', :width => '989', :height => '550'
       .slide-block
         %h2
           %span.a Empowering
@@ -16,7 +15,6 @@
           and
           %span.d education.
     .slide.camp
-      =# image_tag 'heroes/camp-989.jpg', :alt => 'Camp Sivu', :width => '989', :height => '550'
       .slide-block
         %h2
           %span.a At Camp Sivu
@@ -25,16 +23,15 @@
           %span.d fun
           %span.e for kids!
     .slide.students
-      =# image_tag 'heroes/students-989-fade.jpg', :alt => 'Scholarships', :width => '989', :height => '550'
       .slide-block
         %h2
           %span Scholarships
-          %br
-          Aqqualuk Trusts greatest mission
-          %br
-          is to assist in the education of
-          %br
-          Iñupiat people.
+          %span.mission
+            Aqqualuk Trusts greatest mission
+            %br
+            is to assist in the education of
+            %br
+            Iñupiat people.
         %a{:href => '#', :title => '', :class => 'ir'}
           %span
         %ul
@@ -51,7 +48,6 @@
             %br
             Active Sponsors
     .slide.language
-      =# image_tag 'heroes/language-989.jpg', :alt => 'Language and Culture', :width => '989', :height => '550'
       .slide-block
         %h2
           %span Enrich
@@ -81,8 +77,8 @@
 
 %section.panel#testimonial
   .container
-    = image_tag 'icons/circle-quote.png', :alt => 'Testimonials', :width => '170', :height => '164', :class => 'hide-lt-9'
-    = image_tag 'icons/circle-quote-100.png', :alt => 'Testimonials', :width => '100', :height => '96', :class => 'hide-gt-6'
+    = image_tag 'icons/circle-quote.png', :alt => 'Testimonials', :width => '170', :height => '164', :class => 'hide-lt-12 hide-lt-9'
+    = image_tag 'icons/circle-quote-100.png', :alt => 'Testimonials', :width => '100', :height => '96', :class => 'hide-eq-12'
     #carousel2
       .testimonial
         .profile.pic1
