@@ -14,6 +14,7 @@
 //=# require jquery_ujs
 //= require jquery-2.0.3.min
 //= require turbolinks
+//= require enquire.min
 //=# require jquery.anystretch
 //= require jquery.carouFredSel-6.2.1-packed
 //=# require jquery.transit.min

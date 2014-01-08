@@ -16,123 +16,120 @@
 // Carousel
 // ===========================
 
-$(document).ready(function() {
+// $break6:   min-width: 30.416em
+// $break9:   min-width: 46.124em
+// $break12:  min-width: 61.832em
 
-  Mobvious.for_device_type('desktop', function() {
+enquire.register("screen and (min-width: 61.832em)", {
+    match : function() {
+        $('#carousel').carouFredSel({
+            width               : "100%",
+            height              : 550,
+            items: {
+                visible         : 3,
+                start           : -1,
+                width           : 989,
+                height          : 550
+            },
+            scroll: {
+                items           : 1,
+                // easing          : "easeOutCirc",
+                duration        : 1000,
+                // timeoutDuration : 7000,
+                // pauseOnHover    : true
 
-    $('#carousel').carouFredSel({
-        width               : "100%",
-        height              : 550,
-        items: {
-            visible         : 3,
-            start           : -1,
-            width           : 989,
-            height          : 550
-        },
-        scroll: {
-            items           : 1,
-            // easing          : "easeOutCirc",
-            duration        : 1000,
-            // timeoutDuration : 7000,
-            // pauseOnHover    : true
+                onBefore: function(data) {
+                  // hide current block
+                  data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();
+                },
 
-            onBefore: function(data) {
-              // hide current block
-              data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();
+                onAfter: function(data) {
+                  // show active slide block
+                  data.items.visible.eq(1).find( '.slide-block' ).stop().fadeIn(1500);
+                }
             },
 
-            onAfter: function(data) {
-              // show active slide block
-              data.items.visible.eq(1).find( '.slide-block' ).stop().fadeIn(1500);
-            }
-        },
-
-        onCreate: function(data){
-          // show first title block and hide the rest
-          $(this).find( '.slide-block' ).hide();
-          $(this).find( '.slide.active .slide-block' ).stop().fadeIn();
-        },
-
-        auto                : false,
-        prev: {
-            button          : "#prev",
-            key             : "left"
-        },
-        next: {
-            button          : "#next",
-            key             : "right"
-        },
-        pagination: {
-            container       : "#pager",
-            deviation       : 1
-        },
-        // swipe               : true
-        // swipe: {
-        //   onMouse           : true,
-        //   onTouch           : true
-        // }
-        // cookie              : true
-    });
-
-  });
-
-  Mobvious.for_device_type('tablet', function() {
-
-    $('#carousel').carouFredSel({
-        width               : "100%",
-        // height              : 487,
-        items: {
-            visible         : 1,
-            // width           : 487,
-            // height          : 272
-        },
-        scroll: {
-            items           : 1,
-            duration        : 1000,
-            // timeoutDuration : 7000,
-            // pauseOnHover    : true
-
-            onBefore: function(data) {
-              // hide current block
-              data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();
+            onCreate: function(data){
+              // show first title block and hide the rest
+              $(this).find( '.slide-block' ).hide();
+              $(this).find( '.slide.active .slide-block' ).stop().fadeIn();
             },
 
-            onAfter: function(data) {
-              // show active slide block
-              data.items.visible.last().find( '.slide-block' ).stop().fadeIn(1500);
-            }
-        },
+            auto                : false,
+            prev: {
+                button          : "#prev",
+                key             : "left"
+            },
+            next: {
+                button          : "#next",
+                key             : "right"
+            },
+            pagination: {
+                container       : "#pager",
+                deviation       : 1
+            },
+            // swipe               : true
+            // swipe: {
+            //   onMouse           : true,
+            //   onTouch           : true
+            // }
+            // cookie              : true
+        });
+    },
+    unmatch : function() {
+        $('#carousel').carouFredSel({
+            width               : "100%",
+            // height              : 487,
+            items: {
+                visible         : 1,
+                // width           : 487,
+                // height          : 272
+            },
+            scroll: {
+                items           : 1,
+                duration        : 1000,
+                // timeoutDuration : 7000,
+                // pauseOnHover    : true
 
-        onCreate: function(data){
-          // show first title block and hide the rest
-          $(this).find( '.slide-block' ).hide();
-          $(this).find( '.slide.active .slide-block' ).stop().fadeIn();
-        },
+                onBefore: function(data) {
+                  // hide current block
+                  data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();
+                },
 
-        auto                : false,
-        prev: {
-            button          : "#prev",
-            key             : "left"
-        },
-        next: {
-            button          : "#next",
-            key             : "right"
-        },
-        pagination: {
-            container       : "#pager"
-        },
-        swipe               : true
-        // swipe: {
-        //   onMouse           : true,
-        //   onTouch           : true
-        // }
-        // cookie              : true
-    });
+                onAfter: function(data) {
+                  // show active slide block
+                  data.items.visible.last().find( '.slide-block' ).stop().fadeIn(1500);
+                }
+            },
 
-  });
+            onCreate: function(data){
+              // show first title block and hide the rest
+              $(this).find( '.slide-block' ).hide();
+              $(this).find( '.slide.active .slide-block' ).stop().fadeIn();
+            },
 
+            auto                : false,
+            prev: {
+                button          : "#prev",
+                key             : "left"
+            },
+            next: {
+                button          : "#next",
+                key             : "right"
+            },
+            pagination: {
+                container       : "#pager"
+            },
+            swipe               : true
+            // swipe: {
+            //   onMouse           : true,
+            //   onTouch           : true
+            // }
+            // cookie              : true
+        });
+    }
 });
-
+// }).listen();
 
 $("#carousel2").carouFredSel({
     direction           : "up",
