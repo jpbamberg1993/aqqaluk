@@ -18,11 +18,11 @@
 
 $('#carousel').carouFredSel({
     width               : "100%",
-    height              : 487,
+    // height              : 487,
     items: {
         visible         : 1,
-        width           : 487,
-        height          : 272
+        // width           : 487,
+        // height          : 272
     },
     scroll: {
         items           : 1,
