@@ -14,4 +14,5 @@
 //= require turbolinks
 //= require jquery.carouFredSel-6.2.1-packed
 //= require jquery.touchSwipe.min
+//= require mobvious-rails
 //= require site_mobile
