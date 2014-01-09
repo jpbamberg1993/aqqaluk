@@ -40,6 +40,11 @@
   -# config.assets.precompile += %w( modernizr.custom.53769.js )
   = javascript_include_tag 'modernizr.custom.53769'
 
+  %script{src: "//use.typekit.net/lqa5gqo.js", type: "text/javascript"}
+  :javascript
+    try{Typekit.load();}catch(e){}
+
+
   %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
   %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}
 
