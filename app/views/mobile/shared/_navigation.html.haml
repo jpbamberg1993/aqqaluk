@@ -1,10 +1,15 @@
+#header
+  %a{:href => '#menu', :title => 'Menu'}
+
 %nav{:role => "navigation", :id => "menu"}
   %ul
+    %li.active
+      = link_to 'home', root_path, :title => ''
     %li
       = link_to 'Students', pages_students_path, :title => ''
-    %li
-      = link_to 'Donors & Sponsors',pages_sponsors_path, :title => ''
     %li
       = link_to 'Lanuage & Culture', pages_language_path, :title => ''
     %li
       = link_to 'News & Events', pages_news_path, :title => ''
+    %li
+      = link_to 'Donors & Sponsors',pages_sponsors_path, :title => ''

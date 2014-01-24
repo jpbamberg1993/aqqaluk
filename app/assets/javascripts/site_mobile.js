@@ -13,6 +13,26 @@
 
 
 // ===========================
+// mmenu
+// ===========================
+
+$(function() {
+    // $('nav#menu').mmenu({
+    //     slidingSubmenus: false
+    // });
+
+    $('nav#menu').mmenu({
+       // options object
+       position: "right",
+       classes: "mm-black"
+    }, {
+       // configuration object
+       selectedClass: "active"
+    });
+});
+
+
+// ===========================
 // Carousel
 // ===========================
 
