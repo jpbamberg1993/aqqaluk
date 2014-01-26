@@ -1,6 +1,47 @@
 - content_for :title do
   Students
 
+%section.panel#scholarships
+  .container
+    %h2 The Aqqaluk Trust awards scholarships to NANA shareholders, their descendents and dependents that are pursuing college and post-graduate degrees and post-secondary education.
+    %p Scholarships are issued based on a variety of criteria including demonstrated commitment to Iñupiaq values, prior academic performance, and recommendations from others.
+
 %section.panel
   .container
-    %p Need content.
+    %p Robert Aqqaluk Newlin, Sr. recognized that in order to survive in the changing world, young people must not only have a strong cultural identity, but must also be educated and well prepared for jobs and careers. Robert Newlin, Sr. always encouraged young people to continue with their education and to bring their skills and knowledge back to their people.
+    %p And today, thanks to his vision the Aqqaluk Trust is the most important source of educational funding for the NANA region.
+
+%section.panel
+  .container
+    %h1 Aqqaluk Trust College/University and Vocational/Technical Applications
+    %h2 College University Scholarships
+    %ul
+      %li
+        %strong Semester Schedule
+        August 1st (annual fall), January 10th (spring)
+      %li
+        %strong Quarter/Trimester Schedule
+        August 1st (annual fall), November 1st (winter), March 1st (spring)
+      %li
+        %strong Summer Session
+        June 1st (summer)
+    %h2 Vocational/Technical Scholarships
+    %ul
+      %li Application and supporting documents must be completed
+      %strong before the first day of class.
+
+    %a{:href => '#', :title => ''} Please apply for Aqqaluk Trust Scholarships here.
+
+%section.panel#thanks
+  .container
+    .thanks
+      = link_to image_tag('logos/nrc-logo.png', :alt => 'NANA Regional Corporation', :width => '159', :height => '89'), 'http://nana.com/regional', :title => ''
+      = link_to image_tag('logos/ndc-logo.gif', :alt => 'NANA Development Corporation', :width => '161', :height => '89'), 'http://nana-dev.com/', :title => ''
+      = link_to image_tag('logos/akima-logo-2.png', :alt => 'Akima', :width => '207', :height => '61'), 'http://www.akima.com/', :title => ''
+      = link_to image_tag('logos/teck-logo.jpg', :alt => 'Teck Alaska', :width => '73', :height => '73'), 'http://www.teck.com/', :title => ''
+      = link_to image_tag('logos/whp-logo.png', :alt => 'WHPacific', :width => '145', :height => '35'), 'http://www.whpacific.com/', :title => ''
+
+%section.panel
+  .container
+    %p As of the 2013 school year, 340 scholarships were awarded to NANA Regional Shareholders, their dependents and descendants. The total dollar amount was about $874,000.  This funding would not be possible without the generosity of NANA Regional Corporation, Teck Alaska, Robert Aqqaluk Newlin Sr. Memorial Trust Endowment, and from the many employees that contribute from NANA Development, NANA Regional, AKIMA, WHPacific, Aqqaluk Trust Board of Trustee’s and staff, and many more individual supporters that give anonymously through the United Way Campaign of Anchorage.
+    = link_to image_tag('logos/united-way-logo.jpg', :alt => 'United Way of Alaska', :width => '200', :height => '86 - '), 'http://www.liveunitedanchorage.org/give', :title => ''

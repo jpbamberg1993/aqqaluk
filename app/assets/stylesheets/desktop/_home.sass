@@ -496,18 +496,7 @@
   padding: 0
   color: $font-white
   background-color: $black
-  &:before, &:after
-    content: ""
-    position: absolute
-    width: 100%
-    height: 11px
-  &:before
-    top: -11px
-    background: image-url("fixtures/trim-top.png") 0 0 repeat-x
-  &:after
-    bottom: -11px
-    background: image-url("fixtures/trim-bottom.png") 0 0 repeat-x
-  z-index: 1000
+  +panel-trim
   // +hidden
 
 .wood1
