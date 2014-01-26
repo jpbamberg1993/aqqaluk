@@ -43,6 +43,23 @@
     background: image-url("fixtures/trim-bottom.png") 0 0 repeat-x
   z-index: 1000
 
+/* gradients
+
+@mixin panel-shadow($opacity: 0.05, $height: 7px)
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: $height
+  +background-image(linear-gradient(rgba(0, 0, 0, $opacity) 0%, transparent 100%))
+
+@mixin panel-linear-gradient($color1, $color2)
+  +background-image(linear-gradient(135deg, lighten($color1, 20), $color2))
+
+@mixin panel-radial-gradient($color1, $color2)
+  +background-image(radial-gradient(100px 100px, lighten($color1, 10), $color2 300px))
+
 
 /* Lists
   -----------------------
@@ -191,25 +208,6 @@
   &:after
     right: 33px
     +simple-transform($skew-x: 15deg, $rotate: 4deg)
-
-
-/* Gradients
-  -----------------------
-
-@mixin panel-shadow($opacity: 0.05)
-  content: ""
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  height: 7px
-  +background-image(linear-gradient(rgba(0, 0, 0, $opacity) 0%, transparent 100%))
-
-@mixin panel-linear-gradient($color1, $color2)
-  +background-image(linear-gradient(135deg, lighten($color1, 20), $color2))
-
-@mixin panel-radial-gradient($color1, $color2)
-  +background-image(radial-gradient(100px 100px, lighten($color1, 10), $color2 300px))
 
 
 /* Arrows
