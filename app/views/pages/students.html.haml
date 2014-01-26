@@ -43,5 +43,22 @@
 
 %section.panel
   .container
-    %p As of the 2013 school year, 340 scholarships were awarded to NANA Regional Shareholders, their dependents and descendants. The total dollar amount was about $874,000.  This funding would not be possible without the generosity of NANA Regional Corporation, Teck Alaska, Robert Aqqaluk Newlin Sr. Memorial Trust Endowment, and from the many employees that contribute from NANA Development, NANA Regional, AKIMA, WHPacific, Aqqaluk Trust Board of Trustee’s and staff, and many more individual supporters that give anonymously through the United Way Campaign of Anchorage.
+    %p
+      As of the 2013 school year, 340 scholarships were awarded to NANA Regional Shareholders, their dependents and descendants. The total dollar amount was about $874,000.  This funding would not be possible without the generosity of
+      = succeed ',' do
+        %a{:href => '#', :title => ''}< NANA Regional Corporation
+      = succeed ',' do
+        %a{:href => '#', :title => ''} Teck Alaska
+      Robert Aqqaluk Newlin Sr. Memorial Trust Endowment, and from the many employees that contribute from
+      = succeed ',' do
+        %a{:href => '#', :title => ''} NANA Development
+      = succeed ',' do
+        %a{:href => '#', :title => ''} NANA Regional
+      = succeed ',' do
+        %a{:href => '#', :title => ''} AKIMA
+      = succeed ',' do
+        %a{:href => '#', :title => ''} WHPacific
+      Aqqaluk Trust Board of Trustee’s and staff, and many more individual supporters that give anonymously through the
+      = succeed '.' do
+        %a{:href => '#', :title => ''} United Way Campaign of Anchorage
     = link_to image_tag('logos/united-way-logo.jpg', :alt => 'United Way of Alaska', :width => '200', :height => '86 - '), 'http://www.liveunitedanchorage.org/give', :title => ''
