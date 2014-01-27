@@ -2,11 +2,10 @@
   -----------------------
 
 nav
-  +span-columns(2 omega, 4)
-  margin-top: 38px
+  +span-columns(4 omega, 4)
 
   +at-breakpoint($break6)
-    +span-columns(4 omega, $break6)
+    +span-columns(6 omega, $break6)
 
   +at-breakpoint($break9)
     +span-columns(7 omega, $break9)
@@ -17,12 +16,26 @@ nav
     margin-top: 93px
 
 ul#nav
-  +inline-block-list
+  list-style-type: none
+  border: 1px solid #e6e6e6
   li
-    padding: 0 $scale-2
     font-family: $font-family-nav
+    border-bottom: 1px solid #eee
     +link-colors($color-nav, $color-nav, $color-nav, $color-nav, $color-nav)
-  li:first-child
-    padding-left: 0
+  li:last-child
+    border-bottom: 0
+  a
+    display: block
+    padding: $scale-5
   a:hover
     text-decoration: none
+    background-color: #f8f8f8
+  // .current
+  //   font-weight: bold
+
+  +at-breakpoint($break9)
+    +inline-block-list
+    li
+      border: 0
+    a
+      padding: 0 $scale-2
