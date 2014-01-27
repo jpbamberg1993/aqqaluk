@@ -15,9 +15,10 @@ nav
     +span-columns(9 omega, $break12)
     margin-top: 93px
 
-ul#nav
-  list-style-type: none
-  border: 1px solid #e6e6e6
+.nav-primary
+  ul
+    list-style-type: none
+    border: 1px solid #e6e6e6
   li
     font-family: $font-family-nav
     border-bottom: 1px solid #eee
@@ -30,12 +31,47 @@ ul#nav
   a:hover
     text-decoration: none
     background-color: #f8f8f8
-  // .current
+  // .nav-current
   //   font-weight: bold
 
   +at-breakpoint($break9)
-    +inline-block-list
+    ul
+      border: 0
+      +inline-block-list
     li
       border: 0
     a
       padding: 0 $scale-2
+
+.nav-menu
+  .nav-primary
+    position: relative
+    overflow: hidden
+    margin: $scale1
+    a
+      padding-right: $scale5
+    h3
+      display: block
+      position: absolute
+      top: 0
+      left: auto
+      right: 0
+      width: $scale4
+      height: 2.1em
+      text-indent: -999em
+      background: #ccc url(icons/arw-dwn.png) 50% 50% no-repeat
+      cursor: pointer
+    .expanded h3
+      background: #ccc image-url("icons/arw-up.png") 50% 50% no-repeat
+    ul
+      margin: 0
+    li
+      display: none
+    li.nav-current
+      display: list-item
+    li.nav-current,
+      border-bottom-width: 0
+  .expanded li
+    display: list-item
+  .expanded li.nav-current
+    border-bottom-width: 1px

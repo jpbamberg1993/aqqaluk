@@ -1,12 +1,13 @@
 %nav{:role => "navigation"}
   %a{:href => '#main', :title => '', :class => 'screen-reader-text'} Skip to main content
-  %h3.screen-reader-text Sections:
-  %ul#nav
-    %li.current
-      = link_to 'Students', pages_students_path, :title => ''
-    %li
-      = link_to 'Lanuage & Culture', pages_language_path, :title => ''
-    %li
-      = link_to 'News & Events', pages_news_path, :title => ''
-    %li
-      = link_to 'Donors & Sponsors', pages_sponsors_path, :title => ''
+  .nav-primary
+    %h3.screen-reader-text Sections:
+    %ul
+      %li.nav-current
+        = link_to 'Students', pages_students_path, :title => ''
+      %li
+        = link_to 'Lanuage & Culture', pages_language_path, :title => ''
+      %li
+        = link_to 'News & Events', pages_news_path, :title => ''
+      %li
+        = link_to 'Donors & Sponsors', pages_sponsors_path, :title => ''
