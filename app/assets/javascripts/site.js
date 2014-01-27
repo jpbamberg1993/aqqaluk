@@ -127,8 +127,28 @@ function textSlide(){
     });
 }
 
+
+// ===========================
+// Responsive Menu
+// ===========================
+
+function mobileMenu(){
+    $('body').addClass('nav-menu');
+    $('.nav-primary').find('h3')
+        .bind('click focus', function(){$(this).parent().toggleClass('expanded')});
+}
+
+
+function normalMenu(){
+    $('body').removeClass('nav-menu');
+}
+
+// ===========================
+// Enquire.js
+// ===========================
+
 // DRY up handler creation
-function handlerFactory() {
+function handlerCarousel() {
   return {
     match : function() {
         oneSlide(),
@@ -141,7 +161,7 @@ function handlerFactory() {
   };
 }
 
-function handlerFactoryWide() {
+function handlerCarouselWide() {
   return {
     match : function() {
         threeSlides(),
@@ -150,6 +170,17 @@ function handlerFactoryWide() {
     unmatch : function() {
         oneSlide(),
         textSlide()
+    }
+  };
+}
+
+function handlerMenu() {
+  return {
+    match : function() {
+        mobileMenu()
+    },
+    unmatch : function() {
+        normalMenu()
     }
   };
 }
@@ -158,13 +189,23 @@ var $break4  = "screen and (max-width: 30.415em)",
     $break6  = "screen and (min-width: 30.416em)",
     $break9  = "screen and (min-width: 46.124em)",
     $break12 = "screen and (min-width: 61.832em)";
+    $menu    = "screen and (max-width: 46.124em)",
 
 // hook up "media queries"
 enquire
-  .register($break4, handlerFactory())
-  .register($break6, handlerFactory())
-  .register($break9, handlerFactory())
-  .register($break12, handlerFactoryWide());
+  .register($break4, handlerCarousel())
+  .register($break6, handlerCarousel())
+  .register($break9, handlerCarousel())
+  .register($break12, handlerCarouselWide());
+
+enquire
+  .register($menu, handlerMenu());
+
+  // multiple handlers?
+  // .register($break4, [
+  //     handlerCarousel(),
+  //     handlerXxxx()
+  // ])
 
 
 // ===========================
