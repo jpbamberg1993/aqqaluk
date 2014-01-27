@@ -33,7 +33,6 @@
     %ul
       %li Application and supporting documents must be completed
       %strong before the first day of class.
-
     %a{:href => '#', :title => ''} Please apply for Aqqaluk Trust Scholarships here.
 
 %section.panel#sponsors
@@ -75,4 +74,6 @@
       Aqqaluk Trust Board of Trustee’s and staff, and many more individual supporters that give anonymously through the
       = succeed '.' do
         %a{:href => '#', :title => ''} United Way Campaign of Anchorage
-    = link_to image_tag('logos/united-way-logo.jpg', :alt => 'United Way of Alaska', :width => '200', :height => '86 - '), 'http://www.liveunitedanchorage.org/give', :title => ''
+    =# link_to image_tag('logos/united-way-logo.jpg', :alt => 'United Way of Alaska', :width => '200', :height => '86 - '), 'http://www.liveunitedanchorage.org/give', :title => ''
+    %a{:href => 'http://www.liveunitedanchorage.org/give', :title => '', :class => 'ir united-way'}
+      %span United Way of Alaska
