@@ -32,7 +32,7 @@
   h2
     font-family: $eaglefeather
   &:before
-    +panel-shadow(.15, $em-5)
+    +panel-shadow(.15, $scale-5)
 
   +at-breakpoint($break6)
     width: 487px
@@ -66,11 +66,11 @@
     h2
       line-height: 1
       color: $font-white
-      font-size: $em1
+      font-size: $scale1
     span
       +single-text-shadow(0, 2px, 13px, false, #000)
     .a, .b, .c, .d
-      font-size: $em3
+      font-size: $scale3
     .a
       color: $font-orange
     .b
@@ -87,12 +87,12 @@
     +at-breakpoint($break9)
       margin: 25px 0 0 50px
       h2
-        font-size: $em3
+        font-size: $scale3
 
     +at-breakpoint($break12)
       margin: 50px 0 0 50px
       h2
-        font-size: $em4
+        font-size: $scale4
 
 // camp slide ----------------------------- //
 
@@ -119,9 +119,9 @@
     span
       display: block
     .a, .c, .e
-      font-size: $em1
+      font-size: $scale1
     .b, .d
-      font-size: $em2
+      font-size: $scale2
       color: $font-light-blue
     .e, a
       display: inline-block
@@ -134,7 +134,7 @@
     +at-breakpoint($break6)
       margin: 25px 0 0 40px
       .b, .d
-        font-size: $em3
+        font-size: $scale3
 
     +at-breakpoint($break9)
       margin: 30px 0 0 60px
@@ -165,12 +165,12 @@
     height: 178px
     h2
       line-height: 1
-      margin: 10px 0 $em2 40px
-      font-size: $em1
+      margin: 10px 0 $scale2 40px
+      font-size: $scale1
       color: $font-blue
       +single-text-shadow(0, 5px, 8px, false, $font-off-white)
       span
-        font-size: $em5
+        font-size: $scale5
         color: $font-navy-blue
         +single-text-shadow(0, 5px, 8px, false, $font-off-white)
       .mission
@@ -190,10 +190,10 @@
     +at-breakpoint($break6)
       height: 272px
       h2
-        margin: 20px 0 $em2c 40px
+        margin: 20px 0 $scale2c 40px
         .mission
           display: block
-          font-size: $em1
+          font-size: $scale1
       a
         margin-left: 40px
       ul
@@ -208,7 +208,7 @@
         line-height: 1.443
         width: 33%
         text-align: center
-        font-size: $em1
+        font-size: $scale1
         color: $font-white
         +single-text-shadow(0, 5px, 8px, false, #000)
       li:nth-child(2)
@@ -217,8 +217,8 @@
     +at-breakpoint($break9)
       height: 412px
       h2
-        margin: 30px 0 $em2c 50px
-        font-size: $em3
+        margin: 30px 0 $scale2c 50px
+        font-size: $scale3
       a
         width: 151px
         height: 48px
@@ -230,13 +230,13 @@
         height: 109px
         margin: 0 0 -18px 0
       li
-        font-size: $em2
+        font-size: $scale2
 
     +at-breakpoint($break12)
       height: 550px
       h2
-        margin: 50px 0 $em2c 50px
-        font-size: $em4
+        margin: 50px 0 $scale2c 50px
+        font-size: $scale4
       a
         width: 202px
         height: 64px
@@ -247,7 +247,7 @@
       ul
         height: 146px
       li
-        font-size: $em3
+        font-size: $scale3
 
 // language slide ------------------------- //
 
@@ -267,27 +267,27 @@
     line-height: 1
     margin: 20px 0 0 40px
     h2
-      font-size: $em2
+      font-size: $scale2
       color: $font-white
       +single-text-shadow(0, 5px, 5px, false, $font-black)
       span
         display: block
-        font-size: $em4
+        font-size: $scale4
     p
       display: none
 
     +at-breakpoint($break6)
       margin: 20px 0 0 40px
       h2
-        margin-bottom: $em2
-        font-size: $em1
+        margin-bottom: $scale2
+        font-size: $scale1
         span
-          font-size: $em6
+          font-size: $scale6
       p
         display: block
         min-height: 87px
         padding: 15px 0 0 90px
-        font-size: $em1
+        font-size: $scale1
         color: $font-white
         +single-text-shadow(0, 5px, 8px, false, #000)
         background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
@@ -298,9 +298,9 @@
     +at-breakpoint($break9)
       margin: 30px 0 0 60px
       h2
-        font-size: $em4
+        font-size: $scale4
       p
-        font-size: $em2b
+        font-size: $scale2b
 
     +at-breakpoint($break12)
       margin: 50px 0 0 50px
@@ -459,7 +459,7 @@
   +at-breakpoint($break9)
     .profile
       +span-columns(2, $break9)
-      margin-left: $em1
+      margin-left: $scale1
     .pic1
       +image-portal("pics/1.jpg", 120px)
     .pic2
@@ -494,7 +494,7 @@
 
     +at-breakpoint($break12)
       +span-columns(8, $break12)
-      margin-left: $em-2
+      margin-left: $scale-2
 
 
 /* Founder
@@ -509,18 +509,18 @@
   // +hidden
 
 .wood1
-  height: $em3
+  height: $scale3
   background: image-url("fixtures/wood-panel.png") 15% 35% no-repeat
   // @extend .hide-eq-4
 
   +at-breakpoint($break6)
-    height: $em4
+    height: $scale4
 
   +at-breakpoint($break9)
-    height: $em5
+    height: $scale5
 
   +at-breakpoint($break12)
-    height: $em6
+    height: $scale6
 
 .founder
   background-color: $gray
@@ -537,43 +537,43 @@
 
   .quote
     position: relative
-    padding: $em1 0 $em5
+    padding: $scale1 0 $scale5
     z-index: 5613201117
     p
-      font-size: $em1
+      font-size: $scale1
     .last
-      margin-top: $em3
-      margin-bottom: -$em1
+      margin-top: $scale3
+      margin-bottom: -$scale1
 
     +at-breakpoint($break6)
       +span-columns(4)
-      padding: $em2 0 $em6 75px
+      padding: $scale2 0 $scale6 75px
       background: image-url("icons/quotes-50.png") 4px 20px no-repeat
       p
-        font-size: $em1
+        font-size: $scale1
       .last
-        margin-top: $em3
-        margin-bottom: -$em1
+        margin-top: $scale3
+        margin-bottom: -$scale1
 
     +at-breakpoint($break9)
       +span-columns(6)
-      padding: $em3 0 $em7 105px
+      padding: $scale3 0 $scale7 105px
       background: image-url("icons/quotes-75.png") 4px 20px no-repeat
       p
-        font-size: $em2
+        font-size: $scale2
       .last
-        margin-top: $em4
-        margin-bottom: -$em2
+        margin-top: $scale4
+        margin-bottom: -$scale2
 
     +at-breakpoint($break12)
       +span-columns(8)
-      padding: $em4 0 $em8 135px
+      padding: $scale4 0 $scale8 135px
       background: image-url("icons/quotes.png") 4px 16px no-repeat
       p
-        font-size: $em2c
+        font-size: $scale2c
       .last
-        margin-top: $em5
-        margin-bottom: -$em3
+        margin-top: $scale5
+        margin-bottom: -$scale3
 
   &:after
     content: ""
@@ -605,7 +605,7 @@
 
 .culture
   padding-top: 61px + 16px
-  padding-left: $em-5
+  padding-left: $scale-5
   background: image-url("fixtures/inuuniatiqput-200.gif") 0 0 no-repeat
 
   +at-breakpoint($break6)

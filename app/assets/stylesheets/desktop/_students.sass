@@ -3,19 +3,19 @@
     display: block
     width: 151px
     height: 48px
-    margin: $em1 auto 0
+    margin: $scale1 auto 0
     background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
   a:hover
     background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
   background: $snow-blue image-url("heroes/snow.jpg") 50% 50% repeat-x
   &:before
-    +panel-shadow(.15, $em-5)
+    +panel-shadow(.15, $scale-5)
 
   +at-breakpoint($break9)
     a
       width: 202px
       height: 64px
-      margin-top: $em3
+      margin-top: $scale3
       background: image-url("icons/apply-btn-989.png") 0 0 no-repeat
     a:hover
       background: image-url("icons/apply-btn-989-2.png") 0 0 no-repeat
@@ -36,21 +36,21 @@
       +span-columns(6 omega, $break9)
     .vision
       clear: both
-      padding-top: $em-2
-      font-size: $em4
+      padding-top: $scale-2
+      font-size: $scale4
 
   +at-breakpoint($break12)
     .profile-block
       +span-columns(8, $break12)
     .profile
       +span-columns(4 omega, $break12)
-      margin-right: $em1
+      margin-right: $scale1
     .aqqaluk
       +image-portal("pics/aqqaluk.jpg", 275px)
       +box-shadow(3px -5px 5px 0 rgba(0, 0, 0, 0.15) inset, 0 0 1px rgba(0, 0, 0, 0.25) inset)
     .vision
-      padding-top: $em1
-      font-size: $em5
+      padding-top: $scale1
+      font-size: $scale5
 
 #deadlines
   +hidden
@@ -71,7 +71,7 @@
   text-align: center
   a
     display: inline-block
-    margin-right: $em5
+    margin-right: $scale5
   a:nth-child(3)
     vertical-align: bottom
   a:last-child
