@@ -11,7 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery-1.10.2.min
-//= require turbolinks
+//=# require turbolinks
 //= require jquery.carouFredSel-6.2.1-packed
 //= require jquery.touchSwipe.min
 //= require mobvious-rails
