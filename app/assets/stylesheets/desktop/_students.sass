@@ -1,42 +1,128 @@
 #scholarships
-  background: $snow-blue image-url("heroes/snow-stretch.jpg") 50% 50% repeat-x
   a
     display: block
-    margin: 0 auto
-    width: 100px
-    height: 32px
-    background: image-url("icons/apply-btn-487.png") 0 0 no-repeat
+    width: 151px
+    height: 48px
+    margin: $em1 auto 0
+    background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
   a:hover
-    background: image-url("icons/apply-btn-487-2.png") 0 0 no-repeat
+    background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
+  background: $snow-blue image-url("heroes/snow.jpg") 50% 50% repeat-x
   &:before
     +panel-shadow(.15, $em-5)
 
   +at-breakpoint($break9)
     a
-      width: 151px
-      height: 48px
-      background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
-    a:hover
-      background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
-
-  +at-breakpoint($break12)
-    a
       width: 202px
       height: 64px
+      margin-top: $em3
       background: image-url("icons/apply-btn-989.png") 0 0 no-repeat
     a:hover
       background: image-url("icons/apply-btn-989-2.png") 0 0 no-repeat
+  +at-breakpoint($break12)
+    background: $snow-blue image-url("heroes/snow-stretch.jpg") 50% 50% repeat-x
 
-#thanks
-  position: relative
-  // text-align: center
-  background-color: $black
-  +panel-trim
+#robert
+  +hidden
 
-.thanks
+  +at-breakpoint($break9)
+    +reveal-hidden
+    .profile
+      +span-columns(2, $break12)
+    .aqqaluk
+      +image-portal("pics/aqqaluk.jpg", 200px)
+      +box-shadow(3px -5px 5px 0 rgba(0, 0, 0, 0.15) inset, 0 0 1px rgba(0, 0, 0, 0.25) inset)
+    .profile-block
+      +span-columns(6 omega, $break9)
+    .vision
+      clear: both
+      padding-top: $em-2
+      font-size: $em4
+
+  +at-breakpoint($break12)
+    .profile-block
+      +span-columns(8, $break12)
+    .profile
+      +span-columns(4 omega, $break12)
+      margin-right: $em1
+    .aqqaluk
+      +image-portal("pics/aqqaluk.jpg", 275px)
+      +box-shadow(3px -5px 5px 0 rgba(0, 0, 0, 0.15) inset, 0 0 1px rgba(0, 0, 0, 0.25) inset)
+    .vision
+      padding-top: $em1
+      font-size: $em5
+
+#deadlines
+  +hidden
+
+  +at-breakpoint($break9)
+    +reveal-hidden
+
+#sponsors
+  +hidden
+
+  +at-breakpoint($break9)
+    +reveal-hidden
+    position: relative
+    background-color: $black
+    +panel-trim
+
+.sponsors
+  text-align: center
   a
+    display: inline-block
     margin-right: $em5
   a:nth-child(3)
     vertical-align: bottom
   a:last-child
     margin-right:  0
+
+  +at-breakpoint($break9)
+    .nrc
+      width: 80px
+      height: 45px
+      background: image-url("logos/nrc-logo-sm.png") 0 0 no-repeat
+    .ndc
+      width: 80px
+      height: 44px
+      background: image-url("logos/ndc-logo-sm.gif") 0 0 no-repeat
+    .akima
+      width: 100px
+      height: 29px
+      background: image-url("logos/akima-logo-sm.png") 0 0 no-repeat
+    .teck
+      width: 50px
+      height: 50px
+      background: image-url("logos/teck-logo-sm.jpg") 0 0 no-repeat
+    .whpacific
+      width: 100px
+      height: 24px
+      background: image-url("logos/whp-logo-sm.png") 0 0 no-repeat
+
+  +at-breakpoint($break12)
+    .nrc
+      width: 159px
+      height: 89px
+      background: image-url("logos/nrc-logo.png") 0 0 no-repeat
+    .ndc
+      width: 161px
+      height: 89px
+      background: image-url("logos/ndc-logo.gif") 0 0 no-repeat
+    .akima
+      width: 207px
+      height: 61px
+      background: image-url("logos/akima-logo.png") 0 0 no-repeat
+    .teck
+      width: 73px
+      height: 73px
+      background: image-url("logos/teck-logo.jpg") 0 0 no-repeat
+    .whpacific
+      width: 145px
+      height: 35px
+      background: image-url("logos/whp-logo.png") 0 0 no-repeat
+
+#thanks
+  +hidden
+
+  +at-breakpoint($break9)
+    +reveal-hidden
