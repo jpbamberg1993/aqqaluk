@@ -1,6 +1,7 @@
 %nav{:role => "navigation"}
+  %a{:href => '#main', :title => '', :class => 'screen-reader-text'} Skip to main content
   %ul#nav
-    %li
+    %li.current
       = link_to 'Students', pages_students_path, :title => ''
     %li
       = link_to pages_language_path, :title => '' do

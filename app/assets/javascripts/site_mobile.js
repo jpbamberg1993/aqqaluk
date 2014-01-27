@@ -17,10 +17,6 @@
 // ===========================
 
 $(function() {
-    // $('nav#menu').mmenu({
-    //     slidingSubmenus: false
-    // });
-
     $('nav#menu').mmenu({
        // options object
        position: "right",
