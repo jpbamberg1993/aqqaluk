@@ -32,6 +32,12 @@
     width: 487px
     height: 272px
 
+// JavaScript fallback
+
+.no-js .slide
+  float: none
+  margin: 0 auto
+
 // home slide ----------------------------- //
 
 .home
@@ -254,6 +260,14 @@
       margin: 0 10px 0 0
       +border-radius(7px)
 
+// JavaScript fallback
+
+.no-js
+  #prev,
+  #next,
+  #pager
+    +hidden
+
 
 /* Testimonials
   -----------------------
@@ -280,13 +294,13 @@
   .profile
     +span-columns(1, 4)
   .pic1
-    +image-portal("pics/1.jpg", 55px)
+    +image-portal("pics/1.jpg", 50px)
   .pic2
-    +image-portal("pics/2.jpg", 55px)
+    +image-portal("pics/2.jpg", 50px)
   .pic3
-    +image-portal("pics/3.jpg", 55px)
+    +image-portal("pics/3.jpg", 50px)
   .pic4
-    +image-portal("pics/4.jpg", 55px)
+    +image-portal("pics/4.jpg", 50px)
 
   +at-breakpoint($break6)
     .profile
@@ -306,12 +320,16 @@
     +at-breakpoint($break6)
       +span-columns(4, $break6)
 
+// JavaScript fallbacks
+
 .no-js
   .testimonial
     +hidden
   .testimonial:first-child
-    +reveal-hidden-inline
-    z-index: 1000
+    +reveal-hidden
+  #carousel2
+    position: relative
+    z-index: auto
 
 
 /* Founder

@@ -52,7 +52,6 @@
   float: none
   margin: 0 auto
 
-
 // home slide ----------------------------- //
 
 .home
@@ -429,6 +428,7 @@
     width: 100%
     height: 67px
     background: image-url("icons/circle-quote-70.png") 50% 0 no-repeat
+
     +at-breakpoint($break6)
       top: -24px
       height: 96px
@@ -511,13 +511,16 @@
       +span-columns(8, $break12)
       margin-left: $scale-2
 
-// JavaScript fallback
+// JavaScript fallbacks
 
 .no-js
   .testimonial
     +hidden
   .testimonial:first-child
     +reveal-hidden
+  #carousel2
+    position: relative
+    z-index: auto
 
 
 /* Founder
