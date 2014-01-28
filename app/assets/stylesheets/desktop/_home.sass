@@ -46,6 +46,13 @@
     width: 989px
     height: 550px
 
+// JavaScript fallback
+
+.no-js .slide
+  float: none
+  margin: 0 auto
+
+
 // home slide ----------------------------- //
 
 .home
@@ -401,6 +408,14 @@
     bottom: 10px
     margin-right: -475px
 
+// JavaScript fallback
+
+.no-js
+  #prev,
+  #next,
+  #pager
+    +hidden
+
 
 /* Testimonials
   -----------------------
@@ -495,6 +510,14 @@
     +at-breakpoint($break12)
       +span-columns(8, $break12)
       margin-left: $scale-2
+
+// JavaScript fallback
+
+.no-js
+  .testimonial
+    +hidden
+  .testimonial:first-child
+    +reveal-hidden
 
 
 /* Founder

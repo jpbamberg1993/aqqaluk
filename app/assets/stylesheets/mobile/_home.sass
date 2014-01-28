@@ -306,6 +306,13 @@
     +at-breakpoint($break6)
       +span-columns(4, $break6)
 
+.no-js
+  .testimonial
+    +hidden
+  .testimonial:first-child
+    +reveal-hidden-inline
+    z-index: 1000
+
 
 /* Founder
   -----------------------
