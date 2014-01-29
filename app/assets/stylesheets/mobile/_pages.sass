@@ -15,15 +15,14 @@
 /* Toggles
   -----------------------
 
-.hide-lt-9
+// Hide elements when breakpoint = 4 (< 6)
+// Purpose: hide elements from the smallest screen sizes only (smart phones)
+
+.hide-lt-6, .hide-eq-4
   +hidden
 
-// Hide elements when breakpoint > 4
-// Purpose: hide elements from everything but smart phones
-
-.hide-gt-4
   +at-breakpoint($break6)
-    +hidden
+    +reveal-hidden-inline
 
 // Hide elements when breakpoint = 4
 // Purpose: hide elements from the smallest screen sizes only (smart phones)

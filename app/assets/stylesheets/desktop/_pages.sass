@@ -48,6 +48,15 @@
   +at-breakpoint($break9)
     +reveal-hidden-inline
 
+// Hide elements when breakpoint = 4 (< 6)
+// Purpose: hide elements from the smallest screen sizes only (smart phones)
+
+.hide-lt-6, .hide-eq-4
+  +hidden
+
+  +at-breakpoint($break6)
+    +reveal-hidden-inline
+
 // Hide elements when breakpoint > 6
 // Purpose: hide elements from tablets and desktops
 
@@ -61,15 +70,6 @@
 .hide-gt-4
   +at-breakpoint($break6)
     +hidden
-
-// Hide elements when breakpoint = 4
-// Purpose: hide elements from the smallest screen sizes only (smart phones)
-
-.hide-eq-4
-  +hidden
-
-  +at-breakpoint($break6)
-    +reveal-hidden-inline
 
 // For toggling between phone number markup
 
