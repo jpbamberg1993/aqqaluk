@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def students
   end
 
-  def sponsors
+  def support
   end
 
   def language
