@@ -1,0 +1,80 @@
+#sponsors
+  +hidden
+
+  +at-breakpoint($break9)
+    +reveal-hidden
+    position: relative
+    background-color: $black
+    +panel-trim
+
+.sponsors
+  text-align: center
+  a
+    display: inline-block
+    margin-right: $scale5
+  a:nth-child(3)
+    vertical-align: bottom
+  a:last-child
+    margin-right:  0
+
+  +at-breakpoint($break9)
+    .nrc
+      width: 80px
+      height: 45px
+      background: image-url("logos/nrc-logo-sm.png") 0 0 no-repeat
+    .ndc
+      width: 80px
+      height: 44px
+      background: image-url("logos/ndc-logo-sm.gif") 0 0 no-repeat
+    .akima
+      width: 100px
+      height: 29px
+      background: image-url("logos/akima-logo-sm.png") 0 0 no-repeat
+    .teck
+      width: 50px
+      height: 50px
+      background: image-url("logos/teck-logo-sm.jpg") 0 0 no-repeat
+    .whpacific
+      width: 100px
+      height: 24px
+      background: image-url("logos/whp-logo-sm.png") 0 0 no-repeat
+
+  +at-breakpoint($break12)
+    .nrc
+      width: 159px
+      height: 89px
+      background: image-url("logos/nrc-logo.png") 0 0 no-repeat
+    .ndc
+      width: 161px
+      height: 89px
+      background: image-url("logos/ndc-logo.gif") 0 0 no-repeat
+    .akima
+      width: 207px
+      height: 61px
+      background: image-url("logos/akima-logo.png") 0 0 no-repeat
+    .teck
+      width: 73px
+      height: 73px
+      background: image-url("logos/teck-logo.jpg") 0 0 no-repeat
+    .whpacific
+      width: 145px
+      height: 35px
+      background: image-url("logos/whp-logo.png") 0 0 no-repeat
+
+#thanks
+  +hidden
+
+  +at-breakpoint($break9)
+    +reveal-hidden
+    .united-way
+      display: block
+      width: 100px
+      height: 43px
+      background: image-url("logos/united-way-logo-sm.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break12)
+    +reveal-hidden
+    .united-way
+      width: 200px
+      height: 86px
+      background: image-url("logos/united-way-logo.jpg") 0 0 no-repeat
