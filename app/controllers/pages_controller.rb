@@ -5,12 +5,15 @@ class PagesController < ApplicationController
   def students
   end
 
-  def support
-  end
-
   def language
   end
 
+  def camp
+  end
+
   def news
+  end
+
+  def support
   end
 end
