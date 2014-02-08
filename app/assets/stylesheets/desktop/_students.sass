@@ -53,7 +53,32 @@
       font-size: $scale5
 
 #deadlines
-  +hidden
+  background: $gray-1
+  table
+    margin-top: $scale1
+    width: 100%
+  th ,td
+    width: 50%
+    text-align: left
+  &:before
+    +panel-shadow(.05, $scale-5)
 
   +at-breakpoint($break9)
-    +reveal-hidden
+    .semester, .quarter
+      +span-columns(3, $break9)
+      margin-top: 0
+    .summer
+      +span-columns(3 omega, $break9)
+      margin-top: 0
+    .vocational
+      +span-columns(9 omega, $break9)
+      margin-top: $scale3
+
+  +at-breakpoint($break12)
+    .semester, .quarter
+      +span-columns(4, $break12)
+    .summer
+      +span-columns(4 omega, $break12)
+    .vocational
+      +span-columns(12 omega, $break12)
+      margin-top: $scale4

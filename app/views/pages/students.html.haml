@@ -17,20 +17,46 @@
 
 %section.panel#deadlines
   .container
-    %h1 Aqqaluk Trust College/University and Vocational/Technical Applications
-    %h2 College University Scholarships
-    %ul
-      %li
-        %strong Semester Schedule
-        August 1st (annual fall), January 10th (spring)
-      %li
-        %strong Quarter/Trimester Schedule
-        August 1st (annual fall), November 1st (winter), March 1st (spring)
-      %li
-        %strong Summer Session
-        June 1st (summer)
-    %h2 Vocational/Technical Scholarships
-    %ul
-      %li Application and supporting documents must be completed
-      %strong before the first day of class.
-    %a{:href => '#', :title => ''} Please apply for Aqqaluk Trust Scholarships here.
+    %h2 Scholarship Deadlines
+    %table{:summary => 'Semester Schedule Deadlines', :class => 'semester'}
+      %thead
+        %tr
+          %th{colspan: "2"} Semester Schedule
+      %tbody
+        %tr
+          %td Fall
+          %td August 1
+        %tr
+          %td Spring
+          %td January 10
+    %table{:summary => 'Quarter/Trimester Schedule Deadlines', :class => 'quarter'}
+      %thead
+        %tr
+          %th{colspan: "2"} Quarter/Trimester Schedule
+      %tbody
+        %tr
+          %td Fall
+          %td August 1
+        %tr
+          %td Winter
+          %td November 1
+        %tr
+          %td Spring
+          %td March 1
+        %tr
+          %td
+          %td
+    %table{:summary => 'Summer Session Deadlines', :class => 'summer'}
+      %thead
+        %tr
+          %th Summer Session
+      %tbody
+        %tr
+          %td June 1
+    %table{:summary => 'Vocational/Technical Scholarships Deadlines', :class => 'vocational'}
+      %thead
+        %tr
+          %th Vocational/Technical Scholarships
+      %tbody
+        %tr
+          %td Must be completed before the first day of class.
