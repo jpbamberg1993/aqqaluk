@@ -36,22 +36,6 @@
     .purchase
       +span-columns(4 omega, $break6)
 
-  +at-breakpoint($break9)
-    .cd-image
-      +span-columns(2, $break9)
-    .purchase
-      +span-columns(7 omega, $break9)
-
-  +at-breakpoint($break12)
-    .cd-image
-      +span-columns(3, $break12)
-      a
-        width: 187px
-        height: 209px
-        background: image-url("pics/cd.png") 0 0 no-repeat
-    .purchase
-      +span-columns(9 omega, $break12)
-
 #history
   background-color: $gray-2
   .elder
@@ -62,16 +46,6 @@
       width: 125px
       height: 125px
       background: image-url("pics/elder-125.png") no-repeat
-
-    +at-breakpoint($break9)
-      width: 175px
-      height: 175px
-      background: image-url("pics/elder-175.png") no-repeat
-
-    +at-breakpoint($break12)
-      width: 210px
-      height: 210px
-      background: image-url("pics/elder.png") no-repeat
 
   &:before
     +panel-shadow(.05, $scale-5)
