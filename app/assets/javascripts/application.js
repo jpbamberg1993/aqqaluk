@@ -12,8 +12,9 @@
 //
 //= require jquery-2.0.3.min
 //=# require turbolinks
+//= require mobvious-rails
 //= require enquire.min
 //= require jquery.carouFredSel-6.2.1-packed
 //= require jquery.touchSwipe.min
-//= require mobvious-rails
+//= require showHide
 //= require site

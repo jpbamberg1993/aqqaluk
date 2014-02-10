@@ -1,0 +1,36 @@
+#commission
+  position: relative
+  color: $font-off-white
+  background-color: $aqua
+  // @include background-image(linear-gradient(lighten($aqua, 8), $aqua 65%))
+  // @include background-image(linear-gradient($aqua, lighten($aqua, 5) 45%, $aqua 95%))
+  z-index: 1000
+  a
+    +link-colors($font-off-white, $font-off-white, $font-off-white, $font-off-white, $font-off-white)
+  a:hover
+    text-decoration: underline
+  &:before
+    +panel-shadow(.15, $scale-5)
+  &:after
+    content: ""
+    position: absolute
+    bottom: -14px
+    width: 100%
+    height: 14px
+    background: image-url("fixtures/trim-bottom-aqua.png") 0 0 repeat-x
+
+#slidingDiv
+  display: none
+
+#cd
+
+  +at-breakpoint($break12)
+    .cd-image
+      +span-columns(3, $break12)
+    .purchase
+      +span-columns(9 omega, $break12)
+
+#history
+  background-color: $gray-2
+  &:before
+    +panel-shadow(.05, $scale-5)

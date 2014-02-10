@@ -1,21 +1,24 @@
 - content_for :title do
   Language & Culture
 
-%section.panel
+%section.panel#commission
   .container
     %p In 2005 the Aqqaluk Trust and the Native Village of  Kotzebue conducted a survey showing that only 14 percent of the regions residents understand Iñupiaq fluently, with 92% of fluent speakers over  the age of 65.
-    %p Realizing that the Iñupiaq language was in jeopardy, the Iñupiaq Language Commission was formed under the direction of the  Regional Elders Council to pursue ways to revitalize the language.
-    %p The Iñupiaq Language Commission strategies are to create a successful language revitalization effort.
-    %p Teaching children through the creation of language nests is just one idea of how Iñupiaq can be more commonly spoken.  The goal of the Commission is to connect the Elders with the children through the creation of language nests. These language nests are events and places where Iñupiaq is exclusively spoken so that the children of the region are exposed to the language in practical settings.
+    #slidingDiv
+      %p Realizing that the Iñupiaq language was in jeopardy, the Iñupiaq Language Commission was formed under the direction of the  Regional Elders Council to pursue ways to revitalize the language.
+      %p The Iñupiaq Language Commission strategies are to create a successful language revitalization effort.
+      %p Teaching children through the creation of language nests is just one idea of how Iñupiaq can be more commonly spoken. The goal of the Commission is to connect the Elders with the children through the creation of language nests. These language nests are events and places where Iñupiaq is exclusively spoken so that the children of the region are exposed to the language in practical settings.
+    %a.show_hide{:href => "#", "data-link" => "#slidingDiv"} Read more
 
-%section.panel
+%section.panel#cd
   .container
-    %p The Coastal & Kobuk-Selawik dialect Inupiaq Language CD-ROM learning tools are now available for purchase.
+    .cd-image
+      = link_to image_tag('cd.png', :alt => '', :width => '187', :height => '209'), root_path, :title => 'Order Inupiaq Language CD-ROM'
+    %h2.purchase The Coastal & Kobuk-Selawik dialect Inupiaq Language CD-ROM learning tools are now available for purchase.
     %p The software program, developed by NANA with consultation from Rosetta-Stone, is instrumental in learning and  preserving the Inupiaq Language in the Northwest Arctic and beyond.
-    = link_to image_tag('', :alt => 'Rosetta Stone', :width => '', :height => ''), root_path, :title => ''
-    %p The Language CD-ROM is available for purchase for $195 each. Mail orders add $10.00 shipping and handling; additional orders ship for just $3 per CD-ROM. >> ORDER NOW!
+    %p The Language CD-ROM is available for purchase for $195 each. Mail orders add $10.00 shipping and handling; additional orders ship for just $3 per CD-ROM.
 
-%section.panel
+%section.panel#history
   .container
     %h2 Oral History Project:
     %p The Aqqaluk Trust has acquired nearly 750 audio cassette tapes of elders on a number of subjects, ranging from traditional subsistence practices to personal stories from the past.   We know there may be other types of media content out there that need to be compiled, housed, and supported with the development of new multi-media.  We envision that each generation can use the words of our elders to understand their story in today’s reality, and to carry on the values that ground us as Iñupiat.
