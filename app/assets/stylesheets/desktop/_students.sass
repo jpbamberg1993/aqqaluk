@@ -1,5 +1,5 @@
 #scholarships
-  padding-bottom: $scale2b
+  padding: ($scale5 / $reduce) 0 $scale2b
   background-image: image-url("heroes/students-hero-600.jpg")
   background-position: left top
   a
@@ -12,12 +12,12 @@
     background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
 
   +at-breakpoint($break6)
-    padding-bottom: $scale2c
+    padding: ($scale6 / $reduce) 0 $scale2c
     background-image: image-url("heroes/students-hero-650.jpg")
     background-position: center top
 
   +at-breakpoint($break9)
-    padding-bottom: $scale4
+    padding: ($scale7 / $reduce) 0 $scale4
     background-image: image-url("heroes/students-hero-1200.jpg")
     a
       width: 202px
@@ -25,8 +25,9 @@
       background: image-url("icons/apply-btn-989.png") 0 0 no-repeat
     a:hover
       background: image-url("icons/apply-btn-989-2.png") 0 0 no-repeat
+
   +at-breakpoint($break12)
-    padding-bottom: $scale4b
+    padding: ($scale8 / $reduce) 0 $scale4b
     background-image: image-url("heroes/students-hero.jpg")
 
 #robert

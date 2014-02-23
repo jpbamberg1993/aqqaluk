@@ -24,7 +24,6 @@
 $reduce: 2
 
 .hero
-  padding: ($scale5 / $reduce) 0
   text-align: center
   background-color: $yellow
   background-position: center top
@@ -41,20 +40,12 @@ $reduce: 2
   &:before
     +panel-shadow(.15, $scale-5)
 
-  +at-breakpoint($break6)
-    padding: ($scale6 / $reduce) 0
-
-  +at-breakpoint($break9)
-    padding: ($scale7 / $reduce) 0
-
-  +at-breakpoint($break12)
-    padding: ($scale8 / $reduce) 0
-
 .hero_bottom
   padding: ($scale5 / $reduce) 0
   text-align: center
   background-color: $yellow
   p
+    margin: 0
     color: $font-gray
     text-transform: uppercase
 
