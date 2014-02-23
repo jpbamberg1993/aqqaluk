@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def students
   end
 
+  def students_v1
+  end
+
   def language
   end
 
