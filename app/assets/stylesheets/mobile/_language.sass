@@ -1,23 +1,8 @@
 #commission
-  position: relative
-  color: $font-off-white
-  background-color: $aqua
-  // @include background-image(linear-gradient(lighten($aqua, 8), $aqua 65%))
-  // @include background-image(linear-gradient($aqua, lighten($aqua, 5) 45%, $aqua 95%))
-  z-index: 1000
-  a
-    +link-colors($font-off-white, $font-off-white, $font-off-white, $font-off-white, $font-off-white)
+  background-image: image-url("heroes/language-hero-650.jpg")
+  background-position: right top
   a:hover
     text-decoration: underline
-  &:before
-    +panel-shadow(.15, $scale-5)
-  &:after
-    content: ""
-    position: absolute
-    bottom: -14px
-    width: 100%
-    height: 14px
-    background: image-url("fixtures/trim-bottom-aqua.png") 0 0 repeat-x
 
 #slidingDiv
   display: none
