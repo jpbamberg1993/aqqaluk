@@ -36,7 +36,6 @@ $reduce: 2
     background: $yellow image-url("heroes/student-hero.jpg") 100% 0 no-repeat
 
 #scholarships2
-  // padding: $scale2b 0 ($scale5 / $reduce)
   padding: ($scale5 / $reduce) 0
   text-align: center
   background-color: $yellow
@@ -44,15 +43,12 @@ $reduce: 2
     text-transform: uppercase
 
   +at-breakpoint($break6)
-    // padding: $scale2c 0 ($scale6 / $reduce)
     padding: ($scale6 / $reduce) 0
 
   +at-breakpoint($break9)
-    // padding: $scale4 0 ($scale7 / $reduce)
     padding: ($scale7 / $reduce) 0
 
   +at-breakpoint($break12)
-    // padding: $scale4b 0 ($scale8 / $reduce)
     padding: ($scale8 / $reduce) 0
 
 #robert
@@ -60,27 +56,29 @@ $reduce: 2
 
   +at-breakpoint($break9)
     +reveal-hidden
-    .profile
+    .vision_image
       +span-columns(2, $break12)
-    .aqqaluk
       +image-portal("pics/aqqaluk.jpg", 200px)
       +box-shadow(3px -5px 5px 0 rgba(0, 0, 0, 0.15) inset, 0 0 1px rgba(0, 0, 0, 0.25) inset)
-    .profile-block
+    .vision_block
       +span-columns(6 omega, $break9)
+      padding-top: $scale4
+      border-top: 5px solid $cyan
     .vision
       clear: both
       padding-top: $scale-2
       font-size: $scale4
+      color: $cyan
 
   +at-breakpoint($break12)
-    .profile-block
-      +span-columns(8, $break12)
-    .profile
-      +span-columns(4 omega, $break12)
+    .vision_image
+      +span-columns(4, $break12)
       margin-right: $scale1
-    .aqqaluk
       +image-portal("pics/aqqaluk.jpg", 275px)
       +box-shadow(3px -5px 5px 0 rgba(0, 0, 0, 0.15) inset, 0 0 1px rgba(0, 0, 0, 0.25) inset)
+    .vision_block
+      +span-columns(8 omega, $break12)
+      padding-top: $scale5
     .vision
       padding-top: $scale1
       font-size: $scale5
