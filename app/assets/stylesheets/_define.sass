@@ -40,7 +40,6 @@ $scale-10:  0.105em
 $scale-11:  0.09em
 $scale-12:  0.065em
 
-$reduce: 2
 
 /* Fonts
   -----------------------
@@ -67,13 +66,15 @@ $eaglefeather:        "p22-fllw-eaglefeather"
 
 // base definitions...
 
+// $base-font-family:    $droid-sans       !default
 $base-font-family:    $futura           !default
 $base-font-size:      100%              !default
 $base-line-height:    1.618             !default
 
 // font family...
 
-$font-family-header:  $droid-sans       !default
+// $font-family-header:  $droid-sans       !default
+$font-family-header:  $futura           !default
 $font-family-nav:     $droid-sans       !default
 $font-family-button:  $droid-sans       !default
 
@@ -100,6 +101,7 @@ $gray-1:            #f5f5f5
 $gray-2:            #e8e8e8
 $gray-3:            #c1b1b1
 $gray-4:            #969595
+$gray-5:            #787a79
 
 $bg-body:           #fff
 $bg-container:      #fff
@@ -111,10 +113,10 @@ $bg-footer:         #fff
 
 $base-font-color:   #444         !default
 $color-header:      #222         !default
+$font-footer:       $gray-3
 
 $font-white:        #fff
-$font-gray:         $gray-3
-
+$font-gray:         $gray-5
 $font-orange:       #ed9407
 $font-yellow:       #fce805
 $font-purple:       #a26364
@@ -139,7 +141,7 @@ $link-focus:        darken($blue, 10)
 
 // buttons...
 
-$color-button:      $font-gray
+$color-button:      $font-black
 $color-button-font: $font-white
 
 // miscellaneous...

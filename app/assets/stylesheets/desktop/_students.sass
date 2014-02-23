@@ -1,12 +1,7 @@
-#scholarships_top
-  padding: ($scale5 / $reduce) 0 $scale2b
-  text-align: center
-  background: $yellow image-url("heroes/student-hero.jpg") 100% 0 no-repeat
-  h1, h2
-    color: $font-white
-    +single-text-shadow(0, 5px, 5px, false, $font-black)
-  h1
-    text-transform: uppercase
+#scholarships
+  padding-bottom: $scale2b
+  background-image: image-url("heroes/students-hero-600.jpg")
+  background-position: left top
   a
     display: block
     width: 151px
@@ -15,14 +10,15 @@
     background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
   a:hover
     background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
-  &:before
-    +panel-shadow(.15, $scale-5)
 
   +at-breakpoint($break6)
-    padding: ($scale6 / $reduce) 0 $scale2c
+    padding-bottom: $scale2c
+    background-image: image-url("heroes/students-hero-650.jpg")
+    background-position: center top
 
   +at-breakpoint($break9)
-    padding: ($scale7 / $reduce) 0 $scale4
+    padding-bottom: $scale4
+    background-image: image-url("heroes/students-hero-1200.jpg")
     a
       width: 202px
       height: 64px
@@ -30,24 +26,8 @@
     a:hover
       background: image-url("icons/apply-btn-989-2.png") 0 0 no-repeat
   +at-breakpoint($break12)
-    padding: ($scale8 / $reduce) 0 $scale4b
-    background: $yellow image-url("heroes/student-hero.jpg") 100% 0 no-repeat
-
-#scholarships_bottom
-  padding: ($scale5 / $reduce) 0
-  text-align: center
-  background-color: $yellow
-  p
-    text-transform: uppercase
-
-  +at-breakpoint($break6)
-    padding: ($scale6 / $reduce) 0
-
-  +at-breakpoint($break9)
-    padding: ($scale7 / $reduce) 0
-
-  +at-breakpoint($break12)
-    padding: ($scale8 / $reduce) 0
+    padding-bottom: $scale4b
+    background-image: image-url("heroes/students-hero.jpg")
 
 #robert
   +hidden
@@ -94,9 +74,6 @@
       border-bottom: 1px solid $bluish-white
 
   +at-breakpoint($break9)
-    .semester, .quarter, .summer, .vocational
-      h3
-        padding-bottom: $scale-5
     .semester, .quarter
       +span-columns(3, $break9)
       margin-top: 0
@@ -109,9 +86,6 @@
       margin-top: $scale3
 
   +at-breakpoint($break12)
-    .semester, .quarter, .summer, .vocational
-      h3
-        padding-bottom: $scale-2
     .semester, .quarter
       +span-columns(4, $break12)
     .summer

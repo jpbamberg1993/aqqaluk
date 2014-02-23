@@ -18,6 +18,56 @@
     padding: $scale8 0
 
 
+/* Heroes
+  -----------------------
+
+$reduce: 2
+
+.hero
+  padding: ($scale5 / $reduce) 0
+  text-align: center
+  background-color: $yellow
+  background-position: center top
+  background-repeat: no-repeat
+  h1, h2
+    color: $font-white
+    +single-text-shadow(0, 5px, 5px, false, $font-black)
+  h1
+    text-transform: uppercase
+    letter-spacing: $scale-7
+  h2
+    line-height: 1.159
+    padding: 0 $column-width / 2
+  &:before
+    +panel-shadow(.15, $scale-5)
+
+  +at-breakpoint($break6)
+    padding: ($scale6 / $reduce) 0
+
+  +at-breakpoint($break9)
+    padding: ($scale7 / $reduce) 0
+
+  +at-breakpoint($break12)
+    padding: ($scale8 / $reduce) 0
+
+.hero_bottom
+  padding: ($scale5 / $reduce) 0
+  text-align: center
+  background-color: $yellow
+  p
+    color: $font-gray
+    text-transform: uppercase
+
+  +at-breakpoint($break6)
+    padding: ($scale6 / $reduce) 0
+
+  +at-breakpoint($break9)
+    padding: ($scale7 / $reduce) 0
+
+  +at-breakpoint($break12)
+    padding: ($scale8 / $reduce) 0
+
+
 /* Toggles
   -----------------------
 

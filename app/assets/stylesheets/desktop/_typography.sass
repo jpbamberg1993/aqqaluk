@@ -37,16 +37,16 @@ h1, h2, h3, h4, h5
 
 h1
   margin: 0
-  font-size: $scale5
+  font-size: $scale4
 
   +at-breakpoint($break6)
-    font-size: $scale6
+    font-size: $scale5
 
   +at-breakpoint($break9)
-    font-size: $scale7
+    font-size: $scale6
 
   +at-breakpoint($break12)
-    font-size: $scale8
+    font-size: $scale7
 
 h2
   margin: 0 0 $scale-5
@@ -65,8 +65,20 @@ h2
     font-size: $scale4b
 
 h3
-  margin: 0 0 $scale1
+  margin: 0 0 $scale-6
   font-size: $scale2
+
+  +at-breakpoint($break6)
+    margin-bottom: $scale-5
+    font-size: $scale2b
+
+  +at-breakpoint($break9)
+    margin-bottom: $scale-4
+    font-size: $scale2c
+
+  +at-breakpoint($break12)
+    margin-bottom: $scale-3
+    font-size: $scale3
 
 h4
   margin: 0 0 $scale-2
