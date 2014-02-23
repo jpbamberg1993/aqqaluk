@@ -1,0 +1,24 @@
+#camp
+  background-image: image-url("heroes/camp-hero-650.jpg")
+
+  +at-breakpoint($break9)
+    background-image: image-url("heroes/camp-hero-1200.jpg")
+
+  +at-breakpoint($break12)
+    background-image: image-url("heroes/camp-hero.jpg")
+
+$shrink: .75
+
+.hero_bottom
+  .source
+    font-size: $scale2 * $shrink
+    color: $font-orange
+
+    +at-breakpoint($break6)
+      font-size: $scale2c * $shrink
+
+    +at-breakpoint($break9)
+      font-size: $scale3 * $shrink
+
+    +at-breakpoint($break12)
+      font-size: $scale4 * $shrink

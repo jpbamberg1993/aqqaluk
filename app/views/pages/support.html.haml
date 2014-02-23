@@ -1,11 +1,18 @@
 - content_for :title do
   Donors & Sponsors
 
-%section.panel
+%section.panel#support.hero
+  .container
+    %h1 Support Us
+%section.panel.hero_bottom
   .container
     %p Aqqaluk Trust is a non-profit organization that relies on public funds and private contributions to provide programs and scholarships for the benefit of the Iñupiat of the NANA region.
+    %a{:href => '#', :title => '', :class => 'donate ir'}
+      %span Donate Now!
+
+%section.panel
+  .container
     %p Our mission is the driving force of our organization and sole purpose. Supporting Aqqaluk Trust is sustaining the past, present, and future of our Iñupiaq people.
-    %a{:href => '#', :title => ''} Donate Now!
 
 %section.panel
   .container
