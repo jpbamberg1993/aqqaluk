@@ -84,17 +84,21 @@ $reduce: 2
       font-size: $scale5
 
 #deadlines
-  background: $gray-1
-  table
-    margin-top: $scale1
-    width: 100%
-  th ,td
-    width: 50%
-    text-align: left
+  text-align: center
+  background: $light-blue
   &:before
     +panel-shadow(.05, $scale-5)
+  h2
+    color: $font-orange
+  .semester, .quarter, .summer, .vocational
+    h3
+      margin-top: $scale3
+      border-bottom: 1px solid $bluish-white
 
   +at-breakpoint($break9)
+    .semester, .quarter, .summer, .vocational
+      h3
+        padding-bottom: $scale-5
     .semester, .quarter
       +span-columns(3, $break9)
       margin-top: 0
@@ -102,14 +106,19 @@ $reduce: 2
       +span-columns(3 omega, $break9)
       margin-top: 0
     .vocational
-      +span-columns(9 omega, $break9)
+      +span-columns(7, $break9)
+      +squish(1)
       margin-top: $scale3
 
   +at-breakpoint($break12)
+    .semester, .quarter, .summer, .vocational
+      h3
+        padding-bottom: $scale-2
     .semester, .quarter
       +span-columns(4, $break12)
     .summer
       +span-columns(4 omega, $break12)
     .vocational
-      +span-columns(12 omega, $break12)
+      +span-columns(8, $break12)
+      +squish(2)
       margin-top: $scale4

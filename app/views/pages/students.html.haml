@@ -21,45 +21,18 @@
 %section.panel#deadlines
   .container
     %h2 Scholarship Deadlines
-    %table{:summary => 'Semester Schedule Deadlines', :class => 'semester'}
-      %thead
-        %tr
-          %th{colspan: "2"} Semester Schedule
-      %tbody
-        %tr
-          %td Fall
-          %td August 1
-        %tr
-          %td Spring
-          %td January 10
-    %table{:summary => 'Quarter/Trimester Schedule Deadlines', :class => 'quarter'}
-      %thead
-        %tr
-          %th{colspan: "2"} Quarter/Trimester Schedule
-      %tbody
-        %tr
-          %td Fall
-          %td August 1
-        %tr
-          %td Winter
-          %td November 1
-        %tr
-          %td Spring
-          %td March 1
-        %tr
-          %td
-          %td
-    %table{:summary => 'Summer Session Deadlines', :class => 'summer'}
-      %thead
-        %tr
-          %th Summer Session
-      %tbody
-        %tr
-          %td June 1
-    %table{:summary => 'Vocational/Technical Scholarships Deadlines', :class => 'vocational'}
-      %thead
-        %tr
-          %th Vocational/Technical Scholarships
-      %tbody
-        %tr
-          %td Must be completed before the first day of class.
+    .semester
+      %h3 Semester Schedule
+      %p Fall / August 1
+      %p Spring / January 10
+    .quarter
+      %h3 Quarter/Trimester
+      %p Fall / August 1
+      %p Winter / November 1
+      %p Spring / March 1
+    .summer
+      %h3 Summer Session
+      %p June 1
+    .vocational
+      %h3 Vocational/Technical Scholarships
+      %p Must be completed before the first day of class.
