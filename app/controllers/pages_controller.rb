@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def language
   end
 
+  def language_v1
+  end
+
   def camp
   end
 
