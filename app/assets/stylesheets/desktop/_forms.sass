@@ -14,3 +14,24 @@ textarea
 
 button
   font-family: $font-family-button
+
+.cyan_btn, .blue_btn, .orange_btn
+  display: inline-block
+  padding: $scale-6 $scale1
+  +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+  +border-radius(4px)
+.cyan_btn
+  background-color: $cyan
+  &:hover
+    text-decoration: none
+    background-color: lighten($cyan, 10)
+.blue_btn
+  background-color: $blue
+  &:hover
+    text-decoration: none
+    background-color: lighten($blue, 10)
+.orange_btn
+  background-color: $orange
+  &:hover
+    text-decoration: none
+    background-color: lighten($orange, 10)

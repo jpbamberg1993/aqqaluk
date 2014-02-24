@@ -22,3 +22,39 @@ $shrink: .75
 
     +at-breakpoint($break12)
       font-size: $scale4 * $shrink
+
+#camp_body
+  .sidebox
+    +span-columns(4, $break12)
+    .box
+      padding-right: $scale3
+    p
+      border-top: 5px solid $cyan
+  .lessons_values
+    +span-columns(8 omega, $break12)
+    .first
+      color: $cyan
+  .image1, .image2, .image3, .image4
+    height: $column-width * 4
+    background-color: gray
+  .image_row_1
+    +span-columns(8 omega, $break12)
+    margin-bottom: $gutter-width
+    padding-top: $gutter-width
+    .image1
+      +span-columns(4, 8)
+    .image2
+      +span-columns(4 omega, 8)
+  .image_row_2
+    +span-columns(8, $break12)
+    margin-bottom: $gutter-width * 2
+    .image3
+      +span-columns(4, 8)
+    .image4
+      +span-columns(4 omega, 8)
+  .camp_bottom
+    +span-columns(8 omega, $break12)
+    padding-bottom: $scale1
+    border-bottom: 5px solid $cyan
+    p
+      color: $cyan
