@@ -18,6 +18,7 @@ nav
 .nav-primary
   ul
     list-style-type: none
+    text-align: right
     border: 1px solid #e6e6e6
   li
     font-family: $font-family-nav
@@ -28,6 +29,7 @@ nav
   a
     display: block
     padding: $scale-5
+    text-transform: uppercase
   a:hover
     text-decoration: none
     background-color: #f8f8f8
@@ -40,8 +42,8 @@ nav
       +inline-block-list
     li
       border: 0
-    .nav-current
-      +hidden
+    // .nav-current
+    //   +hidden
     a
       padding: 0 $scale-2
 
