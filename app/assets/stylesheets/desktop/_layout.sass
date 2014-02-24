@@ -95,10 +95,20 @@ header
     top: 0
     right: $scale3
     a
+      display: inline-block
+      margin-top: $scale-3
+      padding: $scale-6 $scale1
       text-decoration: none
-  .divider
-    font-size: $scale-2
-    vertical-align: text-top
+      color: $font-white
+      +border-radius(4px)
+    .apply_btn
+      background-color: $cyan
+      &:hover
+        background-color: lighten($cyan, 10)
+    .sponsor_btn
+      background-color: $blue
+      &:hover
+        background-color: lighten($blue, 10)
 
 
 /* Footer
