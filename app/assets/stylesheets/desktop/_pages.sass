@@ -45,6 +45,7 @@ $reduce: 2
   text-align: center
   background-color: $yellow
   p, blockquote
+    line-height: 1.159
     margin: 0
     color: $font-gray
     text-transform: uppercase
@@ -62,11 +63,14 @@ $reduce: 2
 /* Callout
   -----------------------
 
+.callout
+  font-family: $futura
+  color: $cyan
+
 +at-breakpoint($break9)
   .callout
     padding-top: $scale-2
     font-size: $scale4
-    color: $cyan
 
 +at-breakpoint($break12)
   .callout
