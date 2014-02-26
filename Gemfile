@@ -39,6 +39,7 @@ gem 'mobvious'
 gem 'mobvious-rails'
 
 # Compass specific gems.
-gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
+# gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
+gem 'compass-rails'
 gem 'oily_png'
 gem 'susy'
