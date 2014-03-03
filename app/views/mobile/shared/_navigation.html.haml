@@ -1,17 +1,12 @@
-#header
-  %a{:href => '#menu', :title => 'Menu'}
+- content_for :mobile_navigation do
+  #header
+    %a{:href => '#menu', :title => 'Menu'}
 
-%nav{:role => "navigation", :id => "menu"}
-  %ul
-    %li.active
-      = link_to 'home', root_path, :title => ''
-    %li
-      = link_to 'Students', pages_students_path, :title => ''
-    %li
-      = link_to 'Lanuage & Culture', pages_language_path, :title => ''
-    %li
-      = link_to 'Camp', pages_camp_path, :title => ''
-    %li
-      = link_to 'News & Events', pages_news_path, :title => ''
-    %li
-      = link_to 'Support Us',pages_support_path, :title => ''
+  %nav{:role => "navigation", :id => "menu"}
+    %ul
+      = nav_location 'Home',               root_path,           current: current_nav
+      = nav_location 'Students',           pages_students_path, current: current_nav
+      = nav_location 'Language & Culture', pages_language_path, current: current_nav
+      = nav_location 'Camp',               pages_camp_path,     current: current_nav
+      = nav_location 'News & Events',      pages_news_path,     current: current_nav
+      = nav_location 'Support Us',         pages_support_path,  current: current_nav

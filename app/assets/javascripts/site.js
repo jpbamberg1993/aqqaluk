@@ -133,14 +133,14 @@ function textSlide(){
 // ===========================
 
 function mobileMenu(){
-    $('body').addClass('nav-menu');
-    $('.nav-primary').find('h3')
+    $('body').addClass('nav_menu');
+    $('.nav_primary').find('h3')
         .bind('click focus', function(){$(this).parent().toggleClass('expanded')});
 }
 
 
 function normalMenu(){
-    $('body').removeClass('nav-menu');
+    $('body').removeClass('nav_menu');
 }
 
 

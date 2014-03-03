@@ -10,7 +10,7 @@
       %header{:role => "banner"}
         .container{:style => 'position: relative;'}
           = render :partial => 'shared/logo'
-          = render :partial => 'shared/navigation'
+          = yield :mobile_navigation
       #main{:role => "main"}
         = yield
       = render :partial => 'shared/footer'
