@@ -6,10 +6,10 @@
       = browsehappy
       %header{:role => "banner"}
         .container
-          = render :partial => 'shared/logo'
+          = render :partial => 'layouts/logo'
           = yield :main_navigation
-          = render :partial => 'shared/utility'
+          = render :partial => 'layouts/utility'
       #main{:role => "main"}
         = yield
-      = render :partial => 'shared/footer'
+      = render :partial => 'layouts/footer'
     = scripts

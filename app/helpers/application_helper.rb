@@ -20,6 +20,6 @@ module ApplicationHelper
   end
 
   def currently_at(location)
-    render partial: 'shared/navigation', locals: {current_nav: location}
+    render partial: 'layouts/navigation', locals: {current_nav: location}
   end
 end

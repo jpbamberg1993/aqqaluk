@@ -1,17 +1,13 @@
 !!!
-/[if IEMobile 7]><html class="no-js iem7"><![endif]
-/[if (gt IEMobile 7)|!(IEMobile)]><!-->
 %html.no-js
-  /<![endif]
-
   = head
   %body
     .wrapper
       %header{:role => "banner"}
         .container{:style => 'position: relative;'}
-          = render :partial => 'shared/logo'
+          = render :partial => 'layouts/logo'
           = yield :mobile_navigation
       #main{:role => "main"}
         = yield
-      = render :partial => 'shared/footer'
+      = render :partial => 'layouts/footer'
     = scripts
