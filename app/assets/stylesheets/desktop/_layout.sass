@@ -21,8 +21,8 @@ html
 
 body
   background-color: $bg-body
-  // &:after
-  //   +rwd-marker
+  &:after
+    +rwd-marker
 
 .wrapper
   // max-width: 1400px
@@ -70,10 +70,10 @@ header
   +link-colors($color-logo, $color-logo, $color-logo, $color-logo, $color-logo)
 
   +at-breakpoint($break9)
-    +span-columns(2, $break9)
+    +span-columns(1, $break9)
 
   +at-breakpoint($break12)
-    +span-columns(3, $break12)
+    +span-columns(2, $break12)
 
   img
     width: 93px

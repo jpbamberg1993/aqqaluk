@@ -8,11 +8,11 @@ nav
     +span-columns(6 omega, $break6)
 
   +at-breakpoint($break9)
-    +span-columns(7 omega, $break9)
+    +span-columns(8 omega, $break9)
     margin-top: 71px
 
   +at-breakpoint($break12)
-    +span-columns(9 omega, $break12)
+    +span-columns(10 omega, $break12)
     margin-top: 93px
 
 .nav_primary
@@ -44,8 +44,14 @@ nav
       +inline-block-list
     li
       border: 0
+    li:first-child
+      display: none
     a
       padding: 0 $scale-2
+
+  +at-breakpoint($break12)
+    li:first-child
+      display: inline-block
 
 .nav_menu
   .nav_primary
