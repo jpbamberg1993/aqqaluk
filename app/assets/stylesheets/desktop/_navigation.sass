@@ -27,6 +27,8 @@ nav
     +link-colors($color-nav, $color-nav, $color-nav, $color-nav, $color-nav)
   li:last-child
     border-bottom: 0
+  #language2
+    +hidden
   a
     display: block
     padding: $scale-5
@@ -46,12 +48,20 @@ nav
       border: 0
     li:first-child
       display: none
+    #language1
+      +hidden
+    #language2
+      +reveal-hidden-inline
     a
       padding: 0 $scale-2
 
   +at-breakpoint($break12)
     li:first-child
       display: inline-block
+    #language1
+      +reveal-hidden-inline
+    #language2
+      +hidden
 
 .nav_menu
   .nav_primary
