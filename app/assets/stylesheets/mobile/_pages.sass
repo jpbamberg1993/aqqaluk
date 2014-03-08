@@ -26,8 +26,11 @@ $reduce: 2
     color: $font-white
     +single-text-shadow(0, 5px, 5px, false, $font-black)
   h1
+    line-height: 1
+    font-family: $eaglefeather
+    font-weight: normal
+    letter-spacing: $scale-9
     text-transform: uppercase
-    letter-spacing: $scale-7
   h2
     line-height: 1.159
     padding: 0 $column-width / 2
@@ -40,15 +43,16 @@ $reduce: 2
   background-color: $yellow
   p, blockquote
     line-height: 1.159
-    margin: 0
+    margin-bottom: $scale-7
+    font-family: $futura
+    font-size: $scale1
+    letter-spacing: $scale-9
     color: $font-gray
     text-transform: uppercase
-  p
-    font-size: $scale1
 
   +at-breakpoint($break6)
     padding: ($scale6 / $reduce) 0
-    p
+    p, blockquote
       font-size: $scale2
 
 

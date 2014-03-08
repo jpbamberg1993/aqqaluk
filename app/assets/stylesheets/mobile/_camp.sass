@@ -1,11 +1,17 @@
 #camp
-  background-image: image-url("heroes/camp-hero-650.jpg")
+  background-image: image-url("heroes/camp-hero-600.jpg")
+  background-position: center bottom
 
-$shrink: .75
+  +at-breakpoint($break6)
+    background-image: image-url("heroes/camp-hero-800.jpg")
+    background-position: center center
+
+$shrink: .618
 
 .hero_bottom
-  .source
+  .quote_source
     font-size: $scale2 * $shrink
+    font-weight: bold
     color: $font-orange
 
     +at-breakpoint($break6)
