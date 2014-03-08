@@ -76,16 +76,19 @@ $reduce: 2
   -----------------------
 
 .callout
-  font-family: $futura
   color: $cyan
 
+h2.callout
+  line-height: 1.236
+  border-top: 5px solid $cyan
+
 +at-breakpoint($break9)
-  .callout
-    padding-top: $scale-2
+  h2.callout
+    padding-top: $scale2
     font-size: $scale4
 
 +at-breakpoint($break12)
-  .callout
+  h2.callout
     padding-top: $scale1
     font-size: $scale5
 

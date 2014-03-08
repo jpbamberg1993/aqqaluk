@@ -17,6 +17,25 @@ p, blockquote
     margin-bottom: $scale-3
     font-size: $scale4
 
+$p_shrink: .716
+
+.p_shrink
+  margin: 0 0 $scale-6 * $p_shrink
+  font-size: $scale2 * $p_shrink
+
+  +at-breakpoint($break6)
+    margin-bottom: $scale-5 * $p_shrink
+    font-size: $scale2c * $p_shrink
+
+  +at-breakpoint($break9)
+    margin-bottom: $scale-4 * $p_shrink
+    font-size: $scale3 * $p_shrink
+
+  +at-breakpoint($break12)
+    margin-bottom: $scale-3 * $p_shrink
+    font-size: $scale4 * $p_shrink
+
+
 
 /* Links
   -----------------------
