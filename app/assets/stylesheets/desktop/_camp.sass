@@ -35,29 +35,17 @@ $shrink: .618
     +span-columns(4, $break12)
     .box
       padding-right: $scale3
+      h2
+        margin-bottom: $scale2
   .camp_top
     +span-columns(8 omega, $break12)
-  .image1, .image2, .image3, .image4
-    height: $column-width * 4
   .image_row_1
     +span-columns(8 omega, $break12)
-    margin-bottom: $gutter-width * 2
+    margin-bottom: $gutter-width
     padding-top: $gutter-width
-    .image1
-      +span-columns(4, 8)
-      background: image-url("pics/image-1.jpg") left center no-repeat
-    .image2
-      +span-columns(4 omega, 8)
-      background: image-url("pics/image-2.jpg") left center no-repeat
   .image_row_2
     +span-columns(8, $break12)
     margin-bottom: $gutter-width * 2
-    .image3
-      +span-columns(4, 8)
-      background: image-url("pics/image-3.jpg") left center no-repeat
-    .image4
-      +span-columns(4 omega, 8)
-      background: image-url("pics/image-4.jpg") left center no-repeat
   .camp_bottom
     +span-columns(8 omega, $break12)
     padding-bottom: $scale3
@@ -65,3 +53,60 @@ $shrink: .618
     p
       margin-bottom: $scale2
       color: $cyan
+
+  .image1, .image3
+    +span-columns(4, 8)
+  .image2, .image4
+    +span-columns(4 omega, 8)
+  .image1, .image2, .image3, .image4
+    height: 83px
+  .image1
+    background: image-url("pics/image-1-93.jpg") left center no-repeat
+  .image2
+    background: image-url("pics/image-2-93.jpg") left center no-repeat
+  .image3
+    background: image-url("pics/image-3-93.jpg") left center no-repeat
+  .image4
+    background: image-url("pics/image-4-93.jpg") left center no-repeat
+
+  +at-breakpoint($break6)
+    .image_row_1
+      margin-bottom: $gutter-width * .618
+    .image1, .image2, .image3, .image4
+      height: 140px
+    .image1
+      background: image-url("pics/image-1-157.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/image-2-157.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/image-3-157.jpg") left center no-repeat
+    .image4
+      background: image-url("pics/image-4-157.jpg") left center no-repeat
+
+  +at-breakpoint($break9)
+    .image_row_1
+      margin-bottom: $gutter-width - .105
+    .image1, .image2, .image3, .image4
+      height: 212px
+    .image1
+      background: image-url("pics/image-1-237.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/image-2-237.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/image-3-237.jpg") left center no-repeat
+    .image4
+      background: image-url("pics/image-4-237.jpg") left center no-repeat
+
+  +at-breakpoint($break12)
+    .image_row_1
+      margin-bottom: $gutter-width * 2
+    .image1, .image2, .image3, .image4
+      height: 268px
+    .image1
+      background: image-url("pics/image-1.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/image-2.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/image-3.jpg") left center no-repeat
+    .image4
+      background: image-url("pics/image-4.jpg") left center no-repeat
