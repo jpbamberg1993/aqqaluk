@@ -39,7 +39,18 @@ $reduce: 2
     text-transform: uppercase
   h2
     line-height: 1.159
-    padding: 0 $column-width / 2
+    margin-top: $scale-6
+
+    +at-breakpoint($break6)
+      margin-top: $scale-5
+      padding: 0 $column-width / 2
+
+    +at-breakpoint($break9)
+      margin-top: $scale-4
+
+    +at-breakpoint($break12)
+      margin-top: $scale-3
+
   &:before
     +panel-shadow(.15, $scale-5)
 

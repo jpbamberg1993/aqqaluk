@@ -1,32 +1,33 @@
 #scholarships
   padding: ($scale5 / $reduce) 0 $scale2b
   background-image: image-url("heroes/students-hero-600.jpg")
-  background-position: left top
-  a
-    display: block
-    width: 151px
-    height: 48px
-    margin: 0 auto
-    background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
-  a:hover
-    background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
 
   +at-breakpoint($break6)
     padding: ($scale6 / $reduce) 0 $scale2c
-    background-image: image-url("heroes/students-hero-650.jpg")
-    background-position: center top
+    background-image: image-url("heroes/students-hero-800.jpg")
 
 #robert
   +hidden
 
 #deadlines
-  text-align: center
+  position: relative
   background: $light-blue
   &:before
-    +panel-shadow(.05, $scale-5)
-  h2
-    color: $font-orange
+    content: ""
+    position: absolute
+    top: -5px
+    width: 100%
+    height: 5px
+    background: image-url("fixtures/trim-top-blue.png") 0 0 repeat-x
+
+  .container
+    text-align: center
+    h2
+      color: $font-orange
   .semester, .quarter, .summer, .vocational
     h3
-      margin-top: $scale3
+      margin-top: $scale1
       border-bottom: 1px solid $bluish-white
+  .semester
+    h3
+      margin-top: 0

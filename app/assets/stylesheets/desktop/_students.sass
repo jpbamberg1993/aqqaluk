@@ -1,30 +1,14 @@
 #scholarships
   padding: ($scale5 / $reduce) 0 $scale2b
   background-image: image-url("heroes/students-hero-600.jpg")
-  background-position: left top
-  a
-    display: block
-    width: 151px
-    height: 48px
-    margin: 0 auto
-    background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
-  a:hover
-    background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
 
   +at-breakpoint($break6)
     padding: ($scale6 / $reduce) 0 $scale2c
-    background-image: image-url("heroes/students-hero-650.jpg")
-    background-position: center top
+    background-image: image-url("heroes/students-hero-800.jpg")
 
   +at-breakpoint($break9)
     padding: ($scale7 / $reduce) 0 $scale4
-    background-image: image-url("heroes/students-hero-1200.jpg")
-    a
-      width: 202px
-      height: 64px
-      background: image-url("icons/apply-btn-989.png") 0 0 no-repeat
-    a:hover
-      background: image-url("icons/apply-btn-989-2.png") 0 0 no-repeat
+    background-image: image-url("heroes/students-hero-1024.jpg")
 
   +at-breakpoint($break12)
     padding: ($scale8 / $reduce) 0 $scale4b
@@ -45,9 +29,7 @@
       border-top: 5px solid $cyan
     .callout
       clear: both
-      // padding-top: $scale-2
-      // font-size: $scale4
-      // color: $cyan
+      margin: $scale-2 0 0
 
   +at-breakpoint($break12)
     .vision_image
@@ -59,28 +41,39 @@
       +span-columns(8 omega, $break12)
       padding-top: $scale5
     .callout
-      // padding-top: $scale1
-      // font-size: $scale5
+      margin: $scale1 0 0
 
 #deadlines
-  text-align: center
+  position: relative
   background: $light-blue
   &:before
-    +panel-shadow(.05, $scale-5)
-  h2
-    color: $font-orange
+    content: ""
+    position: absolute
+    top: -5px
+    width: 100%
+    height: 5px
+    background: image-url("fixtures/trim-top-blue.png") 0 0 repeat-x
+
+  .container
+    text-align: center
+    h2
+      color: $font-orange
   .semester, .quarter, .summer, .vocational
     h3
-      margin-top: $scale3
+      margin-top: $scale1
       border-bottom: 1px solid $bluish-white
+  .semester
+    h3
+      margin-top: 0
 
   +at-breakpoint($break9)
+    .semester, .quarter, .summer, .vocational
+      h3
+        margin-top: 0
     .semester, .quarter
       +span-columns(3, $break9)
-      margin-top: 0
     .summer
       +span-columns(3 omega, $break9)
-      margin-top: 0
     .vocational
       +span-columns(7, $break9)
       +squish(1)
@@ -94,4 +87,4 @@
     .vocational
       +span-columns(8, $break12)
       +squish(2)
-      margin-top: $scale4
+      margin-top: $scale5
