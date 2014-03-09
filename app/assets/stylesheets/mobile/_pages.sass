@@ -45,7 +45,7 @@ $reduce: 2
 .hero_bottom
   padding: ($scale5 / $reduce) 0
   text-align: center
-  background-color: $yellow
+  background: $yellow image-url("fixtures/bg-pattern.png") 0 0 repeat
   p, blockquote
     line-height: 1.159
     margin-bottom: $scale-7
@@ -65,8 +65,16 @@ $reduce: 2
   -----------------------
 
 .callout
-  font-family: $futura
   color: $cyan
+
+h2.callout
+  line-height: 1.236
+  padding-top: $scale-4
+  border-top: 5px solid $cyan
+
++at-breakpoint($break6)
+  h2.callout
+    padding-top: $scale-2
 
 
 /* Toggles
@@ -81,14 +89,12 @@ $reduce: 2
   +at-breakpoint($break6)
     +reveal-hidden-inline
 
-// Hide elements when breakpoint = 4
-// Purpose: hide elements from the smallest screen sizes only (smart phones)
+// Hide elements when breakpoint > 4
+// Purpose: hide elements from everything but smart phones
 
-.hide-eq-4
-  +hidden
-
+.hide-gt-4
   +at-breakpoint($break6)
-    +reveal-hidden-inline
+    +hidden
 
 // For toggling between phone number markup
 

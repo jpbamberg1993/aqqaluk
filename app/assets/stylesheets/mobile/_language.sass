@@ -1,36 +1,79 @@
 #commission
-  background-image: image-url("heroes/language-hero-650.jpg")
-  background-position: right top
+  background-image: image-url("heroes/language-hero-600.jpg")
+  background-position: right center
   a:hover
     text-decoration: underline
 
-#slidingDiv
+  +at-breakpoint($break6)
+    background-image: image-url("heroes/language-hero-800.jpg")
+
+#slidingDiv, .show_hide
   display: none
 
-#cd
-  .cd-image a
-    display: block
+#language_body
+  .sidebar
+    +span-columns(2, $break6)
+    .box
+      padding-right: $scale3
+      h2
+        margin-bottom: $scale2
+    .callout
+      height: 78px
+      padding: 0
+      border-top: none
+      border-bottom: 5px solid $cyan
+  .image_row_1
+    +span-columns(4 omega, $break6)
+    margin-bottom: $gutter-width
+  .language_top
+    +span-columns(4 omega, $break6)
+  .orange_btn
+    margin: $scale2 0 $scale7
+  .image_row_2
+    +span-columns(4, $break6)
+    margin-bottom: $gutter-width * 2
+  .sidebar2
+    +span-columns(4 omega, $break6)
+  .sidebar3
+    +span-columns(2, $break6)
+    .box
+      padding-right: $scale3
+    .callout
+      border-top: none
+  .language_bottom
+    +span-columns(4 omega, $break6)
+    padding-bottom: $scale3
+    border-bottom: 5px solid $cyan
+
+  .image1, .image3
+    +span-columns(4, 8)
+  .image2, .image4
+    +span-columns(4 omega, 8)
+  .image1, .image2, .image3, .image4
+    height: 83px
+  .image1
+    background: image-url("pics/language/image-1-93.jpg") left center no-repeat
+  .image2
+    background: image-url("pics/language/image-2-93.jpg") left center no-repeat
+  .image3
+    background: image-url("pics/language/image-3-93.jpg") left center no-repeat
+  .image4
+    background: image-url("pics/language/image-4-93.jpg") left center no-repeat
 
   +at-breakpoint($break6)
-    .cd-image
-      +span-columns(2, $break6)
-      a
-        width: 150px
-        height: 168px
-        background: image-url("pics/cd-150.png") 0 0 no-repeat
-    .purchase
-      +span-columns(4 omega, $break6)
-
-#history
-  background-color: $gray-2
-  .elder
-    float: right
-    margin: $scale1 $scale3 0
-
-    +at-breakpoint($break6)
-      width: 125px
-      height: 125px
-      background: image-url("pics/elder-125.png") no-repeat
-
-  &:before
-    +panel-shadow(.05, $scale-5)
+    .sidebar .callout
+      height: 135px
+    .orange_btn
+      margin: $scale1 0 $scale4
+    .image_row_1
+      margin-bottom: $gutter-width * .618
+    .image1, .image2, .image3, .image4
+      height: 140px
+    .image1
+      background: image-url("pics/language/image-1-157.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/language/image-2-157.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/language/image-3-157.jpg") left center no-repeat
+    .image4
+      background: image-url("pics/language/image-4-157.jpg") left center no-repeat

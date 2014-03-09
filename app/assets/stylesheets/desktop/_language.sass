@@ -1,77 +1,154 @@
 #commission
-  background-image: image-url("heroes/language-hero-650.jpg")
-  background-position: right top
-  // a
-  //   +link-colors($font-off-white, $font-off-white, $font-off-white, $font-off-white, $font-off-white)
+  background-image: image-url("heroes/language-hero-600.jpg")
+  background-position: right center
   a:hover
     text-decoration: underline
 
+  +at-breakpoint($break6)
+    background-image: image-url("heroes/language-hero-800.jpg")
+
   +at-breakpoint($break9)
-    background-image: image-url("heroes/language-hero-1200.jpg")
+    background-image: image-url("heroes/language-hero-1024.jpg")
+    background-position: center top
 
   +at-breakpoint($break12)
     background-image: image-url("heroes/language-hero.jpg")
-    background-position: center top
 
 #slidingDiv
   display: none
+  position: relative
+  p:first-child
+    padding-top: $scale6
   p
     padding-top: $scale1
+    font-family: $droid-sans
     text-align: left
     text-transform: none
   p:last-child
     padding-bottom: $scale1
-
-#cd
-  .cd-image a
-    display: block
+  &:before
+    content: ""
+    position: absolute
+    top: $scale2
+    margin-left: -($scale10/2)
+    width: $scale10
+    height: 1px
+    text-align: center
+    +background-image(linear-gradient(left, rgba(220, 229, 236, 0) 0%, $font-gray 13%, $font-gray 86%, rgba(220, 229, 236, 0) 100%))
 
   +at-breakpoint($break6)
-    .cd-image
-      +span-columns(2, $break6)
-      a
-        width: 150px
-        height: 168px
-        background: image-url("pics/cd-150.png") 0 0 no-repeat
-    .purchase
-      +span-columns(4 omega, $break6)
+    &:before
+      top: $scale3
 
   +at-breakpoint($break9)
-    .cd-image
-      +span-columns(2, $break9)
-    .purchase
-      +span-columns(7 omega, $break9)
+    &:before
+      top: $scale4
 
   +at-breakpoint($break12)
-    .cd-image
-      +span-columns(3, $break12)
-      a
-        width: 187px
-        height: 209px
-        background: image-url("pics/cd.png") 0 0 no-repeat
-    .purchase
-      +span-columns(9 omega, $break12)
+    &:before
+      top: $scale4c
 
-#history
-  background-color: $gray-2
-  .elder
-    float: right
-    margin: $scale1 $scale3 0
+#language_body
+  .sidebar
+    +span-columns(4, $break12)
+    .box
+      padding-right: $scale3
+      h2
+        margin-bottom: $scale2
+    .callout
+      height: 78px
+      padding: 0
+      border-top: none
+      border-bottom: 5px solid $cyan
+  .image_row_1
+    +span-columns(8 omega, $break12)
+    margin-bottom: $gutter-width
+  .language_top
+    +span-columns(8 omega, $break12)
+  .orange_btn
+    margin: $scale2 0 $scale7
+  .image_row_2
+    +span-columns(8, $break12)
+    margin-bottom: $gutter-width * 2
+  .sidebar2
+    +span-columns(4 omega, $break12)
+  .sidebar3
+    +span-columns(4, $break12)
+    .box
+      padding-right: $scale3
+    .callout
+      border-top: none
+  .language_bottom
+    +span-columns(8 omega, $break12)
+    padding-bottom: $scale3
+    border-bottom: 5px solid $cyan
 
-    +at-breakpoint($break6)
-      width: 125px
-      height: 125px
-      background: image-url("pics/elder-125.png") no-repeat
+  .image1, .image3
+    +span-columns(4, 8)
+  .image2, .image4
+    +span-columns(4 omega, 8)
+  .image1, .image2, .image3, .image4
+    height: 83px
+  .image1
+    background: image-url("pics/language/image-1-93.jpg") left center no-repeat
+  .image2
+    background: image-url("pics/language/image-2-93.jpg") left center no-repeat
+  .image3
+    background: image-url("pics/language/image-3-93.jpg") left center no-repeat
+  .image4
+    background: image-url("pics/language/image-4-93.jpg") left center no-repeat
 
-    +at-breakpoint($break9)
-      width: 175px
-      height: 175px
-      background: image-url("pics/elder-175.png") no-repeat
+  +at-breakpoint($break6)
+    .sidebar .callout
+      height: 135px
+    .orange_btn
+      margin: $scale1 0 $scale4
+    .image_row_1
+      margin-bottom: $gutter-width * .618
+    .image1, .image2, .image3, .image4
+      height: 140px
+    .image1
+      background: image-url("pics/language/image-1-157.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/language/image-2-157.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/language/image-3-157.jpg") left center no-repeat
+    .image4
+      background: image-url("pics/language/image-4-157.jpg") left center no-repeat
 
-    +at-breakpoint($break12)
-      width: 210px
-      height: 210px
-      background: image-url("pics/elder.png") no-repeat
+  +at-breakpoint($break9)
+    .sidebar .callout
+      height: 207px
+    .orange_btn
+      margin: $scale2 0 $scale5
+    .image_row_1
+      margin-bottom: $gutter-width - .105
+    .image1, .image2, .image3, .image4
+      height: 212px
+    .image1
+      background: image-url("pics/language/image-1-237.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/language/image-2-237.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/language/image-3-237.jpg") left center no-repeat
+    .image4
+      background: image-url("pics/language/image-4-237.jpg") left center no-repeat
 
-  &:before
-    +panel-shadow(.05, $scale-5)
+  +at-breakpoint($break12)
+    .sidebar .callout
+      height: 263px
+      padding: 0
+    .orange_btn
+      margin: $scale2 0 $scale7
+    .image_row_1
+      margin-bottom: $gutter-width * 2
+    .image1, .image2, .image3, .image4
+      height: 268px
+    .image1
+      background: image-url("pics/language/image-1.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/language/image-2.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/language/image-3.jpg") left center no-repeat
+    .image4
+      background: image-url("pics/language/image-4.jpg") left center no-repeat

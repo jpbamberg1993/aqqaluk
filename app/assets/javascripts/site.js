@@ -156,8 +156,8 @@ $(document).ready(function(){
     speed: 1000,                   // speed you want the toggle to happen
     easing: '',                    // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
     changeText: 1,                 // if you dont want the button text to change, set this to 0
-    showText: 'Read more',         // the button text to show when a div is closed
-    hideText: 'Show less'          // the button text to show when a div is open
+    showText: 'READ MORE',         // the button text to show when a div is closed
+    hideText: 'SHOW LESS'          // the button text to show when a div is open
   });
 
 });

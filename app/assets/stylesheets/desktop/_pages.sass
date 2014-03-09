@@ -57,7 +57,7 @@ $reduce: 2
 .hero_bottom
   padding: ($scale5 / $reduce) 0
   text-align: center
-  background-color: $yellow
+  background: $yellow image-url("fixtures/bg-pattern.png") 0 0 repeat
   p, blockquote
     line-height: 1.159
     margin-bottom: $scale-7
@@ -91,7 +91,12 @@ $reduce: 2
 
 h2.callout
   line-height: 1.236
+  padding-top: $scale-4
   border-top: 5px solid $cyan
+
++at-breakpoint($break6)
+  h2.callout
+    padding-top: $scale-2
 
 +at-breakpoint($break9)
   h2.callout
