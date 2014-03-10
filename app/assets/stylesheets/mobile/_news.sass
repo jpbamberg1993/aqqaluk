@@ -1,3 +1,51 @@
 #news
   background-image: image-url("heroes/news-hero-650.jpg")
   background-position: right top
+
+#newsletters
+  padding: $scale2 0 0
+
+  +at-breakpoint($break6)
+    padding-top: $scale3
+
+.newsletters
+  border-bottom: 5px solid $cyan
+  padding-bottom: $scale2
+  h2
+    line-height: 1.236
+    +span-columns(4 omega)
+    margin: 0 0 $scale-4
+    color: $cyan
+  ul
+    +span-columns(4 omega)
+    margin: 0
+    list-style-type: none
+    list-style-position: inside
+
+  +clearfix
+
+  +at-breakpoint($break6)
+    padding-bottom: $scale3
+    h2
+      +span-columns(2)
+      margin: 0
+    ul
+      +span-columns(4 omega)
+
+#stories
+  h2
+    color: $cyan
+  ul
+    list-style-position: inside
+
+.stories
+  padding-bottom: $scale2
+  border-bottom: 1px solid $gray-2
+  img
+    max-width: 100%
+    margin-bottom: $scale2b
+
+  +at-breakpoint($break6)
+    padding-bottom: $scale2c
+    img
+      margin-bottom: $scale1
