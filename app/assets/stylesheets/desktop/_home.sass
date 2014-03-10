@@ -419,7 +419,6 @@
   -----------------------
 
 #testimonial
-  // +hidden
   &:before
     content: ""
     position: absolute
@@ -445,7 +444,7 @@
 
 .testimonial
   display: block
-  height: 150px
+  height: 225px
   +clearfix
   .profile
     +span-columns(1, 4)
@@ -459,6 +458,7 @@
     +image-portal("pics/4.jpg", 50px)
 
   +at-breakpoint($break6)
+    height: 260px
     .profile
       +span-columns(1, $break6)
     .pic1
@@ -471,6 +471,7 @@
       +image-portal("pics/4.jpg", 90px)
 
   +at-breakpoint($break9)
+    height: 210px
     .profile
       +span-columns(2, $break9)
       margin-left: $scale1
@@ -484,6 +485,7 @@
       +image-portal("pics/4.jpg", 120px)
 
   +at-breakpoint($break12)
+    height: 250px
     .profile
       +span-columns(2, $break12)
       +pre(1, $break12)
@@ -509,6 +511,12 @@
     +at-breakpoint($break12)
       +span-columns(8, $break12)
       margin-left: $scale-2
+
+  .quote_source
+    font-weight: bold
+    color: $font-orange
+    letter-spacing: $scale-9
+    text-transform: uppercase
 
 // JavaScript fallbacks
 

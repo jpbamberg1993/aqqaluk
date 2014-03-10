@@ -273,7 +273,6 @@
   -----------------------
 
 #testimonial
-  // +hidden
   &:before
     content: ""
     position: absolute
@@ -289,7 +288,7 @@
 
 .testimonial
   display: block
-  height: 150px
+  height: 225px
   +clearfix
   .profile
     +span-columns(1, 4)
@@ -303,6 +302,7 @@
     +image-portal("pics/4.jpg", 50px)
 
   +at-breakpoint($break6)
+    height: 260px
     .profile
       +span-columns(1, $break6)
     .pic1
@@ -319,6 +319,12 @@
 
     +at-breakpoint($break6)
       +span-columns(4, $break6)
+
+  .quote_source
+    font-weight: bold
+    color: $font-orange
+    letter-spacing: $scale-9
+    text-transform: uppercase
 
 // JavaScript fallbacks
 
