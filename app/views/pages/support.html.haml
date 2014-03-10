@@ -5,19 +5,24 @@
 %section.panel#support.hero
   .container
     %h1 Support Us
-%section.panel.hero_bottom
+%section.panel.hero_bottom.pos_btn
   .container
     %p Aqqaluk Trust is a non-profit organization that relies on public funds and private contributions to provide programs and scholarships for the benefit of the Iñupiat of the NANA region.
-    %a{:href => '#', :title => '', :class => 'donate ir'}
-      %span Donate Now!
+    %a{:href => '#', :title => '', :class => 'orange_btn'} Donate Now!
 
-%section.panel
+%section.panel#image_row
   .container
-    %p Our mission is the driving force of our organization and sole purpose. Supporting Aqqaluk Trust is sustaining the past, present, and future of our Iñupiaq people.
+    .image1
+    .image2
+    .image3
 
-%section.panel
+%section.panel#support_body
   .container
+    %blockquote The Aqqaluk Trust makes a big difference for young adults.
+    %p.quote_source Edward Morris
+    %p.callout Our mission is the driving force of our organization and sole purpose. Supporting Aqqaluk Trust is sustaining the past, present, and future of our Iñupiaq people.
     %p Your donation makes a significant difference in the impact of our programs.  Your contribution supports educational scholarships, Iñupiaq language revitalization efforts, and cultural sustainability of the northwest Arctic region.
+    %a{:href => '#', :title => 'Become a sponsor', :class => 'blue_btn'} Download Our Pledge Form
 
 %section.panel#sponsors
   .container
@@ -40,7 +45,7 @@
 
 %section.panel#thanks
   .container
-    %p
+    %p.p_shrink
       As of the 2013 school year, 340 scholarships were awarded to NANA Regional Shareholders, their dependents and descendants. The total dollar amount was about $874,000.  This funding would not be possible without the generosity of
       = succeed ',' do
         %a{:href => 'http://nana.com/regional', :title => ''}< NANA Regional Corporation

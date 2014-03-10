@@ -1,16 +1,85 @@
 #support
   background-color: $mustard
-  background-image: image-url("heroes/support-hero-450.jpg")
+  background-image: image-url("heroes/support-hero-200.jpg")
   background-position: center bottom
 
-.donate
-  display: block
-  width: 151px
-  height: 48px
-  margin: 0 auto
-  background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
-  &:hover
-    background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
+  +at-breakpoint($break6)
+    background-image: image-url("heroes/support-hero-250.jpg")
+
+.pos_btn
+  position: relative
+  a
+    position: absolute
+    bottom: -17px
+    width: 100px
+    margin-left: -50px
+    z-index: 1000
+
+#image_row
+  padding-bottom: 0
+  .image1, .image2, .image3
+    height: 93px
+  .image1
+    +span-columns(2, $break6)
+    background: image-url("pics/support/image-1-103.jpg") 50% 0 no-repeat
+  .image2
+    +span-columns(2, $break6)
+    background: image-url("pics/support/image-2-103.jpg") 50% 0 no-repeat
+  .image3
+    +span-columns(2 omega, $break6)
+    background: image-url("pics/support/image-3-103.jpg") 50% 0 no-repeat
+
+  +at-breakpoint($break6)
+    .image1, .image2, .image3
+      height: 141px
+    .image1
+      background: image-url("pics/support/image-1-157.jpg") left center no-repeat
+    .image2
+      background: image-url("pics/support/image-2-157.jpg") left center no-repeat
+    .image3
+      background: image-url("pics/support/image-3-157.jpg") left center no-repeat
+
+#support_body
+  text-align: center
+  blockquote
+    position: relative
+    line-height: 1.236
+    padding: 0 $scale4
+    font-family: $futura
+    font-size: $scale3
+    color: $cyan
+    &:before, &:after
+      content: ""
+      position: absolute
+      top: 0
+      width: 34px
+      height: 27px
+    &:before
+      left: 0
+      background: image-url("icons/quote-left.png") 0 0 no-repeat
+    &:after
+      right: 0
+      background: image-url("icons/quote-right.png") 0 0 no-repeat
+
+    +at-breakpoint($break6)
+      font-size: $scale4
+
+  .quote_source
+    padding-bottom: $scale1
+    font-family: $futura
+    font-size: $scale1
+    font-weight: bold
+    color: $font-orange
+    letter-spacing: $scale-9
+    text-align: center
+    text-transform: uppercase
+    border-bottom: 5px solid $cyan
+
+    +at-breakpoint($break6)
+      font-size: $scale2
+
+  .callout
+    margin-top: $scale1
 
 #sponsors
   +hidden
