@@ -633,22 +633,40 @@
 /* Culture
   -----------------------
 
-#culture
-  // +hidden
+.face
+  background: image-url("icons/face-30.png") 0 0 no-repeat
+  .callout
+    padding: 0 0 $scale-4 35px + 20px
+    border-top: none
+    border-bottom: 5px solid $cyan
 
-.culture
-  padding-top: 61px + 16px
-  padding-left: $scale-5
-  background: image-url("fixtures/inuuniatiqput-200.gif") 0 0 no-repeat
++at-breakpoint($break6)
+  .face
+    +span-columns(2, $break6)
+    background: image-url("icons/face-35.png") 0 0 no-repeat
+    .callout
+      padding: 69px + 20px 0 $scale-3
+  .culture
+    +span-columns(4 omega, $break6)
 
-  +at-breakpoint($break6)
-    padding-top: 71px + 16px
-    background: image-url("fixtures/way-of-life-450.gif") 0 0 no-repeat
++at-breakpoint($break9)
+  .face
+    +span-columns(3, $break9)
+    background: image-url("icons/face-55.png") 0 0 no-repeat
+    .box
+      padding-right: $scale1
+    .callout
+      padding: 111px + 30px 0 $scale-2
+  .culture
+    +span-columns(6 omega, $break9)
 
-  +at-breakpoint($break9)
-    padding-top: 111px + 32px
-    background: image-url("fixtures/way-of-life-700.gif") 0 0 no-repeat
-
-  +at-breakpoint($break12)
-    padding-top: 135px + 48px
-    background: image-url("fixtures/way-of-life.gif") 0 0 no-repeat
++at-breakpoint($break12)
+  .face
+    +span-columns(4, $break12)
+    background: image-url("icons/face.png") 0 0 no-repeat
+    .box
+      padding-right: $scale3
+    .callout
+      padding: 135px + 30px 0 $scale1
+  .culture
+    +span-columns(8 omega, $break12)

@@ -404,14 +404,18 @@
 /* Culture
   -----------------------
 
-#culture
-  // +hidden
+.face
+  background: image-url("icons/face-30.png") 0 0 no-repeat
+  .callout
+    padding: 0 0 $scale-4 35px + 20px
+    border-top: none
+    border-bottom: 5px solid $cyan
 
-.culture
-  padding-top: 61px + 16px
-  padding-left: $scale-5
-  background: image-url("fixtures/inuuniatiqput-200.gif") 0 0 no-repeat
-
-  +at-breakpoint($break6)
-    padding-top: 71px + 16px
-    background: image-url("fixtures/way-of-life-450.gif") 0 0 no-repeat
++at-breakpoint($break6)
+  .face
+    +span-columns(2, $break6)
+    background: image-url("icons/face-35.png") 0 0 no-repeat
+    .callout
+      padding: 69px + 20px 0 $scale-3
+  .culture
+    +span-columns(4 omega, $break6)
