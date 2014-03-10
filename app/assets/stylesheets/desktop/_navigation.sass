@@ -37,8 +37,6 @@ nav
   a:hover
     text-decoration: none
     background-color: $gray-1
-  .active a
-    background-color: $gray-1
 
   +at-breakpoint($break9)
     ul
@@ -62,6 +60,8 @@ nav
       +reveal-hidden-inline
     #language2
       +hidden
+    .active a
+      background-color: $gray-1
 
 .nav_menu
   .nav_primary
