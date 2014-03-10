@@ -1,0 +1,672 @@
+/* Hero
+  -----------------------
+
+#hero_v1
+  position: relative
+  width: 100%
+  height: 178px
+  overflow: hidden
+  background-color: $black
+
+  +at-breakpoint($break6)
+    height: 272px
+
+  +at-breakpoint($break9)
+    height: 412px
+
+  +at-breakpoint($break12)
+    height: 550px
+
+.slide_v1
+  position: relative
+  float: left
+  display: block
+  width: 319px
+  height: 178px
+  .slide-block
+    position: absolute
+    display: block
+    top: 0
+    width: 100%
+  h2
+    font-family: $eaglefeather
+  &:before
+    +panel-shadow(.15, $scale-5)
+
+  +at-breakpoint($break6)
+    width: 487px
+    height: 272px
+
+  +at-breakpoint($break9)
+    width: 738px
+    height: 412px
+
+  +at-breakpoint($break12)
+    width: 989px
+    height: 550px
+
+// JavaScript fallback
+
+.no-js .slide_v1
+  float: none
+  margin: 0 auto
+
+// home slide ----------------------------- //
+
+.home_v1
+  background: image-url("heroes/home-319.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break6)
+    background: image-url("heroes/home-487.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break9)
+    background: image-url("heroes/home-738.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break12)
+    background: image-url("heroes/home-989.jpg") 0 0 no-repeat
+
+  .slide-block
+    width: 250px
+    margin: 20px 0 0 40px
+    h2
+      line-height: 1
+      color: $font-white
+      font-size: $scale1
+    span
+      +single-text-shadow(0, 2px, 13px, false, #000)
+    .a, .b, .c, .d
+      font-size: $scale3
+    .a
+      color: $font-orange
+    .b
+      color: $font-yellow
+    .c
+      color: $font-purple
+    .d
+      color: $font-white-yellow
+
+    +at-breakpoint($break6)
+      width: 100%
+      margin: 25px 0 0 40px
+
+    +at-breakpoint($break9)
+      margin: 25px 0 0 50px
+      h2
+        font-size: $scale3
+
+    +at-breakpoint($break12)
+      margin: 50px 0 0 50px
+      h2
+        font-size: $scale4
+
+// camp slide ----------------------------- //
+
+.camp_v1
+  background: image-url("heroes/camp-319.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break6)
+    background: image-url("heroes/camp-487.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break9)
+    background: image-url("heroes/camp-738.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break12)
+    background: image-url("heroes/camp-989.jpg") 0 0 no-repeat
+
+  .slide-block
+    margin: 20px 0 0 40px
+    h2
+      line-height: .95
+      // color: $font-black
+      // +single-text-shadow(0, 5px, 8px, false, #fff)
+      color: $font-white
+      +single-text-shadow(0, 5px, 5px, false, $font-black)
+    span
+      display: block
+    .a, .c, .e
+      font-size: $scale1
+    .b, .d
+      font-size: $scale2
+      color: $font-light-blue
+    .e, a
+      display: inline-block
+    a
+      width: 24px
+      height: 24px
+      margin: 0 0 -5px 2px
+      background: image-url("icons/arw-but-738.png") 0 0 no-repeat
+
+    +at-breakpoint($break6)
+      margin: 25px 0 0 40px
+      .b, .d
+        font-size: $scale3
+
+    +at-breakpoint($break9)
+      margin: 30px 0 0 60px
+      a
+        width: 31px
+        height: 31px
+        margin: 0 0 -7px 3px
+        background: image-url("icons/arw-but-989.png") 0 0 no-repeat
+
+    +at-breakpoint($break12)
+      margin: 50px 0 0 50px
+
+// students slide ------------------------- //
+
+.students_v1
+  background: image-url("heroes/students-319-fade.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break6)
+    background: image-url("heroes/students-487-fade.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break9)
+    background: image-url("heroes/students-738-fade.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break12)
+    background: image-url("heroes/students-989-fade.jpg") 0 0 no-repeat
+
+  .slide-block
+    height: 178px
+    h2
+      line-height: 1
+      margin: 10px 0 $scale2 40px
+      font-size: $scale1
+      color: $font-blue
+      +single-text-shadow(0, 5px, 8px, false, $font-off-white)
+      span
+        font-size: $scale5
+        color: $font-navy-blue
+        +single-text-shadow(0, 5px, 8px, false, $font-off-white)
+      .mission
+        display: none
+    a
+      display: block
+      margin: 0 auto
+      width: 100px
+      height: 32px
+      margin-left: 33px
+      background: image-url("icons/apply-btn-487.png") 0 0 no-repeat
+    a:hover
+      background: image-url("icons/apply-btn-487-2.png") 0 0 no-repeat
+    ul
+      display: none
+
+    +at-breakpoint($break6)
+      height: 272px
+      h2
+        margin: 20px 0 $scale2c 40px
+        .mission
+          display: block
+          font-size: $scale1
+      a
+        margin-left: 40px
+      ul
+        position: absolute
+        display: block
+        bottom: 0
+        width: 100%
+        height: 72px
+        margin: 0 0 -4px 0
+      li
+        display: inline-block
+        line-height: 1.443
+        width: 33%
+        text-align: center
+        font-size: $scale1
+        color: $font-white
+        +single-text-shadow(0, 5px, 8px, false, #000)
+      li:nth-child(2)
+        width: 32%
+
+    +at-breakpoint($break9)
+      height: 412px
+      h2
+        margin: 30px 0 $scale2c 50px
+        font-size: $scale3
+      a
+        width: 151px
+        height: 48px
+        margin-left: 140px
+        background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
+      a:hover
+        background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
+      ul
+        height: 109px
+        margin: 0 0 -18px 0
+      li
+        font-size: $scale2
+
+    +at-breakpoint($break12)
+      height: 550px
+      h2
+        margin: 50px 0 $scale2c 50px
+        font-size: $scale4
+      a
+        width: 202px
+        height: 64px
+        margin-left: 200px
+        background: image-url("icons/apply-btn-989.png") 0 0 no-repeat
+      a:hover
+        background: image-url("icons/apply-btn-989-2.png") 0 0 no-repeat
+      ul
+        height: 146px
+      li
+        font-size: $scale3
+
+// language slide ------------------------- //
+
+.language_v1
+  background: image-url("heroes/language-319.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break6)
+    background: image-url("heroes/language-487.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break9)
+    background: image-url("heroes/language-738.jpg") 0 0 no-repeat
+
+  +at-breakpoint($break12)
+    background: image-url("heroes/language-989.jpg") 0 0 no-repeat
+
+  .slide-block
+    line-height: 1
+    margin: 20px 0 0 40px
+    h2
+      font-size: $scale2
+      color: $font-white
+      +single-text-shadow(0, 5px, 5px, false, $font-black)
+      span
+        display: block
+        font-size: $scale4
+    p
+      display: none
+
+    +at-breakpoint($break6)
+      margin: 20px 0 0 40px
+      h2
+        margin-bottom: $scale2
+        font-size: $scale1
+        span
+          font-size: $scale6
+      p
+        display: block
+        min-height: 87px
+        padding: 15px 0 0 90px
+        font-size: $scale1
+        color: $font-white
+        +single-text-shadow(0, 5px, 8px, false, #000)
+        background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
+        strong
+          color: $font-orange
+          +single-text-shadow(1px, 2px, 2px, false, #fff)
+
+    +at-breakpoint($break9)
+      margin: 30px 0 0 60px
+      h2
+        font-size: $scale4
+      p
+        font-size: $scale2b
+
+    +at-breakpoint($break12)
+      margin: 50px 0 0 50px
+
+// slide controls ------------------------- //
+
+.control_v1
+  position: absolute
+  display: block
+  top: 0
+  width: 50%
+  height: 178px
+
+  +at-breakpoint($break6)
+    height: 272px
+
+  +at-breakpoint($break9)
+    height: 412px
+
+  +at-breakpoint($break12)
+    height: 550px
+
+#prev_v1
+  left: -118px
+  background: image-url("icons/arrow-left-50.png") 100% 50% no-repeat
+
+  +at-breakpoint($break6)
+    left: -200px
+
+  +at-breakpoint($break9)
+    left: -320px
+
+  +at-breakpoint($break12)
+    left: -494px
+    background: rgba(41, 35, 35, 0.5) image-url("icons/arrow-left.png") 100% 50% no-repeat
+
+#next_v1
+  right: -118px
+  background: image-url("icons/arrow-right-50.png") 0 50% no-repeat
+
+  +at-breakpoint($break6)
+    right: -200px
+
+  +at-breakpoint($break9)
+    right: -320px
+
+  +at-breakpoint($break12)
+    right: -494px
+    background: rgba(41, 35, 35, 0.5) image-url("icons/arrow-right.png") 0 50% no-repeat
+
++at-breakpoint($break12)
+  #prev, #next
+    &:hover
+      background-color: rgba(41, 35, 35, 0.3)
+
+#pager_v1
+  position: absolute
+  display: block
+  bottom: 1px
+  right: 50%
+  margin-right: -150px
+  z-index: 1000
+  a
+    display: inline-block
+    width: 5px
+    height: 5px
+    margin: 0 5px 0 0
+    border: 2px solid #fff
+    border: 2px solid rgba(255, 255, 255, 0.5)
+    +border-radius(5px)
+  .selected
+    background-color: #fff
+    background-color: rgba(255, 255, 255, 0.5)
+  span
+    display: none
+
+  +at-breakpoint($break6)
+    bottom: 1px
+    right: 50%
+    margin-right: -240px
+    a
+      width: 7px
+      height: 7px
+      margin: 0 10px 0 0
+      +border-radius(7px)
+
+  +at-breakpoint($break9)
+    bottom: 5px
+    margin-right: -360px
+    a
+      width: 10px
+      height: 10px
+      margin: 0 5px 0 0
+      +border-radius(10px)
+
+  +at-breakpoint($break12)
+    bottom: 10px
+    margin-right: -475px
+
+// JavaScript fallback
+
+.no-js
+  #prev_v1,
+  #next_v1,
+  #pager_v1
+    +hidden
+
+
+/* Testimonials
+  -----------------------
+
+#testimonial_v1
+  &:before
+    content: ""
+    position: absolute
+    top: -17px
+    width: 100%
+    height: 67px
+    background: image-url("icons/circle-quote-70.png") 50% 0 no-repeat
+
+    +at-breakpoint($break6)
+      top: -24px
+      height: 96px
+      background: image-url("icons/circle-quote-100.png") 50% 0 no-repeat
+
+    +at-breakpoint($break9)
+      top: -30px
+      height: 125px
+      background: image-url("icons/circle-quote-130.png") 50% 0 no-repeat
+
+    +at-breakpoint($break12)
+      top: -41px
+      height: 164px
+      background: image-url("icons/circle-quote.png") 50% 0 no-repeat
+
+.testimonial_v1
+  display: block
+  height: 225px
+  +clearfix
+  .profile
+    +span-columns(1, 4)
+  .pic1
+    +image-portal("pics/1.jpg", 50px)
+  .pic2
+    +image-portal("pics/2.jpg", 50px)
+  .pic3
+    +image-portal("pics/3.jpg", 50px)
+  .pic4
+    +image-portal("pics/4.jpg", 50px)
+
+  +at-breakpoint($break6)
+    height: 260px
+    .profile
+      +span-columns(1, $break6)
+    .pic1
+      +image-portal("pics/1.jpg", 90px)
+    .pic2
+      +image-portal("pics/2.jpg", 90px)
+    .pic3
+      +image-portal("pics/3.jpg", 90px)
+    .pic4
+      +image-portal("pics/4.jpg", 90px)
+
+  +at-breakpoint($break9)
+    height: 210px
+    .profile
+      +span-columns(2, $break9)
+      margin-left: $scale1
+    .pic1
+      +image-portal("pics/1.jpg", 120px)
+    .pic2
+      +image-portal("pics/2.jpg", 120px)
+    .pic3
+      +image-portal("pics/3.jpg", 120px)
+    .pic4
+      +image-portal("pics/4.jpg", 120px)
+
+  +at-breakpoint($break12)
+    height: 250px
+    .profile
+      +span-columns(2, $break12)
+      +pre(1, $break12)
+      margin-left: $column-width/2
+    .pic1
+      +image-portal("pics/1.jpg", 150px)
+    .pic2
+      +image-portal("pics/2.jpg", 150px)
+    .pic3
+      +image-portal("pics/3.jpg", 150px)
+    .pic4
+      +image-portal("pics/4.jpg", 150px)
+
+  .profile-block
+    +span-columns(3 omega, 4)
+
+    +at-breakpoint($break6)
+      +span-columns(4, $break6)
+
+    +at-breakpoint($break9)
+      +span-columns(7 omega, $break9)
+
+    +at-breakpoint($break12)
+      +span-columns(8, $break12)
+      margin-left: $scale-2
+
+  .quote_source
+    font-weight: bold
+    color: $font-orange
+    letter-spacing: $scale-9
+    text-transform: uppercase
+
+// JavaScript fallbacks
+
+.no-js
+  .testimonial_v1
+    +hidden
+  .testimonial_v1:first-child
+    +reveal-hidden
+  #carousel2_v1
+    position: relative
+    z-index: auto
+
+
+/* Founder
+  -----------------------
+
+#founder_v1
+  position: relative
+  padding: 0
+  color: $font-white
+  background-color: $black
+  +panel-trim
+  // +hidden
+
+.wood1_v1
+  height: $scale3
+  background: image-url("fixtures/wood-panel.png") 15% 35% no-repeat
+  // @extend .hide-eq-4
+
+  +at-breakpoint($break6)
+    height: $scale4
+
+  +at-breakpoint($break9)
+    height: $scale5
+
+  +at-breakpoint($break12)
+    height: $scale6
+
+.founder_v1
+  background-color: $gray-4
+  h2
+    margin-bottom: 0
+    font-family: $sanvito
+
+.wood2_v1
+  position: relative
+  background: image-url("fixtures/wood-panel.png") 100% 0 no-repeat
+
+  +at-breakpoint($break6)
+    +clearfix
+
+  .quote
+    position: relative
+    padding: $scale1 0 $scale5
+    z-index: 5613201117
+    p
+      font-size: $scale1
+    .last
+      margin-top: $scale3
+      margin-bottom: -$scale1
+
+    +at-breakpoint($break6)
+      +span-columns(4)
+      padding: $scale2 0 $scale6 75px
+      background: image-url("icons/quotes-50.png") 4px 20px no-repeat
+      p
+        font-size: $scale1
+      .last
+        margin-top: $scale3
+        margin-bottom: -$scale1
+
+    +at-breakpoint($break9)
+      +span-columns(6)
+      padding: $scale3 0 $scale7 105px
+      background: image-url("icons/quotes-75.png") 4px 20px no-repeat
+      p
+        font-size: $scale2
+      .last
+        margin-top: $scale4
+        margin-bottom: -$scale2
+
+    +at-breakpoint($break12)
+      +span-columns(8)
+      padding: $scale4 0 $scale8 135px
+      background: image-url("icons/quotes.png") 4px 16px no-repeat
+      p
+        font-size: $scale2c
+      .last
+        margin-top: $scale5
+        margin-bottom: -$scale3
+
+  &:after
+    content: ""
+    position: absolute
+    right: 0
+    bottom: 0
+
+    +at-breakpoint($break6)
+      width: 150px
+      height: 161px
+      background: image-url("pics/robert-150.png") no-repeat
+
+    +at-breakpoint($break9)
+      width: 250px
+      height: 269px
+      background: image-url("pics/robert-250.png") no-repeat
+
+    +at-breakpoint($break12)
+      width: 391px
+      height: 420px
+      background: image-url("pics/robert.png") no-repeat
+
+
+/* Culture
+  -----------------------
+
+#culture_v1
+  .face
+    background: image-url("icons/face-30.png") 0 0 no-repeat
+    .callout
+      padding: 0 0 $scale4 35px + 10px
+      border-top: none
+      border-bottom: 5px solid $cyan
+
+  +at-breakpoint($break6)
+    .face
+      +span-columns(2, $break6)
+      background: image-url("icons/face-35.png") 0 0 no-repeat
+      .callout
+        padding: 69px + 20px 0 $scale-3
+    .culture
+      +span-columns(4 omega, $break6)
+
+  +at-breakpoint($break9)
+    .face
+      +span-columns(3, $break9)
+      background: image-url("icons/face-55.png") 0 0 no-repeat
+      .box
+        padding-right: $scale1
+      .callout
+        padding: 111px + 30px 0 $scale-2
+    .culture
+      +span-columns(6 omega, $break9)
+
+  +at-breakpoint($break12)
+    .face
+      +span-columns(4, $break12)
+      background: image-url("icons/face.png") 0 0 no-repeat
+      .box
+        padding-right: $scale3
+      .callout
+        padding: 135px + 30px 0 $scale1
+    .culture
+      +span-columns(8 omega, $break12)

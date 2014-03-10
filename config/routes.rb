@@ -2,6 +2,7 @@ Aqqaluk::Application.routes.draw do
   root :to => 'pages#home'
 
   get "pages/home"
+  get "pages/home_v1"
   get "pages/students"
   get "pages/students_v1"
   get "pages/language"

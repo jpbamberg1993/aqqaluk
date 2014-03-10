@@ -1,0 +1,126 @@
+- content_for :title do
+  Home
+= currently_at 'Home'
+
+%section#hero_v1
+  #carousel
+    .slide_v1.home_v1.active
+      .slide-block
+        %h2
+          %span.a Empowering
+          %br
+          the Iñupiat through
+          %span.b language,
+          %span.c culture
+          %br
+          and
+          %span.d education.
+    .slide.camp_v1
+      .slide-block
+        %h2
+          %span.a At Camp Sivunniigvik
+          %span.b education
+          %span.c is
+          %span.d fun
+          %span.e for kids!
+          %a{:href => pages_language_path, :title => 'Camp Sivu'}
+    .slide.students_v1
+      .slide-block
+        %h2
+          %span Scholarships
+          %span.mission
+            Aqqualuk Trusts greatest mission
+            %br
+            is to assist in the education of
+            %br
+            Iñupiat people.
+        %a{:href => '#', :title => '', :class => 'ir'}
+          %span Apply Today!
+        %ul
+          %li
+            340
+            %br
+            Students Helped in 2013
+          %li
+            $874,000
+            %br
+            2013 Total Expenditure
+          %li
+            492
+            %br
+            Active Sponsors
+    .slide.language_v1
+      .slide-block
+        %h2
+          %span Enrich
+          your culture by learning the
+          %br
+          Iñupiat language!
+        %p
+          %a{:href => pages_language_path, :title => ''} Click here
+          for your
+          %strong FREE
+          %br
+          copy of Rosetta Stone
+
+  = link_to '', '#', :title => 'Previous', :id => 'prev_v1', :class => 'control_v1'
+  = link_to '', '#', :title => 'Next', :id => 'next_v1', :class => 'control_v1'
+  #pager_v1
+    %a.selected{href: "#"}
+      %span 1
+    %a{href: "#"}
+      %span 2
+    %a{href: "#"}
+      %span 3
+    %a{href: "#"}
+      %span 4
+    %a{href: "#"}
+      %span 5
+
+%section.panel#testimonial_v1
+  .container
+    #carousel2_v1
+      .testimonial_v1
+        .profile.pic1
+        .profile-block
+          %p "I am a scholarship recipient and can honestly say I would not be in school without the Trusts help! Thank you for supporting my dreams."
+          %p.p_shrink.quote_source Stefanie Armstrong
+      .testimonial_v1
+        .profile.pic2
+        .profile-block
+          %p "Thank you Aqqaluk Trust!!!!! Thanks for chipping in on my training twice!!!!! Building Maintenance and Millwright Maintenance. Now watch."
+          %p.p_shrink.quote_source Thomas Nay
+      .testimonial_v1
+        .profile.pic3
+        .profile-block
+          %p "Aqqaluk Trust-imi iluqaan quyanaaġikpisi! I am grateful to everyone at A.T.! Taikuu for the work you do."
+          %p.p_shrink.quote_source Naaqtuuq Dommek
+      .testimonial_v1
+        .profile.pic4
+        .profile-block
+          %p "Thank you Aqqaluk Trust! NANA, Dr. Lathrop, and all others who have supported my ventures in becoming a dentist. 3.5 more years till I'm back home!!"
+          %p.p_shrink.quote_source Zazell Staheli
+
+%section.panel#founder_v1
+  .container.wood1_v1
+  .founder_v1
+    .container
+      %h2
+        %span.hide-eq-4 Who is
+        Robert Aqqaluk
+        %span.hide-eq-4 Newlin Sr.?
+  .container.wood2_v1
+    .quote
+      %blockquote Hard work has changed somewhat. When I was growing up we had no stove oil, we had no electricity, we had no good homes ...but we had to work in order to be alive. Things change, but there’s still a lot of things that a fellow can do.”
+      %p -- Robert Aqqaluk Newlin, Sr.
+      %p.last
+        %a{:href => pages_support_path, :title => 'Become a sponsor', :class => 'orange_btn'} Donate Now!
+
+%section.panel#culture_v1
+  .container
+    .face
+      .box
+        %h2.callout Our way of life.
+    .culture
+      %p.p_shrink Aqqaluk Trust is a 501 (c)3 non-profit private foundation. The Aqqaluk Trust was founded in 1989 in honor of Robert Aqqaluk Newlin, Sr., one of the great Iñupiat leaders. The foundation first provided scholarship funding for eligible applicants seeking training or pursuing one’s secondary education.
+      %p.hide-lt-9.p_shrink Since its inception, Aqqaluk Trust has grown and now provides more Iñupiaq language and cultural resources. Aqqaluk Trust currently focuses on three major areas related to the language, culture, and education of the Iñupiat people of northwest Alaska.
