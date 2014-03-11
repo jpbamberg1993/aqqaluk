@@ -1,7 +1,7 @@
 /* Hero
   -----------------------
 
-#hero_v1
+#hero_v2
   position: relative
   width: 100%
   height: 178px
@@ -17,7 +17,7 @@
   +at-breakpoint($break12)
     height: 550px
 
-.slide_v1
+.slide_v2
   position: relative
   float: left
   display: block
@@ -47,13 +47,13 @@
 
 // JavaScript fallback
 
-.no-js .slide_v1
+.no-js .slide_v2
   float: none
   margin: 0 auto
 
 // home slide ----------------------------- //
 
-.home_v1
+.home_v2
   background: image-url("heroes/home-319.jpg") 0 0 no-repeat
 
   +at-breakpoint($break6)
@@ -101,7 +101,7 @@
 
 // camp slide ----------------------------- //
 
-.camp_v1
+.camp_v2
   background: image-url("heroes/camp-319.jpg") 0 0 no-repeat
 
   +at-breakpoint($break6)
@@ -154,7 +154,7 @@
 
 // students slide ------------------------- //
 
-.students_v1
+.students_v2
   background: image-url("heroes/students-319-fade.jpg") 0 0 no-repeat
 
   +at-breakpoint($break6)
@@ -256,7 +256,7 @@
 
 // language slide ------------------------- //
 
-.language_v1
+.language_v2
   background: image-url("heroes/language-319.jpg") 0 0 no-repeat
 
   +at-breakpoint($break6)
@@ -312,7 +312,7 @@
 
 // slide controls ------------------------- //
 
-.control_v1
+.control_v2
   position: absolute
   display: block
   top: 0
@@ -328,7 +328,7 @@
   +at-breakpoint($break12)
     height: 550px
 
-#prev_v1
+#prev_v2
   left: -118px
   background: image-url("icons/arrow-left-50.png") 100% 50% no-repeat
 
@@ -342,7 +342,7 @@
     left: -494px
     background: rgba(41, 35, 35, 0.5) image-url("icons/arrow-left.png") 100% 50% no-repeat
 
-#next_v1
+#next_v2
   right: -118px
   background: image-url("icons/arrow-right-50.png") 0 50% no-repeat
 
@@ -361,7 +361,7 @@
     &:hover
       background-color: rgba(41, 35, 35, 0.3)
 
-#pager_v1
+#pager_v2
   position: absolute
   display: block
   bottom: 1px
@@ -408,16 +408,16 @@
 // JavaScript fallback
 
 .no-js
-  #prev_v1,
-  #next_v1,
-  #pager_v1
+  #prev_v2,
+  #next_v2,
+  #pager_v2
     +hidden
 
 
 /* Testimonials
   -----------------------
 
-#testimonial_v1
+#testimonial_v2
   &:before
     content: ""
     position: absolute
@@ -441,7 +441,7 @@
       height: 164px
       background: image-url("icons/circle-quote.png") 50% 0 no-repeat
 
-.testimonial_v1
+.testimonial_v2
   display: block
   height: 225px
   +clearfix
@@ -520,11 +520,11 @@
 // JavaScript fallbacks
 
 .no-js
-  .testimonial_v1
+  .testimonial_v2
     +hidden
-  .testimonial_v1:first-child
+  .testimonial_v2:first-child
     +reveal-hidden
-  #carousel2_v1
+  #carousel2_v2
     position: relative
     z-index: auto
 
@@ -532,80 +532,57 @@
 /* Founder
   -----------------------
 
-#founder_v1
+#founder_v2
   position: relative
   padding: 0
   color: $font-white
-  background-color: $black
+  background: $black image-url("fixtures/wood-panel-fade.png") 50% 50% no-repeat
   +panel-trim
-  // +hidden
+  &:before, &:after
+    height: 5px
+  &:before
+    top: -5px
+    background: image-url("fixtures/trim-top-black.png") 0 0 repeat-x
+  &:after
+    bottom: -5px
+    background: image-url("fixtures/trim-bottom-black.png") 0 0 repeat-x
 
-.wood1_v1
-  height: $scale3
-  background: image-url("fixtures/wood-panel.png") 15% 35% no-repeat
-  // @extend .hide-eq-4
-
-  +at-breakpoint($break6)
-    height: $scale4
-
-  +at-breakpoint($break9)
-    height: $scale5
-
-  +at-breakpoint($break12)
-    height: $scale6
-
-.founder_v1
-  background-color: $gray-4
-  h2
-    margin-bottom: 0
-    font-family: $sanvito
-
-.wood2_v1
+.founder_v2
   position: relative
-  background: image-url("fixtures/wood-panel.png") 100% 0 no-repeat
-
-  +at-breakpoint($break6)
-    +clearfix
-
+  padding: $scale5 0
+  h2
+    color: $cyan
   .quote
     position: relative
-    padding: $scale1 0 $scale5
-    z-index: 5613201117
-    p
-      font-size: $scale1
-    .last
+    z-index: 1000
+  .orange_btn
+    margin-top: $scale3
+    margin-bottom: -$scale1
+  +clearfix
+
+  +at-breakpoint($break6)
+    padding: $scale6 0
+    .quote
+      +span-columns(4)
+    .orange_btn
       margin-top: $scale3
       margin-bottom: -$scale1
 
-    +at-breakpoint($break6)
-      +span-columns(4)
-      padding: $scale2 0 $scale6 75px
-      background: image-url("icons/quotes-50.png") 4px 20px no-repeat
-      p
-        font-size: $scale1
-      .last
-        margin-top: $scale3
-        margin-bottom: -$scale1
-
-    +at-breakpoint($break9)
+  +at-breakpoint($break9)
+    padding: $scale7 0
+    .quote
       +span-columns(6)
-      padding: $scale3 0 $scale7 105px
-      background: image-url("icons/quotes-75.png") 4px 20px no-repeat
-      p
-        font-size: $scale2
-      .last
-        margin-top: $scale4
-        margin-bottom: -$scale2
+    .orange_btn
+      margin-top: $scale4
+      margin-bottom: -$scale2
 
-    +at-breakpoint($break12)
+  +at-breakpoint($break12)
+    padding: $scale8 0
+    .quote
       +span-columns(8)
-      padding: $scale4 0 $scale8 135px
-      background: image-url("icons/quotes.png") 4px 16px no-repeat
-      p
-        font-size: $scale2c
-      .last
-        margin-top: $scale5
-        margin-bottom: -$scale3
+    .orange_btn
+      margin-top: $scale5
+      margin-bottom: -$scale3
 
   &:after
     content: ""
@@ -624,15 +601,17 @@
       background: image-url("pics/robert-250.png") no-repeat
 
     +at-breakpoint($break12)
-      width: 391px
-      height: 420px
-      background: image-url("pics/robert.png") no-repeat
+      width: 500px
+      height: 415px
+      background: image-url("pics/robert-brushed.png") no-repeat
+
+
 
 
 /* Culture
   -----------------------
 
-#culture_v1
+#culture_v2
   .face
     background: image-url("icons/face-30.png") 0 0 no-repeat
     .callout

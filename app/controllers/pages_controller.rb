@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def home_v1
+  def home_v2
   end
 
   def students

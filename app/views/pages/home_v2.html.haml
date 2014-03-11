@@ -2,9 +2,9 @@
   Home
 = currently_at 'Home'
 
-%section#hero_v1
+%section#hero
   #carousel
-    .slide_v1.home_v1.active
+    .slide.home.active
       .slide-block
         %h2
           %span.a Empowering
@@ -15,7 +15,7 @@
           %br
           and
           %span.d education.
-    .slide.camp_v1
+    .slide.camp
       .slide-block
         %h2
           %span.a At Camp Sivunniigvik
@@ -24,7 +24,7 @@
           %span.d fun
           %span.e for kids!
           %a{:href => pages_language_path, :title => 'Camp Sivu'}
-    .slide.students_v1
+    .slide.students
       .slide-block
         %h2
           %span Scholarships
@@ -49,7 +49,7 @@
             492
             %br
             Active Sponsors
-    .slide.language_v1
+    .slide.language
       .slide-block
         %h2
           %span Enrich
@@ -63,9 +63,9 @@
           %br
           copy of Rosetta Stone
 
-  = link_to '', '#', :title => 'Previous', :id => 'prev_v1', :class => 'control_v1'
-  = link_to '', '#', :title => 'Next', :id => 'next_v1', :class => 'control_v1'
-  #pager_v1
+  = link_to '', '#', :title => 'Previous', :id => 'prev', :class => 'control'
+  = link_to '', '#', :title => 'Next', :id => 'next', :class => 'control'
+  #pager
     %a.selected{href: "#"}
       %span 1
     %a{href: "#"}
@@ -77,46 +77,43 @@
     %a{href: "#"}
       %span 5
 
-%section.panel#testimonial_v1
+%section.panel#testimonial
   .container
-    #carousel2_v1
-      .testimonial_v1
+    #carousel2
+      .testimonial
         .profile.pic1
         .profile-block
           %p "I am a scholarship recipient and can honestly say I would not be in school without the Trusts help! Thank you for supporting my dreams."
           %p.p_shrink.quote_source Stefanie Armstrong
-      .testimonial_v1
+      .testimonial
         .profile.pic2
         .profile-block
           %p "Thank you Aqqaluk Trust!!!!! Thanks for chipping in on my training twice!!!!! Building Maintenance and Millwright Maintenance. Now watch."
           %p.p_shrink.quote_source Thomas Nay
-      .testimonial_v1
+      .testimonial
         .profile.pic3
         .profile-block
           %p "Aqqaluk Trust-imi iluqaan quyanaaġikpisi! I am grateful to everyone at A.T.! Taikuu for the work you do."
           %p.p_shrink.quote_source Naaqtuuq Dommek
-      .testimonial_v1
+      .testimonial
         .profile.pic4
         .profile-block
           %p "Thank you Aqqaluk Trust! NANA, Dr. Lathrop, and all others who have supported my ventures in becoming a dentist. 3.5 more years till I'm back home!!"
           %p.p_shrink.quote_source Zazell Staheli
 
-%section.panel#founder_v1
-  .container.wood1_v1
-  .founder_v1
-    .container
+%section.panel#founder_v2
+  .container
+    .founder_v2
       %h2
-        %span.hide-eq-4 Who is
-        Robert Aqqaluk
-        %span.hide-eq-4 Newlin Sr.?
-  .container.wood2_v1
-    .quote
-      %blockquote Hard work has changed somewhat. When I was growing up we had no stove oil, we had no electricity, we had no good homes ...but we had to work in order to be alive. Things change, but there’s still a lot of things that a fellow can do.”
-      %p -- Robert Aqqaluk Newlin, Sr.
-      %p.last
+        %span.hide-eq-4 A little about our founder,
+        %span Robert Aqqaluk
+        %span.hide-eq-4 Newlin Sr.
+      .quote
+        %blockquote.p_shrink "Hard work has changed somewhat. When I was growing up we had no stove oil, we had no electricity, we had no good homes ...but we had to work in order to be alive. Things change, but there’s still a lot of things that a fellow can do."
+        %p.p_shrink Robert Aqqaluk Newlin, Sr. is the key figure behind the Aqqaluk Trust and his vision is what allows us to help you learn more about the language and culture of the Iñupiaq People.
         %a{:href => pages_support_path, :title => 'Become a sponsor', :class => 'orange_btn'} Donate Now!
 
-%section.panel#culture_v1
+%section.panel#culture
   .container
     .face
       .box
