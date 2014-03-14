@@ -23,6 +23,8 @@
   display: block
   width: 319px
   height: 178px
+  background-image: image-url("mobile-hero-sprite.jpg")
+  background-repeat: no-repeat
   .slide-block
     position: absolute
     display: block
@@ -36,14 +38,20 @@
   +at-breakpoint($break6)
     width: 487px
     height: 272px
+    background-image: image-url("mini-hero-sprite.jpg")
+    background-repeat: no-repeat
 
   +at-breakpoint($break9)
     width: 738px
     height: 412px
+    background-image: image-url("tablet-hero-sprite.jpg")
+    background-repeat: no-repeat
 
   +at-breakpoint($break12)
     width: 989px
     height: 550px
+    background-image: image-url("desktop-hero-sprite.jpg")
+    background-repeat: no-repeat
 
 // JavaScript fallback
 
@@ -54,16 +62,16 @@
 // home slide ----------------------------- //
 
 .home
-  background: image-url("heroes/home-319.jpg") 0 0 no-repeat
+  background-position: 0 0
 
   +at-breakpoint($break6)
-    background: image-url("heroes/home-487.jpg") 0 0 no-repeat
+    background-position: 0 0
 
   +at-breakpoint($break9)
-    background: image-url("heroes/home-738.jpg") 0 0 no-repeat
+    background-position: 0 0
 
   +at-breakpoint($break12)
-    background: image-url("heroes/home-989.jpg") 0 0 no-repeat
+    background-position: 0 0
 
   .slide-block
     width: 250px
@@ -102,16 +110,16 @@
 // camp slide ----------------------------- //
 
 .camp
-  background: image-url("heroes/camp-319.jpg") 0 0 no-repeat
+  background-position: 0 -1120px
 
   +at-breakpoint($break6)
-    background: image-url("heroes/camp-487.jpg") 0 0 no-repeat
+    background-position: 0 -1120px
 
   +at-breakpoint($break9)
-    background: image-url("heroes/camp-738.jpg") 0 0 no-repeat
+    background-position: 0 -860px
 
   +at-breakpoint($break12)
-    background: image-url("heroes/camp-989.jpg") 0 0 no-repeat
+    background-position: 0 -1120px
 
   .slide-block
     margin: 20px 0 0 40px
@@ -155,16 +163,16 @@
 // students slide ------------------------- //
 
 .students
-  background: image-url("heroes/students-319.jpg") 0 0 no-repeat
+  background-position: 0 -1680px
 
   +at-breakpoint($break6)
-    background: image-url("heroes/students-487-fade.jpg") 0 0 no-repeat
+    background-position: 0 -1680px
 
   +at-breakpoint($break9)
-    background: image-url("heroes/students-738-fade.jpg") 0 0 no-repeat
+    background-position: 0 -1290px
 
   +at-breakpoint($break12)
-    background: image-url("heroes/students-989-fade.jpg") 0 0 no-repeat
+    background-position: 0 -1680px
 
   .slide-block
     height: 178px
@@ -258,16 +266,16 @@
 // language slide ------------------------- //
 
 .language
-  background: image-url("heroes/language-319.jpg") 0 0 no-repeat
+  background-position: 0 -560px
 
   +at-breakpoint($break6)
-    background: image-url("heroes/language-487.jpg") 0 0 no-repeat
+    background-position: 0 -560px
 
   +at-breakpoint($break9)
-    background: image-url("heroes/language-738.jpg") 0 0 no-repeat
+    background-position: 0 -430px
 
   +at-breakpoint($break12)
-    background: image-url("heroes/language-989.jpg") 0 0 no-repeat
+    background-position: 0 -560px
 
   .slide-block
     line-height: 1
