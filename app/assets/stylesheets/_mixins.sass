@@ -14,18 +14,6 @@
   visibility: visible
 
 
-/* Icon Fonts
-  -----------------------
-
-@mixin data-icon
-  font-family: 'icon-fonts'
-  content: attr(data-icon)
-  speak: none
-  font-weight: normal
-  line-height: 1
-  -webkit-font-smoothing: antialiased
-
-
 /* Panel Decorations
   -----------------------
 
@@ -77,33 +65,13 @@
   +border-radius(5px)
   +opacity(.50)
 
-  // +at-breakpoint($break5)
-  //   background-color: purple
-  //   content: "5"
-
   +at-breakpoint($break6)
     background-color: blue
     content: "6"
 
-  // +at-breakpoint($break7)
-  //   background-color: green
-  //   content: "7"
-
-  // +at-breakpoint($break8)
-  //   background-color: yellow
-  //   content: "8"
-
   +at-breakpoint($break9)
     background-color: aqua
     content: "9"
-
-  // +at-breakpoint($break10)
-  //   background-color: brown
-  //   content: "10"
-
-  // +at-breakpoint($break11)
-  //   background-color: violet
-  //   content: "11"
 
   +at-breakpoint($break12)
     background-color: orange
@@ -120,6 +88,3 @@
   height: $size
   +border-radius($size/2)
   +box-shadow(0 -5px 5px 0 rgba(0, 0, 0, 0.15) inset, 0 0 1px rgba(0, 0, 0, 0.25) inset)
-
-// .test
-//   +image-portal("<path_to_test_image>.jpg", 150px)
