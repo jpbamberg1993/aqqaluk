@@ -8,11 +8,11 @@ nav
     +span-columns(6 omega, $break6)
 
   +at-breakpoint($break9)
-    +span-columns(8 omega, $break9)
+    +span-columns(7 omega, $break9)
     margin-top: 71px
 
   +at-breakpoint($break12)
-    +span-columns(10 omega, $break12)
+    +span-columns(9 omega, $break12)
     margin-top: 93px
 
 .nav_primary
@@ -27,7 +27,7 @@ nav
     +link-colors($color-nav, $color-nav, $color-nav, $color-nav, $color-nav)
   li:last-child
     border-bottom: 0
-  #language2
+  #language2, #news2
     +hidden
   a
     display: block
@@ -46,9 +46,9 @@ nav
       border: 0
     li:first-child
       display: none
-    #language1
+    #language1, #news1
       +hidden
-    #language2
+    #language2, #news2
       +reveal-hidden-inline
     a
       padding: 0 $scale-2
@@ -56,9 +56,9 @@ nav
   +at-breakpoint($break12)
     li:first-child
       display: inline-block
-    #language1
+    #language1, #news1
       +reveal-hidden-inline
-    #language2
+    #language2, #news2
       +hidden
     .active a
       background-color: $gray-1

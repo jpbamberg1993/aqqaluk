@@ -110,10 +110,10 @@
 // camp slide ----------------------------- //
 
 .camp
-  background-position: 0 -1120px
+  background-position: 0 -380px
 
   +at-breakpoint($break6)
-    background-position: 0 -1120px
+    background-position: 0 -580px
 
   +at-breakpoint($break9)
     background-position: 0 -860px
@@ -125,8 +125,6 @@
     margin: 20px 0 0 40px
     h2
       line-height: .95
-      // color: $font-black
-      // +single-text-shadow(0, 5px, 8px, false, #fff)
       color: $font-white
       +single-text-shadow(0, 5px, 5px, false, $font-black)
     span
@@ -142,7 +140,7 @@
       width: 24px
       height: 24px
       margin: 0 0 -5px 2px
-      background: image-url("icons/arw-but-738.png") 0 0 no-repeat
+      background: image-url("mobile-sprite.png") -100px 0 no-repeat
 
     +at-breakpoint($break6)
       margin: 25px 0 0 40px
@@ -155,18 +153,20 @@
         width: 31px
         height: 31px
         margin: 0 0 -7px 3px
-        background: image-url("icons/arw-but-989.png") 0 0 no-repeat
+        background: image-url("tablet-sprite.png") -160px 0 no-repeat
 
     +at-breakpoint($break12)
       margin: 50px 0 0 50px
+      a
+        background: image-url("desktop-sprite.png") 0 0 no-repeat
 
 // students slide ------------------------- //
 
 .students
-  background-position: 0 -1680px
+  background-position: 0 -570px
 
   +at-breakpoint($break6)
-    background-position: 0 -1680px
+    background-position: 0 -870px
 
   +at-breakpoint($break9)
     background-position: 0 -1290px
@@ -178,7 +178,7 @@
     height: 178px
     h2
       line-height: 1
-      margin: 10px 0 $scale2 40px
+      margin: 10px 0 $scale2 60px
       font-size: $scale1
       color: $font-blue
       +single-text-shadow(0, 5px, 8px, false, $font-off-white)
@@ -189,14 +189,7 @@
       .mission
         display: none
     a
-      display: block
-      margin: 0 auto
-      width: 100px
-      height: 32px
-      margin-left: 33px
-      background: image-url("icons/apply-btn-487.png") 0 0 no-repeat
-    a:hover
-      background: image-url("icons/apply-btn-487-2.png") 0 0 no-repeat
+      margin: 20px 0 0 102px
     ul
       display: none
 
@@ -208,7 +201,7 @@
           display: block
           font-size: $scale1
       a
-        margin-left: 40px
+        margin: 0 0 0 40px
       ul
         position: absolute
         display: block
@@ -234,12 +227,7 @@
         margin: 30px 0 $scale2c 50px
         font-size: $scale3
       a
-        width: 151px
-        height: 48px
-        margin-left: 140px
-        background: image-url("icons/apply-btn-738.png") 0 0 no-repeat
-      a:hover
-        background: image-url("icons/apply-btn-738-2.png") 0 0 no-repeat
+        margin-left: 160px
       ul
         height: 109px
         margin: 0 0 -18px 0
@@ -252,12 +240,7 @@
         margin: 50px 0 $scale2c 50px
         font-size: $scale4
       a
-        width: 202px
-        height: 64px
-        margin-left: 200px
-        background: image-url("icons/apply-btn-989.png") 0 0 no-repeat
-      a:hover
-        background: image-url("icons/apply-btn-989-2.png") 0 0 no-repeat
+        margin-left: 180px
       ul
         height: 146px
       li
@@ -266,10 +249,10 @@
 // language slide ------------------------- //
 
 .language
-  background-position: 0 -560px
+  background-position: 0 -190px
 
   +at-breakpoint($break6)
-    background-position: 0 -560px
+    background-position: 0 -290px
 
   +at-breakpoint($break9)
     background-position: 0 -430px
@@ -287,7 +270,7 @@
       span
         display: block
         font-size: $scale4
-    p
+    .rosetta, p
       display: none
 
     +at-breakpoint($break6)
@@ -297,27 +280,32 @@
         font-size: $scale1
         span
           font-size: $scale6
+      .rosetta
+        display: block
+        float: left
+        width: 68px
+        height: 87px
+        background: image-url("mobile-sprite.png") -140px 0 no-repeat
       p
         display: block
-        min-height: 87px
-        padding: 15px 0 0 90px
+        margin: 50px 0 0 80px
         font-size: $scale1
         color: $font-white
         +single-text-shadow(0, 5px, 8px, false, #000)
-        background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
-        // strong
-        //   color: $font-orange
-        //   +single-text-shadow(1px, 2px, 2px, false, #fff)
 
     +at-breakpoint($break9)
       margin: 30px 0 0 60px
       h2
         font-size: $scale4
+      .rosetta
+        background: image-url("tablet-sprite.png") -200px 0 no-repeat
       p
         font-size: $scale2b
 
     +at-breakpoint($break12)
       margin: 50px 0 0 50px
+      .rosetta
+        background: image-url("desktop-sprite.png") -40px 0 no-repeat
 
 // slide controls ------------------------- //
 
@@ -432,23 +420,23 @@
     position: absolute
     top: -17px
     width: 100%
-    height: 67px
-    background: image-url("icons/circle-quote-70.png") 50% 0 no-repeat
+    height: 44px
+    background: image-url("mobile-sprite.png") 50% -350px no-repeat
 
     +at-breakpoint($break6)
       top: -24px
-      height: 96px
-      background: image-url("icons/circle-quote-100.png") 50% 0 no-repeat
+      height: 63px
+      background: image-url("mobile-sprite.png") 50% -275px no-repeat
 
     +at-breakpoint($break9)
       top: -30px
-      height: 125px
-      background: image-url("icons/circle-quote-130.png") 50% 0 no-repeat
+      height: 82px
+      background: image-url("tablet-sprite.png") 50% -289px no-repeat
 
     +at-breakpoint($break12)
       top: -41px
-      height: 164px
-      background: image-url("icons/circle-quote.png") 50% 0 no-repeat
+      height: 107px
+      background: image-url("desktop-sprite.png") 50% -590px no-repeat
 
 .testimonial
   display: block
@@ -587,7 +575,7 @@
     +at-breakpoint($break6)
       +span-columns(4)
       padding: $scale2 0 $scale6 75px
-      background: image-url("icons/quotes-50.png") 4px 20px no-repeat
+      background: image-url("mobile-sprite.png") -506px 20px no-repeat
       p
         font-size: $scale1
       .last
@@ -597,7 +585,7 @@
     +at-breakpoint($break9)
       +span-columns(6)
       padding: $scale3 0 $scale7 105px
-      background: image-url("icons/quotes-75.png") 4px 20px no-repeat
+      background: image-url("tablet-sprite.png") -767px 18px no-repeat
       p
         font-size: $scale2
       .last
@@ -607,7 +595,7 @@
     +at-breakpoint($break12)
       +span-columns(8)
       padding: $scale4 0 $scale8 135px
-      background: image-url("icons/quotes.png") 4px 16px no-repeat
+      background: image-url("desktop-sprite.png") -585px 16px no-repeat
       p
         font-size: $scale2c
       .last
@@ -623,24 +611,24 @@
     +at-breakpoint($break6)
       width: 150px
       height: 161px
-      background: image-url("pics/robert-150.png") no-repeat
+      background: image-url("mobile-sprite.png") -330px -100px no-repeat
 
     +at-breakpoint($break9)
       width: 250px
       height: 269px
-      background: image-url("pics/robert-250.png") no-repeat
+      background: image-url("tablet-sprite.png") -290px 0 no-repeat
 
     +at-breakpoint($break12)
       width: 391px
       height: 420px
-      background: image-url("pics/robert.png") no-repeat
+      background: image-url("desktop-sprite.png") 0 -151px no-repeat
 
 
 /* Culture
   -----------------------
 
 .face
-  background: image-url("icons/face-30.png") 0 0 no-repeat
+  background: image-url("mobile-sprite.png") 0 -100px no-repeat
   .callout
     padding: 0 0 $scale4 35px + 10px
     border-top: none
@@ -649,7 +637,7 @@
 +at-breakpoint($break6)
   .face
     +span-columns(2, $break6)
-    background: image-url("icons/face-35.png") 0 0 no-repeat
+    background: image-url("mobile-sprite.png") 0 -190px no-repeat
     .callout
       padding: 69px + 20px 0 $scale-3
   .culture
@@ -658,7 +646,7 @@
 +at-breakpoint($break9)
   .face
     +span-columns(3, $break9)
-    background: image-url("icons/face-55.png") 0 0 no-repeat
+    background: image-url("tablet-sprite.png") 0 -100px no-repeat
     .box
       padding-right: $scale1
     .callout
@@ -669,7 +657,7 @@
 +at-breakpoint($break12)
   .face
     +span-columns(4, $break12)
-    background: image-url("icons/face.png") 0 0 no-repeat
+    background: image-url("desktop-sprite.png") -400px -350px no-repeat
     .box
       padding-right: $scale3
     .callout

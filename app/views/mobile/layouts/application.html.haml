@@ -5,7 +5,7 @@
     .wrapper
       %header{:role => "banner"}
         .container{:style => 'position: relative;'}
-          = render :partial => 'layouts/logo'
+          = link_to '', root_path, :title => 'Aqqaluk Trust', :class => 'logo'
           = yield :mobile_navigation
       #main{:role => "main"}
         = yield

@@ -6,7 +6,7 @@
       = browsehappy
       %header{:role => "banner"}
         .container
-          = render :partial => 'layouts/logo'
+          = link_to '', root_path, :title => 'Aqqaluk Trust', :class => 'logo'
           = yield :main_navigation
           = render :partial => 'layouts/utility'
       #main{:role => "main"}

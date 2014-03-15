@@ -17,6 +17,8 @@
   display: block
   width: 319px
   height: 178px
+  background-image: image-url("mobile-hero-sprite.jpg")
+  background-repeat: no-repeat
   .slide-block
     position: absolute
     display: block
@@ -30,6 +32,8 @@
   +at-breakpoint($break6)
     width: 487px
     height: 272px
+    background-image: image-url("mini-hero-sprite.jpg")
+    background-repeat: no-repeat
 
 // JavaScript fallback
 
@@ -40,10 +44,10 @@
 // home slide ----------------------------- //
 
 .home
-  background: image-url("heroes/home-319.jpg") 0 0 no-repeat
+  background-position: 0 0
 
   +at-breakpoint($break6)
-    background: image-url("heroes/home-487.jpg") 0 0 no-repeat
+    background-position: 0 0
 
   .slide-block
     width: 250px
@@ -72,17 +76,17 @@
 // camp slide ----------------------------- //
 
 .camp
-  background: image-url("heroes/camp-319.jpg") 0 0 no-repeat
+  background-position: 0 -380px
 
   +at-breakpoint($break6)
-    background: image-url("heroes/camp-487.jpg") 0 0 no-repeat
+    background-position: 0 -580px
 
   .slide-block
     margin: 20px 0 0 40px
     h2
       line-height: .95
-      color: $font-black
-      +single-text-shadow(0, 5px, 8px, false, #fff)
+      color: $font-white
+      +single-text-shadow(0, 5px, 5px, false, $font-black)
     span
       display: block
     .a, .c, .e
@@ -96,7 +100,7 @@
       width: 24px
       height: 24px
       margin: 0 0 -5px 2px
-      background: image-url("icons/arw-but-738.png") 0 0 no-repeat
+      background: image-url("mobile-sprite.png") -100px 0 no-repeat
 
     +at-breakpoint($break6)
       margin: 25px 0 0 40px
@@ -106,16 +110,16 @@
 // students slide ------------------------- //
 
 .students
-  background: image-url("heroes/students-319.jpg") 0 0 no-repeat
+  background-position: 0 -570px
 
   +at-breakpoint($break6)
-    background: image-url("heroes/students-487-fade.jpg") 0 0 no-repeat
+    background-position: 0 -870px
 
   .slide-block
     height: 178px
     h2
       line-height: 1
-      margin: 10px 0 $scale2 40px
+      margin: 10px 0 $scale2 60px
       font-size: $scale1
       color: $font-blue
       +single-text-shadow(0, 5px, 8px, false, $font-off-white)
@@ -126,12 +130,7 @@
       .mission
         display: none
     a
-      display: block
-      margin: 0 auto
-      width: 100px
-      height: 32px
-      margin-left: 33px
-      background: image-url("icons/apply-btn-487.png") 0 0 no-repeat
+      margin: 20px 0 0 102px
     ul
       display: none
 
@@ -143,7 +142,7 @@
           display: block
           font-size: $scale1
       a
-        margin-left: 40px
+        margin: 0 0 0 40px
       ul
         position: absolute
         display: block
@@ -166,10 +165,10 @@
 // language slide ------------------------- //
 
 .language
-  background: image-url("heroes/language-319.jpg") 0 0 no-repeat
+  background-position: 0 -190px
 
   +at-breakpoint($break6)
-    background: image-url("heroes/language-487.jpg") 0 0 no-repeat
+    background-position: 0 -290px
 
   .slide-block
     line-height: 1
@@ -181,7 +180,7 @@
       span
         display: block
         font-size: $scale4
-    p
+    .rosetta, p
       display: none
 
     +at-breakpoint($break6)
@@ -191,14 +190,18 @@
         font-size: $scale1
         span
           font-size: $scale6
+      .rosetta
+        display: block
+        float: left
+        width: 68px
+        height: 87px
+        background: image-url("mobile-sprite.png") -140px 0 no-repeat
       p
         display: block
-        min-height: 87px
-        padding: 15px 0 0 90px
+        margin: 50px 0 0 80px
         font-size: $scale1
         color: $font-white
         +single-text-shadow(0, 5px, 8px, false, #000)
-        background: image-url("icons/rosetta-stone-989.png") 0 0 no-repeat
 
 // slide controls ------------------------- //
 
@@ -275,13 +278,13 @@
     position: absolute
     top: -17px
     width: 100%
-    height: 67px
-    background: image-url("icons/circle-quote-70.png") 50% 0 no-repeat
+    height: 44px
+    background: image-url("mobile-sprite.png") 50% -350px no-repeat
 
     +at-breakpoint($break6)
       top: -24px
-      height: 96px
-      background: image-url("icons/circle-quote-100.png") 50% 0 no-repeat
+      height: 63px
+      background: image-url("mobile-sprite.png") 50% -275px no-repeat
 
 .testimonial
   display: block
@@ -337,18 +340,17 @@
 
 /* Founder
   -----------------------
+
 #founder
   position: relative
   padding: 0
   color: $font-white
   background-color: $black
   +panel-trim
-  // +hidden
 
 .wood1
   height: $scale3
   background: image-url("fixtures/wood-panel.png") 15% 35% no-repeat
-  // @extend .hide-eq-4
 
   +at-breakpoint($break6)
     height: $scale4
@@ -379,7 +381,7 @@
     +at-breakpoint($break6)
       +span-columns(4)
       padding: $scale2 0 $scale6 75px
-      background: image-url("icons/quotes-50.png") 4px 20px no-repeat
+      background: image-url("mobile-sprite.png") -506px 20px no-repeat
       p
         font-size: $scale1
       .last
@@ -395,23 +397,23 @@
     +at-breakpoint($break6)
       width: 150px
       height: 161px
-      background: image-url("pics/robert-150.png") no-repeat
+      background: image-url("mobile-sprite.png") -330px -100px no-repeat
 
 
 /* Culture
   -----------------------
 
 .face
-  background: image-url("icons/face-30.png") 0 0 no-repeat
+  background: image-url("mobile-sprite.png") 0 -100px no-repeat
   .callout
-    padding: 0 0 $scale-4 35px + 20px
+    padding: 0 0 $scale4 35px + 10px
     border-top: none
     border-bottom: 5px solid $cyan
 
 +at-breakpoint($break6)
   .face
     +span-columns(2, $break6)
-    background: image-url("icons/face-35.png") 0 0 no-repeat
+    background: image-url("mobile-sprite.png") 0 -190px no-repeat
     .callout
       padding: 69px + 20px 0 $scale-3
   .culture
