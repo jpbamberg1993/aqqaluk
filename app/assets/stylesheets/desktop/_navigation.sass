@@ -77,12 +77,10 @@ nav
       left: auto
       right: 0
       width: $scale4
-      height: 2.1em
+      height: 1.8em
       text-indent: -999em
-      background: #ccc url(icons/arw-dwn.png) 50% 50% no-repeat
+      background: #ccc image-url("icons/arw-dwn.png") 50% 50% no-repeat
       cursor: pointer
-    .expanded h3
-      background: #ccc image-url("icons/arw-up.png") 50% 50% no-repeat
     ul
       margin: 0
     li
@@ -95,3 +93,5 @@ nav
     display: list-item
   .expanded li.active
     border-bottom-width: 1px
+  .expanded h3
+    background-image: image-url("icons/arw-up.png")
