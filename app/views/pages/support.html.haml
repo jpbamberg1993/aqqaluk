@@ -8,7 +8,7 @@
 %section.panel.hero_bottom.pos_btn
   .container
     %p Aqqaluk Trust is a non-profit organization that relies on public funds and private contributions to provide programs and scholarships for the benefit of the Iñupiat of the NANA region.
-    %a{:href => '#', :title => '', :class => 'orange_btn'} Donate Now!
+    = link_to 'Donate Now!', '/Pledge Form.pdf', :title => '', :class => 'orange_btn'
 
 %section.panel#image_row
   .container
@@ -22,7 +22,7 @@
     %p.quote_source Edward Morris
     %p.callout Our mission is the driving force of our organization and sole purpose. Supporting Aqqaluk Trust is sustaining the past, present, and future of our Iñupiaq people.
     %p Your donation makes a significant difference in the impact of our programs.  Your contribution supports educational scholarships, Iñupiaq language revitalization efforts, and cultural sustainability of the northwest Arctic region.
-    %a{:href => '#', :title => 'Become a sponsor', :class => 'blue_btn'} Download Our Pledge Form
+    = link_to 'Download Our Pledge Form', '/Pledge Form.pdf', :title => 'Become a sponsor', :class => 'blue_btn'
 
 %section.panel#sponsors
   .container
