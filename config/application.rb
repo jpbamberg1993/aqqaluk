@@ -27,11 +27,11 @@ module Aqqaluk
     # http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
     config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
 
-    config.before_configuration do
-      env_file = File.join(Rails.root, 'config', 'local_env.yml')
-      YAML.load(File.open(env_file)).each do |key, value|
-        ENV[key.to_s] = value
-      end if File.exists?(env_file)
-    end
+    # config.before_configuration do
+    #   env_file = File.join(Rails.root, 'config', 'local_env.yml')
+    #   YAML.load(File.open(env_file)).each do |key, value|
+    #     ENV[key.to_s] = value
+    #   end if File.exists?(env_file)
+    # end
   end
 end
