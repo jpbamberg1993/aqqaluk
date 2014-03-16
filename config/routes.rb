@@ -1,6 +1,9 @@
 Aqqaluk::Application.routes.draw do
   root :to => 'pages#home'
 
+  post "save_markdown", to: 'pages#save_markdown'
+  get 'edit_markdown', to: 'pages#edit_markdown'
+
   get "pages/home"
   get "pages/home_v2"
   get "pages/students"

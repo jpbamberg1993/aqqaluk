@@ -1,6 +1,13 @@
 module ApplicationHelper
   include Mobvious::Rails::Helper
 
+  def compile_markdown(text)
+    markdown_renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+
+    markdown_renderer.render(text).html_safe
+  end
+
+
   def head
     render :partial => 'layouts/head'
   end

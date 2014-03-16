@@ -18,3 +18,4 @@
 //= require jquery.touchSwipe.min
 //= require showHide
 //= require site
+//= require markdown_editor

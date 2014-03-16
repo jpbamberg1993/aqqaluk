@@ -1,4 +1,19 @@
 class PagesController < ApplicationController
+  def save_markdown
+    render(
+      partial: 'pages/markdown_panel',
+
+      locals: {markdown_source_z: params[:markdown_source_b]}
+    )
+  end
+
+  def edit_markdown
+    render(
+      partial: 'pages/markdown_editor',
+      locals: {markdown_source: params[:markdown_source_g]}
+    )
+  end
+
   def home
   end
 

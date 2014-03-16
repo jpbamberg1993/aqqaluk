@@ -1,7 +1,8 @@
 !!!
 %html.no-js{:lang => "en"}
   = head
-  %body
+
+  %body{'data-authenticity_token' => form_authenticity_token}
     .wrapper
       = browsehappy
       %header{:role => "banner"}
