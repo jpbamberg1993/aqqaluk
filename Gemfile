@@ -37,6 +37,7 @@ end
 gem 'haml-rails'
 gem 'mobvious'
 gem 'mobvious-rails'
+gem 'asset_sync'
 
 # Compass specific gems.
 # gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
