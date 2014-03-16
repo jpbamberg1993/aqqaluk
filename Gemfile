@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+# ruby '2.0.0'
 
 gem 'rails', '4.0.2'
 
@@ -37,6 +37,8 @@ end
 gem 'haml-rails'
 gem 'mobvious'
 gem 'mobvious-rails'
+gem 'pry'
+gem 'redcarpet'
 
 # Compass specific gems.
 # gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
