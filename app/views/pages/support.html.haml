@@ -5,10 +5,11 @@
 %section.panel#support.hero
   .container
     %h1 Support Us
-%section.panel.hero_bottom.pos_btn
+%section.panel.hero_bottom
   .container
     %p Aqqaluk Trust is a non-profit organization that relies on public funds and private contributions to provide programs and scholarships for the benefit of the Iñupiat of the NANA region.
-    = link_to 'Donate Now!', '/Pledge Form.pdf', :title => '', :class => 'orange_btn'
+    .pos_btn
+      = link_to 'Donate Now!', '/Pledge Form.pdf', :title => '', :class => 'orange_btn'
 
 %section.panel#image_row
   .container
@@ -27,11 +28,6 @@
 %section.panel#sponsors
   .container
     .sponsors
-      =# link_to image_tag('logos/nrc-logo.png', :alt => 'NANA Regional Corporation', :width => '159', :height => '89'), 'http://nana.com/regional', :title => ''
-      =# link_to image_tag('logos/ndc-logo.gif', :alt => 'NANA Development Corporation', :width => '161', :height => '89'), 'http://nana-dev.com/', :title => ''
-      =# link_to image_tag('logos/akima-logo.png', :alt => 'Akima', :width => '207', :height => '61'), 'http://www.akima.com/', :title => ''
-      =# link_to image_tag('logos/teck-logo.jpg', :alt => 'Teck Alaska', :width => '73', :height => '73'), 'http://www.teck.com/', :title => ''
-      =# link_to image_tag('logos/whp-logo.png', :alt => 'WHPacific', :width => '145', :height => '35'), 'http://www.whpacific.com/', :title => ''
       %a{:href => 'http://nana.com/regional', :title => 'Visit NANA Regional Corporation', :class => 'ir nrc'}
         %span NANA Regional Corporation
       %a{:href => 'http://nana-dev.com/', :title => 'Visit NANA Development Corporation', :class => 'ir ndc'}
@@ -63,6 +59,3 @@
       Aqqaluk Trust Board of Trustee’s and staff, and many more individual supporters that give anonymously through the
       = succeed '.' do
         %a{:href => 'http://www.liveunitedanchorage.org/give', :title => ''} United Way Campaign of Anchorage
-    =# link_to image_tag('logos/united-way-logo.jpg', :alt => 'United Way of Alaska', :width => '200', :height => '86 - '), 'http://www.liveunitedanchorage.org/give', :title => ''
-    / %a{:href => 'http://www.liveunitedanchorage.org/give', :title => '', :class => 'ir united-way'}
-    /   %span United Way of Alaska
