@@ -58,6 +58,7 @@ Aqqaluk::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
   # config.action_controller.asset_host = "//#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
   config.action_controller.asset_host = "http://d2rfidc3jzjxi6.cloudfront.net"
+  # config.action_controller.asset_host = "http://cdn%d.aqqaluktrust.com"
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
