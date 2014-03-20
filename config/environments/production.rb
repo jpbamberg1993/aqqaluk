@@ -60,6 +60,9 @@ Aqqaluk::Application.configure do
   # config.action_controller.asset_host = "http://d2rfidc3jzjxi6.cloudfront.net"
   config.action_controller.asset_host = "http://cdn%d.aqqaluktrust.com"
 
+  # http://work.stevegrossi.com/2013/05/28/set-far-future-expires-headers-for-assets-on-heroku/
+  config.static_cache_control = "public, max-age=31536000"
+
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
