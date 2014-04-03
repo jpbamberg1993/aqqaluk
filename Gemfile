@@ -40,6 +40,8 @@ gem 'mobvious-rails'
 gem 'asset_sync'
 gem 'unf'
 gem 'newrelic_rpm'
+gem 'ember-rails', github: "emberjs/ember-rails"
+gem 'ember-source', '1.4.0'
 
 # Compass specific gems.
 # gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
