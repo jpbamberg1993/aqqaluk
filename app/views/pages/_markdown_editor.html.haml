@@ -1,0 +1,7 @@
+.markdown_editor{'data-save_markdown_path' => save_markdown_path}
+  %textarea{name: 'markdown_source', rows: 10, cols: 80}
+    = markdown_source || default_markdown_source
+
+  %br
+
+  = link_to 'save', nil, class: 'save'
