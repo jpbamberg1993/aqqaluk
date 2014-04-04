@@ -17,3 +17,13 @@
 //= require jquery.touchSwipe.min
 //= require showHide
 //= require site
+//= require jquery
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require ./aqqaluk
+
+// for more details see: http://emberjs.com/guides/application/
+Aqqaluk = Ember.Application.create();
+
