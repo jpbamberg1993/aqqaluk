@@ -23,6 +23,6 @@
 //= require_self
 //= require ./aqqaluk
 
-// for more details see: http://emberjs.com/guides/application/
-Aqqaluk = Ember.Application.create();
-
+Aqqaluk = Ember.Application.create({
+  rootElement: '#stories'
+});

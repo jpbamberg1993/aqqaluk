@@ -21,18 +21,27 @@
         %li
           %a{:href => 'http://www.icontact-archive.com/v93Wl9ESven72SGB8-1-5kaCPvKBdSMI?w=3', :title => ''} Vol. 3, No. 3, News from Aqqaluk Trust, December 20, 2012
 
-%section.panel#stories
-  .container
-    .stories
-      %h2 The 2014 Uuttukuu Snow Golf Challenge took place on February 28th.  Thank you all for supporting us throughout this year’s event!
-      = image_tag 'pics/news/NMs.jpg', :alt => ''
-      %p Interested in participating next year? Here's how to do it:
-      %ul
-        %li Recruit a team of 4 of your most fun friends/colleagues
-        %li Download the registration form
-        %li Fill the registration form out completely and include payment
-        %li Submit the registration form to the Aqqaluk Trust
-        %li Come to the event location and don't forget your camera!
-      %a{:href => '#', :title => ''} CLICK HERE TO DOWNLOAD THE REGISTRATION FORM
-      %br
-      = image_tag 'pics/news/uuttukuu-logo.jpg', :alt => ''
+
+  %section.panel#stories
+    %script{type: "text/x-handlebars"}
+      .container
+
+        .stories
+          %h1 Hello from Ember!
+          %p Type something:
+          {{view Ember.TextField valueBinding="name"}}
+          %p {{name}}
+
+        .stories
+          %h2 The 2014 Uuttukuu Snow Golf Challenge took place on February 28th.  Thank you all for supporting us throughout this year’s event!
+          = image_tag 'pics/news/NMs.jpg', :alt => ''
+          %p Interested in participating next year? Here's how to do it:
+          %ul
+            %li Recruit a team of 4 of your most fun friends/colleagues
+            %li Download the registration form
+            %li Fill the registration form out completely and include payment
+            %li Submit the registration form to the Aqqaluk Trust
+            %li Come to the event location and don't forget your camera!
+          %a{:href => '#', :title => ''} CLICK HERE TO DOWNLOAD THE REGISTRATION FORM
+          %br
+          = image_tag 'pics/news/uuttukuu-logo.jpg', :alt => ''
