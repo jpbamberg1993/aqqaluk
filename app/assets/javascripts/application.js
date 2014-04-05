@@ -17,7 +17,6 @@
 //= require jquery.touchSwipe.min
 //= require showHide
 //= require site
-//= require jquery
 //= require handlebars
 //= require ember
 //= require ember-data
