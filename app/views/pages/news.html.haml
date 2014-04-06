@@ -27,10 +27,7 @@
       .container
 
         .story
-          %h1 Hello from Ember!
-          %p Type something:
-          {{view Ember.TextField valueBinding="name"}}
-          %p {{name}}
+          {{outlet}}
 
         .story
           %h2 The 2014 Uuttukuu Snow Golf Challenge took place on February 28th.  Thank you all for supporting us throughout this year’s event!
