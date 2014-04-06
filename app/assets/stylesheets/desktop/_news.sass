@@ -61,29 +61,34 @@
       +span-columns(9 omega)
 
 #stories
+  padding-top: 0
   h2
     color: $cyan
   ul
     list-style-position: inside
 
-.stories
-  padding-bottom: $scale2
+.story
+  padding: $scale2 0
   border-bottom: 1px solid $gray-2
   img
     max-width: 100%
     margin-bottom: $scale2b
 
   +at-breakpoint($break6)
-    padding-bottom: $scale2c
+    padding: $scale2c 0
     img
       margin-bottom: $scale1
 
   +at-breakpoint($break9)
-    padding-bottom: $scale4
+    padding: $scale4 0
     img
       margin-bottom: $scale3
 
   +at-breakpoint($break12)
-    padding-bottom: $scale5
+    padding: $scale5 0
     img
       margin-bottom: $scale4
+
+.story:last-child
+  padding-bottom: 0
+  border: none

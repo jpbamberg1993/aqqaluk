@@ -34,20 +34,18 @@
     ul
       +span-columns(4 omega)
 
-#stories
-  h2
-    color: $cyan
-  ul
-    list-style-position: inside
-
-.stories
-  padding-bottom: $scale2
+.story
+  padding: $scale2 0
   border-bottom: 1px solid $gray-2
   img
     max-width: 100%
     margin-bottom: $scale2b
 
   +at-breakpoint($break6)
-    padding-bottom: $scale2c
+    padding: $scale2c 0
     img
       margin-bottom: $scale1
+
+.story:last-child
+  padding-bottom: 0
+  border: none
