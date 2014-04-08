@@ -20,6 +20,13 @@ module Aqqaluk
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Ember.js – Testing on Rails, page 17
+    config.generators do |g|
+        g.test_framework :rspec, fixtures: true, view_specs: false,
+          helper_specs: false, controller_specs: false, routing_specs: false
+        g.factory_girl true
+    end
+
     # Tell your app to use Mobvious::Manager as Rack middleware.
     config.middleware.use Mobvious::Manager
 
