@@ -7,6 +7,10 @@ group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'growl'
+  gem 'guard-rspec'
+  gem 'guard-teaspoon'
+  gem 'teaspoon'
 end
 
 gem 'sass-rails',   '4.0.2'
