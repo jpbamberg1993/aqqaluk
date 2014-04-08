@@ -23,6 +23,10 @@
 //= require_self
 //= require ./aqqaluk
 
+<% if Rails.env.development? %>
+  Ember.LOG_TRANSITIONS = true;
+<% end %>
+
 Aqqaluk = Ember.Application.create({
   rootElement: '#stories'
 });
