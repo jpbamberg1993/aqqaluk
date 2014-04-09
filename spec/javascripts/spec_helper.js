@@ -32,6 +32,6 @@
 var d = document;
 d.write('<div id="ember-testing-container"><div id="ember-testing"></div></div>');
 
-AddressBook.rootElement = "#ember-testing"
-AddressBook.setupForTesting();
-AddressBook.injectTestHelpers();
+Aqqaluk.rootElement = "#ember-testing"
+Aqqaluk.setupForTesting();
+Aqqaluk.injectTestHelpers();
