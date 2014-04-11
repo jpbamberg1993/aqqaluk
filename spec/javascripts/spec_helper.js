@@ -27,6 +27,7 @@
 //
 // You can require javascript files here. A good place to start is by requiring your application.js.
 //= require application.js.erb
+//= require support/testing_helpers
 //= require_self
 
 var d = document;
