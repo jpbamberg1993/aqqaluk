@@ -25,4 +25,7 @@ class PagesController < ApplicationController
 
   def support
   end
+
+  def memorial_fund
+  end
 end
