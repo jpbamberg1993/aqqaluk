@@ -138,7 +138,6 @@ function mobileMenu(){
         .bind('click focus', function(){$(this).parent().toggleClass('expanded')});
 }
 
-
 function normalMenu(){
     $('body').removeClass('nav_menu');
 }
