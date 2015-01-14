@@ -51,3 +51,44 @@
     padding-bottom: $scale2c
     img
       margin-bottom: $scale1
+
+// Typography Change
+
+$news_shrink: .716
+
+.news_shrink
+  p, label, ul
+    margin: 0 0 $scale-4
+    font-size: $scale2 * $news_shrink
+  label
+    font-weight: bold
+
+  +at-breakpoint($break6)
+    p, label, ul
+      margin-bottom: $scale-3
+      font-size: $scale2c * $news_shrink
+
+// Golf Challenge
+
+.challenge-left, .challenge-right
+  +span-columns(4 omega)
+  label, p, ul
+    float: left
+  label
+    width: 20%
+  p, ul
+    width: 80%
+.challenge-right
+  img
+    display: none
+
++at-breakpoint($break6)
+  .challenge-left
+    +span-columns(4)
+  .challenge-right
+    +span-columns(2 omega)
+    img
+      display: block
+      margin-top: 13%
+      padding-left: 10%
+      padding-right: 5%

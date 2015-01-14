@@ -24,16 +24,41 @@
 %section.panel#stories
   .container
     .stories
-      %h2 It’s Coming…….!  The 2015 Uuttukuu Snow Golf Challenge takes place in Anchorage on March 6, 2015!
-      = image_tag 'pics/news/golf-challenge.jpg', :alt => ''
-      %h2 Want to play? Here's how to do it:
-      %ul
-        %li Recruit a team of 4 colleagues that like to have fun for a good cause
-        %li Click on the registration link and download the form
-        %li Email, fax or mail a completed form, with payment, to the Aqqaluk Trust
-        %li Prepare yourself for the most unique winter golf tournament EVER!
-      = link_to 'CLICK HERE TO DOWNLOAD THE REGISTRATION FORM', '/Player Registration Form 2015.docx', :title => 'Register'
+      %h2
+        6th Annual Uuttukuu Snow Golf Challenge, Friday, March 6th
+        %br
+        Delaney Park Strip
+      = link_to 'Register Now!', '/Player Registration Form 2015.docx', :title => 'Download Player Registration Form', :class => 'orange_btn'
       %br
       %br
-      %p.p_shrink For more information regarding registration or sponsorships please contact Sarah Hobart, sarah.hobart@aqqaluktrust.com/907-441-9928
-      = image_tag 'pics/news/uuttukuu-logo.jpg', :alt => ''
+      .challenge-left.news_shrink
+        %br
+        %label Who:
+        %p Everyone is welcome to participate at this uniquely Alaskan FUNdraiser for the Aqqaluk Trust.  Participation is open to teams of 4 players with a registration fee of $200 per player.
+        %label What:
+        %p The 6th annual Uuttukuu Snow Golf Challenge.  Uuttukuu, meaning “little” in Iñupiaq, describes this 11-hole, golf style tournament played on the snow at the Delaney Park Strip.  22 teams of 4 will play 11 holes on a par 3 or 4 course with limited flight golf balls and a two club allowance per player.  Each hole is 50 to 75 yards and built around the snow on University Lake.  The challenge part is where we bring 10,000 years of Inupiat culture in to the mix.  Two of the 11-holes will combine the feats of the Iñupiaq Eskimo with the skills of golf.  For example, at one hole the player must wear traditional Eskimo style sunglasses to putt the ball and at another hole the player must wear fur mittens to putt the ball.  There will also be a harpoon hole-in-one contest open to all participants.
+        %label When:
+        %ul
+          %li Friday, March 6, 2015 at 9am:
+          %li 9am: Registration Opens
+          %li 9:30am: Driving Range Opens
+          %li 10am: First round of 11 teams starts
+          %li 11:30am: Lunch at NANA Headquarters (909 West 9th Avenue) & registration for the second round of play
+          %li 12noon-12:50pm: Lunch
+          %li 1pm: Second round of 11 teams start
+          %li 3:30pm: Awards & Prizes Ceremony
+        %label Where:
+        %p Delaney Park Strip and NANA Headquarters, 909 West 9th Avenue
+        %label Why:
+        %p The Uuttukuu Snow Golf Challenge has two goals; to have fun and most importantly to raise funds for the Aqqaluk Trust.  The money raised from Uuttukuu sponsorships will support the programs & services of the Aqqaluk Trust.  The Aqqaluk Trust is a 501-C3 non-profit corporation founded in memory of Robert Aqqaluk Newlin, Sr., one of the great Iñupiat leaders from the Northwest Arctic region of Alaska.  Robert Aqqaluk Newlin believed that the key to survival & success of the Iñupiat is an understanding of their rich cultural heritage and education.  Today the Aqqaluk Trust continues the legacy of Robert Aqqaluk Newlin.  The Trust benefits the Alaska Native community of the Northwest Arctic Region by preserving the Iñupiaq language, awarding educational scholarships and enhancing the Iñupiaq culture.  Please join us!
+        %br
+        %br
+        %br
+        %label Info:
+        %p
+          %strong
+            For more information contact Sarah Hobart at 907.441.9928 /
+            = mail_to 'sarah.hobart@aqqaluktrust.com'
+          = image_tag 'pics/news/uuttukuu-logo.jpg', :alt => 'Uuttukuu Logo'
+      .challenge-right
+        = image_tag 'logos/challenge-logos.gif', :alt => ''
