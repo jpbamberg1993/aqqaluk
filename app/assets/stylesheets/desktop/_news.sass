@@ -156,8 +156,38 @@ $news-shrink: .716
     img
       padding-left: 25%
 
-
 // Golf Challenge SUCCESS
 
+#grid
+  ul
+    margin: 0 auto
+    +clearfix
+  img
+    margin-bottom: 0
 
+.grid-item
+  list-style: none
+  overflow: hidden
+  margin-bottom: $scale1
 
++at-breakpoint($break9)
+  .grid-item
+    +span-columns(3)
+    margin-bottom: gutter(9)
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9),
+    &:nth-child(12),
+    &:nth-child(15)
+      +span-columns(3 omega)
+
++at-breakpoint($break12)
+  .grid-item
+    +span-columns(4)
+    margin-bottom: gutter(12)
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9),
+    &:nth-child(12),
+    &:nth-child(15)
+      +span-columns(4 omega)
