@@ -3,6 +3,7 @@ Aqqaluk::Application.routes.draw do
 
   get "pages/home"
   get "pages/home_v2"
+  get "pages/about_us"
   get "pages/students"
   get "pages/students_v1"
   get "pages/language"

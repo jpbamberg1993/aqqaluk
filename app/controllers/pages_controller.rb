@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def home_v2
   end
 
+  def about_us
+  end
+
   def students
   end
 
