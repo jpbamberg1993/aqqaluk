@@ -6,6 +6,7 @@ Aqqaluk::Application.routes.draw do
   get "pages/about_us"
   get "pages/students"
   get "pages/students_v1"
+  get "pages/savaktuq"
   get "pages/language"
   get "pages/language_v1"
   get "pages/camp"

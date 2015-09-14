@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   def students_v1
   end
 
+  def savaktuq
+  end
+
   def language
   end
 
