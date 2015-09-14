@@ -1,0 +1,40 @@
+/* Culture
+  -----------------------
+
+.face
+  background: image-url("mobile-sprite.png") 0 -100px no-repeat
+  .callout
+    padding: 0 0 $scale4 35px + 10px
+    border-top: none
+    border-bottom: 5px solid $cyan
+
++at-breakpoint($break6)
+  .face
+    +span-columns(2, $break6)
+    background: image-url("mobile-sprite.png") 0 -190px no-repeat
+    .callout
+      padding: 69px + 20px 0 $scale-3
+  .culture
+    +span-columns(4 omega, $break6)
+
++at-breakpoint($break9)
+  .face
+    +span-columns(3, $break9)
+    background: image-url("tablet-sprite.png") 0 -110px no-repeat
+    .box
+      padding-right: $scale1
+    .callout
+      padding: 111px + 30px 0 $scale-2
+  .culture
+    +span-columns(6 omega, $break9)
+
++at-breakpoint($break12)
+  .face
+    +span-columns(4, $break12)
+    background: image-url("desktop-sprite.png") -400px -350px no-repeat
+    .box
+      padding-right: $scale3
+    .callout
+      padding: 135px + 30px 0 $scale1
+  .culture
+    +span-columns(8 omega, $break12)
