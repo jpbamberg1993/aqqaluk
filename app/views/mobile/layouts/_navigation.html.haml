@@ -5,6 +5,7 @@
   %nav{:role => "navigation", :id => "menu"}
     %ul
       = nav_location 'Home',               root_path,                 current: current_nav
+      = nav_location 'About Us',           pages_about_us_path,       current: current_nav
       = nav_location 'Students',           pages_students_path,       current: current_nav
       = nav_location 'Language & Culture', pages_language_path,       current: current_nav
       = nav_location 'Camp',               pages_camp_path,           current: current_nav
