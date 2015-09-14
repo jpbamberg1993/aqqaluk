@@ -32,6 +32,9 @@ class PagesController < ApplicationController
   def support
   end
 
+  def golf_challenge
+  end
+  
   def memorial_fund
   end
 end

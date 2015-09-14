@@ -12,6 +12,7 @@ Aqqaluk::Application.routes.draw do
   get "pages/camp"
   get "pages/news"
   get "pages/support"
+  get "pages/golf_challenge"
   get "pages/memorial_fund"
 
   # The priority is based upon order of creation: first created -> highest priority.
