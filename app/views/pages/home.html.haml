@@ -15,6 +15,7 @@
           %br
           and
           %span.d education.
+        %a{:href => 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F7ESMGAF7GRQ2', :title => 'Become a sponsor', :class => 'cyan_btn'} Donate Now!
     .slide.camp
       .slide-block
         %h2
@@ -54,13 +55,14 @@
       .slide-block
         %h2
           %span Enrich
-          your culture by learning the
-          %br
-          Iñupiat language!
-        .rosetta
-        %p
-          = link_to 'CLICK HERE', '/Inupiaq Language CD Order Form.pdf', :title => 'Order CD-ROM'
-          to order
+          .enrich
+            your culture by learning the
+            %br
+            Iñupiat language!
+        -# .rosetta
+        -# %p
+        -#   = link_to 'CLICK HERE', '/Inupiaq Language CD Order Form.pdf', :title => 'Order CD-ROM'
+        -#   to order
 
   = link_to '', '#', :title => 'Previous', :id => 'prev', :class => 'control'
   = link_to '', '#', :title => 'Next', :id => 'next', :class => 'control'
@@ -109,10 +111,11 @@
   .container.wood2
     .quote
       %blockquote Hard work has changed somewhat. When I was growing up we had no stove oil, we had no electricity, we had no good homes ...but we had to work in order to be alive. Things change, but there’s still a lot of things that a fellow can do.”
-      %p -- Robert Aqqaluk Newlin, Sr.
+      %p
+        \-- Robert Aqqaluk Newlin, Sr.
+        %a{href: '#', title: ''} Learn More
       %p.last
-        %a{:href => pages_support_path, :title => 'Become a sponsor', :class => 'orange_btn'} Donate Now!
-
+        %a{:href => 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F7ESMGAF7GRQ2', :title => 'Become a sponsor', :class => 'orange_btn'} Donate Now!
 %section.panel#culture
   .container
-    %p Fill in with something?
+    %p A new “Message from an Elder or Robert Aqqaluk Newlin” panel that includes a photo of the designated person (CMS).
