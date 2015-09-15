@@ -10,6 +10,15 @@
 #slidingDiv, .show_hide
   display: none
 
+
+#language_body
+  .sidebar, .sidebar2
+    h2
+      font-size: $scale1
+
+      +at-breakpoint($break6)
+        font-size: $scale2b
+
 #language_body
   .sidebar
     +span-columns(2, $break6)
@@ -37,7 +46,7 @@
     +span-columns(4, $break6)
     margin-bottom: $gutter-width * 2
   .sidebar2
-    +span-columns(4 omega, $break6)
+    +span-columns(2 omega, $break6)
   .sidebar3
     +span-columns(2, $break6)
     .box
