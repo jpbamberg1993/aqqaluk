@@ -19,11 +19,13 @@
     width: 100%
     height: 5px
     background: image-url("fixtures/trim-top-blue.png") 0 0 repeat-x
-
   .container
     text-align: center
     h2
       color: $font-orange
+      margin-bottom: 0
+  .deadlines
+    margin-bottom: $scale-4
   .semester, .quarter, .summer, .vocational
     h3
       margin-top: $scale1
@@ -31,3 +33,17 @@
   .semester
     h3
       margin-top: 0
+
+  +at-breakpoint($break6)
+    .deadlines
+      margin-bottom: $scale-3
+
+.student-panel
+  padding-top: $scale6
+  .testimonial
+    height: 285px
+
+  +at-breakpoint($break6)
+    padding-top: $scale7
+    .testimonial
+      height: 320px
