@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   def about_us
   end
 
-  def students
+  def education
   end
 
   def students_v1
@@ -34,7 +34,7 @@ class PagesController < ApplicationController
 
   def golf_challenge
   end
-  
+
   def memorial_fund
   end
 end
