@@ -12,4 +12,13 @@ module ApplicationHelper
   def browsehappy
     render :partial => 'layouts/browsehappy'
   end
+
+  # FIXME ccm: Not passing class.
+  def nav_switch(title)
+    if device_type == :mobile
+      nav_at 'title', in: 'mobile'
+    else
+      nav_at 'title'
+    end
+  end
 end

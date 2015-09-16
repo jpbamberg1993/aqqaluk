@@ -1,6 +1,10 @@
 - content_for :title do
   News & Events
-= currently_at 'News & Events'
+- for_device_type :mobile do
+  = nav_at 'News & Events', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'News & Events'
+=# nav_switch('News & Events')
 
 %section.panel#news.hero
   .container

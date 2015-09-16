@@ -1,6 +1,10 @@
 - content_for :title do
   Savaktuq
-= currently_at 'Savaktuq'
+- for_device_type :mobile do
+  = nav_at 'Savaktuq', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'Savaktuq'
+=# nav_switch('Savaktuq')
 
 %section.panel#savaktuq-links
   .container
@@ -10,4 +14,4 @@
 %section.panel#savaktuq-info
   .container
     .savaktuq-info
-      %p Useful information for students and parents 
+      %p Useful information for students and parents

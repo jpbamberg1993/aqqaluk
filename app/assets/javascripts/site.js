@@ -132,15 +132,15 @@ function textSlide(){
 // Responsive Menu
 // ===========================
 
-function mobileMenu(){
-    $('body').addClass('nav_menu');
-    $('.nav_primary').find('h3')
-        .bind('click focus', function(){$(this).parent().toggleClass('expanded')});
-}
+// function mobileMenu(){
+//     $('body').addClass('nav_menu');
+//     $('.nav_primary').find('h3')
+//         .bind('click focus', function(){$(this).parent().toggleClass('expanded')});
+// }
 
-function normalMenu(){
-    $('body').removeClass('nav_menu');
-}
+// function normalMenu(){
+//     $('body').removeClass('nav_menu');
+// }
 
 
 // ===========================
@@ -193,16 +193,16 @@ function handlerCarouselWide() {
   };
 }
 
-function handlerMenu() {
-  return {
-    match : function() {
-        mobileMenu()
-    },
-    unmatch : function() {
-        normalMenu()
-    }
-  };
-}
+// function handlerMenu() {
+//   return {
+//     match : function() {
+//         mobileMenu()
+//     },
+//     unmatch : function() {
+//         normalMenu()
+//     }
+//   };
+// }
 
 var $break4  = "screen and (max-width: 30.415em)",
     $break6  = "screen and (min-width: 30.416em)",
@@ -217,14 +217,8 @@ enquire
   .register($break9, handlerCarousel())
   .register($break12, handlerCarouselWide());
 
-enquire
-  .register($menu, handlerMenu());
-
-  // multiple handlers?
-  // .register($break4, [
-  //     handlerCarousel(),
-  //     handlerXxxx()
-  // ])
+// enquire
+//   .register($menu, handlerMenu());
 
 
 // ===========================

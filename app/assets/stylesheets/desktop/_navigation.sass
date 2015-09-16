@@ -9,89 +9,71 @@ nav
 
   +at-breakpoint($break9)
     +span-columns(7 omega, $break9)
-    margin-top: 71px
+    margin-top: 76px
 
   +at-breakpoint($break12)
     +span-columns(9 omega, $break12)
-    margin-top: 93px
+    margin-top: 100px
 
 .nav_primary
-  ul
+  ul.dropdown
+    position: relative
+    margin: 0
     list-style-type: none
     text-align: right
-    border: 1px solid #e6e6e6
-  li
-    font-family: $font-family-nav
-    border-bottom: 1px solid #eee
-    text-align: left
-    +link-colors($color-nav, $color-nav, $color-nav, $color-nav, $color-nav)
-  li:last-child
-    border-bottom: 0
-  #language2, #news2
-    +hidden
-  a
-    display: block
-    padding: $scale-5
-    font-weight: 700
-    text-transform: uppercase
-  a:hover
-    text-decoration: none
-    background-color: $gray-1
-
-  +at-breakpoint($break9)
-    ul
-      border: 0
-      +inline-block-list
     li
-      border: 0
-    li:first-child
-      display: none
-    #language1, #news1, #fund
-      +hidden
-    #language2, #news2
-      +reveal-hidden-inline
-    a
-      padding: 0 $scale-2
-
-  +at-breakpoint($break12)
-    li:first-child
       display: inline-block
-    #language1, #news1
-      +reveal-hidden-inline
-    #language2, #news2
-      +hidden
-    .active a
-      color: $link-hover
-
-.nav_menu
-  .nav_primary
-    position: relative
-    overflow: hidden
-    margin: $scale1
+      zoom: 1
+      font-family: $font-family-nav
+      text-align: left
+      +link-colors($color-nav, $color-nav, $color-nav, $color-nav, $color-nav)
     a
-      padding-right: $scale5
-    h3
       display: block
-      position: absolute
-      top: 0
-      left: auto
-      right: 0
-      width: $scale4
-      height: 1.8em
-      text-indent: -999em
-      background: #ccc image-url("icons/arw-dwn.png") 50% 50% no-repeat
-      cursor: pointer
+      padding: $scale-5
+      font-weight: 700
+      text-transform: uppercase
+    a:hover
+      text-decoration: none
+      background-color: $gray-2
+    li a
+      display: block
+    li.active a
+      color: $link-hover
+    li.hover, li:hover
+      position: relative
+
+    /* LEVEL TWO */
     ul
-      margin: 0
-    li
+      visibility: hidden
+      position: absolute
+      top: 100%
+      left: 0
+      width: 200px
+      background-color: $bg-nav
+      z-index: 1001
+    ul li
+      float: none
+      display: inline-block
+      width: 200px
+    li:hover > ul
+      visibility: visible
+
+    #home
       display: none
-    li.active
-      display: list-item
-    li.active,
-      border-bottom-width: 0
-  .expanded li
-    display: list-item
-  .expanded li.active
-    border-bottom-width: 1px
-  .expanded h3
-    background-image: image-url("icons/arw-up.png")
+    #language1
+      +hidden
+
+    +at-breakpoint($break9)
+      a
+        padding: 0 $scale-2
+
+    +at-breakpoint($break12)
+      #home
+        display: inline-block
+      #language1
+        +reveal-hidden-inline
+      #language2
+        +hidden
+
+// .nav_menu
+//   .nav_primary

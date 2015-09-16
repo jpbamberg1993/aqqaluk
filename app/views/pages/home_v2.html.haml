@@ -1,6 +1,10 @@
 - content_for :title do
   Home
-= currently_at 'Home'
+- for_device_type :mobile do
+  = nav_at 'Home', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'Home'
+=# nav_switch('Home')
 
 %section#hero
   #carousel

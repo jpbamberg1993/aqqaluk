@@ -1,6 +1,10 @@
 - content_for :title do
   Language & Culture
-= currently_at 'Language & Culture'
+- for_device_type :mobile do
+  = nav_at 'Language & Culture', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'Language & Culture'
+=# nav_switch('Language & Culture')
 
 %section.panel#commission.hero
   .container
@@ -29,7 +33,7 @@
       %p.p_shrink The software program, developed by NANA with consultation from Rosetta-Stone, is instrumental in learning and  preserving the Iñupiaq Language in the Northwest Arctic and beyond.
       %p.p_shrink The Language CD-ROM is available for purchase for $195 each. Mail orders add $10.00 shipping and handling; additional orders ship for just $3 per CD-ROM.
       %p.p_shrink
-        %a{href: 'http://www.rosettastone.com/system-requirements', title: ''} System Requirements 
+        %a{href: 'http://www.rosettastone.com/system-requirements', title: ''} System Requirements
     .image_row_2
       .image3
       .image4

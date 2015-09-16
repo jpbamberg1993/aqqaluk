@@ -1,6 +1,10 @@
 - content_for :title do
   Ruth Sandvik Memorial Fund
-= currently_at 'Memorial Fund'
+- for_device_type :mobile do
+  = nav_at 'Memorial Fund', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'Memorial Fund'
+=# nav_switch('Memorial Fund')
 
 %section.panel#donation
   .container
