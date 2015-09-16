@@ -1,0 +1,12 @@
+- content_for :title do
+  Board Members
+- for_device_type :mobile do
+  = nav_at 'Board Members', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'Board Members'
+=# nav_switch('Board Members')
+
+%section.panel#board-members
+  .container
+    .board-members
+      %p Board Members - photos and bios

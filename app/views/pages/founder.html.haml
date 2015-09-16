@@ -1,0 +1,12 @@
+- content_for :title do
+  Founder
+- for_device_type :mobile do
+  = nav_at 'Founder', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'Founder'
+=# nav_switch('Founder')
+
+%section.panel#robert
+  .container
+    .robert
+      %p Roberty Aqqaluk Newlin - additional photos, quotes, and if possible soundbites

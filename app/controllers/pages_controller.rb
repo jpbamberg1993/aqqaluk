@@ -8,6 +8,18 @@ class PagesController < ApplicationController
   def about_us
   end
 
+  def news
+  end
+
+  def founder
+  end
+
+  def board_members
+  end
+
+  def staff
+  end
+
   def education
   end
 
@@ -24,9 +36,6 @@ class PagesController < ApplicationController
   end
 
   def camp
-  end
-
-  def news
   end
 
   def support

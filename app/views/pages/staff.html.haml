@@ -1,0 +1,12 @@
+- content_for :title do
+  Staff
+- for_device_type :mobile do
+  = nav_at 'Staff', in: 'mobile'
+- for_device_type :desktop do
+  = nav_at 'Staff'
+=# nav_switch('Staff')
+
+%section.panel#staff
+  .container
+    .staff
+      %p Staff - photos and bios

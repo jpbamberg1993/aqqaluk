@@ -7,10 +7,10 @@
         = nav_to 'Home', root_path, id: 'home'
         = nav_to 'About Us', pages_about_us_path do
           %ul.sub-menu
-            %li= link_to 'News & Events', root_path
-            %li= link_to 'Founder', root_path
-            %li= link_to 'Board Members', root_path
-            %li= link_to 'Staff', root_path
+            %li= link_to 'News & Events', pages_news_path
+            %li= link_to 'Founder', pages_founder_path
+            %li= link_to 'Board Members', pages_board_members_path
+            %li= link_to 'Staff', pages_staff_path
         = nav_to 'Education', pages_education_path
         = nav_to 'Savaktuq', pages_savaktuq_path
         = nav_to 'Language & Culture', pages_language_path, id: 'language1'
