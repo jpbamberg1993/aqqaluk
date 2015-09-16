@@ -1,0 +1,23 @@
+- content_for :mobile_navigation do
+  #header
+    %a{:href => '#menu', :title => 'Menu'}
+
+  %nav{:role => "navigation", :id => "menu"}
+    %ul.dropdown
+      = nav_to 'Home', atc_path
+      = nav_to 'About Us', atc_about_us_path do
+        %ul.sub-menu
+          %li= link_to 'News & Events', root_path
+          %li= link_to 'Founder', root_path
+          %li= link_to 'Board Members', root_path
+          %li= link_to 'Staff', root_path
+      = nav_to 'Education', pages_education_path
+      = nav_to 'Savaktuq', pages_savaktuq_path
+      = nav_to 'Language & Culture', pages_language_path, id: 'language1'
+      = nav_to 'Language', pages_language_path, id: 'language2'
+      = nav_to 'Language', pages_language_path
+      = nav_to 'Camp', pages_camp_path, class: 'nav-last'
+      =# nav_to 'News & Events', pages_news_path, id: 'news1'
+      =# nav_to 'News', pages_news_path, id: 'news2'
+      =# nav_to 'Support Us', pages_support_path, class: 'nav-last'
+      = nav_to 'Memorial Fund', pages_memorial_fund_path
