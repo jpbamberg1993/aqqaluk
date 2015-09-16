@@ -40,6 +40,7 @@ gem 'mobvious-rails'
 gem 'asset_sync'
 gem 'unf'
 gem 'newrelic_rpm'
+gem 'goose'
 
 # Compass specific gems.
 # gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"

@@ -78,6 +78,7 @@ GEM
       multi_json (~> 1.0)
     formatador (0.2.4)
     fssm (0.2.10)
+    goose (0.8.0)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -211,6 +212,7 @@ DEPENDENCIES
   capybara (= 2.1.0)
   coffee-rails (= 4.0.1)
   compass-rails
+  goose
   haml-rails
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
