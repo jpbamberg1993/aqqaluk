@@ -13,12 +13,16 @@ module ApplicationHelper
     render :partial => 'layouts/browsehappy'
   end
 
+  def title(page_title)
+    content_for(:title) { page_title }
+  end
+
   # FIXME ccm: Not passing class.
   def nav_switch(title)
     if device_type == :mobile
-      nav_at 'title', in: 'mobile'
+      nav_at(title, {in: :mobile})
     else
-      nav_at 'title'
+      nav_at(title)
     end
   end
 end
