@@ -41,6 +41,7 @@ gem 'asset_sync'
 gem 'unf'
 gem 'newrelic_rpm'
 gem 'goose'
+gem 'comfortable_mexican_sofa', '~> 1.12.0'
 
 # Compass specific gems.
 # gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
