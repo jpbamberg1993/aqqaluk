@@ -1,10 +1,5 @@
-- content_for :title do
-  Language & Culture
-- for_device_type :mobile do
-  = nav_at 'Language & Culture', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'Language & Culture'
-=# nav_switch('Language & Culture')
+= title 'Language and Culture'
+= nav_switch 'Language and Culture'
 
 %section.panel#commission_v1
   .container

@@ -1,10 +1,5 @@
-- content_for :title do
-  Support Us
-- for_device_type :mobile do
-  = nav_at 'Support Us', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'Support Us'
-=# nav_switch('Support Us')
+= title 'Support'
+= nav_switch 'Support'
 
 %section.panel#support.hero
   .container

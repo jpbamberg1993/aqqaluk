@@ -1,10 +1,5 @@
-- content_for :title do
-  News & Events
-- for_device_type :mobile do
-  = nav_at 'News & Events', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'News & Events'
-=# nav_switch('News & Events')
+= title 'News & Events'
+= nav_switch 'News & Events'
 
 %section.panel#news.hero
   .container
@@ -24,3 +19,18 @@
           %a{:href => 'http://www.icontact-archive.com/v93Wl9ESven72SGB8-1-5pwQSh4rOew_?w=3', :title => ''} Vol. 2, No. 3, News from Aqqaluk Trust, October 2, 2012
         %li
           %a{:href => 'http://www.icontact-archive.com/v93Wl9ESven72SGB8-1-5kaCPvKBdSMI?w=3', :title => ''} Vol. 3, No. 3, News from Aqqaluk Trust, December 20, 2012
+
+%section.panel#stories
+  .container
+    .stories
+      %p Some Content.
+
+%section.panel#stories
+  .container
+    .stories
+      %p Some Content.
+
+%section.panel#stories
+  .container
+    .stories
+      %p Some Content.

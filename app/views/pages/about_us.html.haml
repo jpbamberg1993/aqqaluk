@@ -1,10 +1,5 @@
-- content_for :title do
-  About Us
-- for_device_type :mobile do
-  = nav_at 'About Us', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'About Us'
-=# nav_switch('About Us')
+= title 'About Us'
+= nav_switch 'About Us'
 
 %section.panel#robert
   .container

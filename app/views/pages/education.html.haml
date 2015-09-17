@@ -1,10 +1,5 @@
-- content_for :title do
-  Education
-- for_device_type :mobile do
-  = nav_at 'Education', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'Education'
-=# nav_switch 'Education'
+= title 'Education'
+= nav_switch 'Education'
 
 %section.panel#scholarships.hero
   .container

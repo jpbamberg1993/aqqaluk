@@ -1,10 +1,5 @@
-- content_for :title do
-  Founder
-- for_device_type :mobile do
-  = nav_at 'Founder', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'Founder'
-=# nav_switch('Founder')
+= title 'Founder'
+= nav_switch 'Founder'
 
 %section.panel#newlin
   .container

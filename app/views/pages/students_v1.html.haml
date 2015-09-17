@@ -1,10 +1,5 @@
-- content_for :title do
-  Students
-- for_device_type :mobile do
-  = nav_at 'Students', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'Students'
-=# nav_switch('Students')
+= title 'Students'
+= nav_switch 'Students'
 
 %section.panel#scholarships_v1
   .container

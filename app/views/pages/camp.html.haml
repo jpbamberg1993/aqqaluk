@@ -1,10 +1,5 @@
-- content_for :title do
-  Camp Sivunniigvik
-- for_device_type :mobile do
-  = nav_at 'Camp', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'Camp'
-=# nav_switch 'Camp'
+= title 'Camp'
+= nav_switch 'Camp'
 
 %section.panel#camp.hero
   .container

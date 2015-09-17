@@ -1,10 +1,5 @@
-- content_for :title do
-  Golf Challenge
-- for_device_type :mobile do
-  = nav_at 'Golf Challenge', in: 'mobile'
-- for_device_type :desktop do
-  = nav_at 'Golf Challenge'
-=# nav_switch('Golf Challenge')
+= title 'Golf Challenge'
+= nav_switch 'Golf Challenge'
 
 %section.panel#stories
   .container

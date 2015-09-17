@@ -17,7 +17,6 @@ module ApplicationHelper
     content_for(:title) { page_title }
   end
 
-  # FIXME ccm: Not passing class.
   def nav_switch(title)
     if device_type == :mobile
       nav_at(title, {in: :mobile})
