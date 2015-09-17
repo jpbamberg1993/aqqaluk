@@ -1,9 +1,4 @@
 Aqqaluk::Application.routes.draw do
-  comfy_route :cms_admin, :path => '/admin'
-
-  # Make sure this routeset is defined last
-  comfy_route :cms, :path => '/', :sitemap => false
-
   root :to => 'pages#home'
 
   get "pages/home"
@@ -22,4 +17,8 @@ Aqqaluk::Application.routes.draw do
   get "pages/support"
   get "pages/golf_challenge"
   get "pages/memorial_fund"
+
+  comfy_route :cms_admin, :path => '/admin'
+  # Make sure this routeset is defined last
+  comfy_route :cms, :path => '/', :sitemap => false
 end
