@@ -15,9 +15,10 @@
         = nav_to 'Education', education_path
         = nav_to 'Savaktuq', savaktuq_path do
           %ul.sub-menu
-            %li= link_to 'FAQ', faq_path
-            -# %li= link_to 'FAQ', '/faq'
-            %li= link_to 'Student Blog', blog_path
+            -# %li= link_to 'FAQ', faq_path
+            %li= link_to 'FAQ', '/frequently-asked-questions'
+            -# %li= link_to 'Student Blog', blog_path
+            %li= link_to 'Student Blog', '/student-blog'
         = nav_to 'Language & Culture', language_path, id: 'language1'
         = nav_to 'Language', language_path, id: 'language2'
         = nav_to 'Camp', camp_path, class: 'nav-last'

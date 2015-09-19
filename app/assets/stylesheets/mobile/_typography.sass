@@ -19,6 +19,21 @@ $p_shrink: .716
     margin-bottom: $scale-3
     font-size: $scale2c * $p_shrink
 
+// Typography Change
+
+$shrinkage: .716
+
+.stories, .questions, .student-blog
+  p, label, ul
+    margin: 0 0 $scale-4
+    font-size: $scale2 * $shrinkage
+  label
+    font-weight: bold
+  +at-breakpoint($break6)
+    p, label, ul
+      margin-bottom: $scale-3
+      font-size: $scale2c * $shrinkage
+
 
 /* Links
   -----------------------
