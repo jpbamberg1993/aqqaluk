@@ -11,6 +11,8 @@ Aqqaluk::Application.routes.draw do
   get '/education',      to: 'pages#education'
   get '/students_v1',    to: 'pages#students_v1'
   get '/savaktuq',       to: 'pages#savaktuq'
+  get '/faq',            to: 'pages#faq'
+  get '/blog',           to: 'pages#blog'
   get '/language',       to: 'pages#language'
   get '/language_v1',    to: 'pages#language_v1'
   get '/camp',           to: 'pages#camp'

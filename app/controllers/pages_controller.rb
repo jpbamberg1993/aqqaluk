@@ -29,6 +29,12 @@ class PagesController < ApplicationController
   def savaktuq
   end
 
+  def faq
+  end
+
+  def blog
+  end
+
   def language
   end
 
