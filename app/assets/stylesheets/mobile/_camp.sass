@@ -27,7 +27,7 @@ $shrink: .618
     +span-columns(4 omega, $break6)
   .image_row_1
     +span-columns(4 omega, $break6)
-    margin-bottom: $gutter-width * .618
+    margin-bottom: $gutter-width
     padding-top: $gutter-width
   .image_row_2
     +span-columns(4, $break6)
@@ -39,31 +39,32 @@ $shrink: .618
     p
       margin-bottom: $scale2
       color: $cyan
+
   .image1, .image3
-    +span-columns(2, 4)
+    +span-columns(3, 6)
   .image2, .image4
-    +span-columns(2 omega, 4)
+    +span-columns(3 omega, 6)
   .image1, .image2, .image3, .image4
     height: 83px
   .image1
-    background: image-url("pics/image-1-93.jpg") left center no-repeat
+    background: image-url("pics/camp/image-1-93.jpg") left center no-repeat
   .image2
-    background: image-url("pics/image-2-93.jpg") left center no-repeat
+    background: image-url("pics/camp/image-2-93.jpg") left center no-repeat
   .image3
-    background: image-url("pics/image-3-93.jpg") left center no-repeat
+    background: image-url("pics/camp/image-3-93.jpg") left center no-repeat
   .image4
-    background: image-url("pics/image-4-93.jpg") left center no-repeat
+    background: image-url("pics/camp/image-4-93.jpg") left center no-repeat
 
   +at-breakpoint($break6)
     .image_row_1
-      margin-bottom: $gutter-width
+      margin-bottom: $gutter-width * .618
     .image1, .image2, .image3, .image4
       height: 140px
     .image1
-      background: image-url("pics/image-1-157.jpg") left center no-repeat
+      background: image-url("pics/camp/image-1-157.jpg") left center no-repeat
     .image2
-      background: image-url("pics/image-2-157.jpg") left center no-repeat
+      background: image-url("pics/camp/image-2-157.jpg") left center no-repeat
     .image3
-      background: image-url("pics/image-3-157.jpg") left center no-repeat
+      background: image-url("pics/camp/image-3-157.jpg") left center no-repeat
     .image4
-      background: image-url("pics/image-4-157.jpg") left center no-repeat
+      background: image-url("pics/camp/image-4-157.jpg") left center no-repeat

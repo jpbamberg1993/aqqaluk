@@ -71,6 +71,32 @@ a
     text-decoration: underline
 
 
+/* Icon Fonts
+  -----------------------
+
+.utility a,
+.social-media a
+  [data-icon]:before
+    +data-icon
+
+.utility .icon
+  +hidden
+
+  +at-breakpoint($break6)
+    margin-right: $scale-6
+    font-size: $scale2
+    +reveal-hidden-inline
+
+  +at-breakpoint($break9)
+    margin-right: $scale-5
+    font-size: $scale2b
+
+  +at-breakpoint($break12)
+    margin-top: 5px
+    margin-right: $scale-4
+    font-size: $scale2c
+
+
 /* Headers
   -----------------------
 

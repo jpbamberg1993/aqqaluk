@@ -1,17 +1,19 @@
 %footer{:role => "contentinfo"}
   .container
-    .address
-      .vcard
-        %p.fn.org
-          Aqqaluk Trust
-        .adr
-          %p.street-address P.O. Box 509
-          %p
-            %span.locality> Kotzebue
-            ,
-            %span.region Alaska
-            %span.postal-code 99752
-
+    .footer-left
+      .address
+        .vcard
+          %p.fn.org
+            Aqqaluk Trust
+          .adr
+            %p.street-address P.O. Box 509
+            %p
+              %span.locality> Kotzebue
+              ,
+              %span.region Alaska
+              %span.postal-code 99752
+      .social-media
+        = render 'shared/social_media'
     .phone-number
       %p
         Toll Free --
