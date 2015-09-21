@@ -28,6 +28,7 @@ $break12:           12;
 // To counter normalize indentation of lists.
 ol, ul {
   padding-left: 0;
+  list-style-position: inside;
 }
 
 
