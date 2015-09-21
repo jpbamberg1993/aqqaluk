@@ -262,6 +262,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+  kaminari
   mobvious
   mobvious-rails
   newrelic_rpm
